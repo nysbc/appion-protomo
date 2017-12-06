@@ -186,7 +186,6 @@ COPY config/bashrc /etc/bashrc
 #RUN mkdir -p /home/appionuser/.mozilla/firefox/yvn3wpn8.default
 #COPY profiles.ini  /home/appionuser/.mozilla/firefox/
 COPY config/config.php /emg/sw/myami/myamiweb/config.php
-COPY localdb.sh /emg/sw/localdb.sh
 COPY startup.sh /emg/sw/startup.sh
 
 
