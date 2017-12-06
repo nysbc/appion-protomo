@@ -31,7 +31,6 @@ To access the Appion webviewer, navigate to
 Your ip address may vary depending on your Docker distribution.
 
 # Example
-
 Make sure your container is running via the ```./run.sh``` script.
 
 From inside the appion-protomo directory (on the host machine, not inside the container), execute the command:
@@ -119,7 +118,8 @@ Click `processing` at the top
 
 # Compatibility
 
-The pipeline has been tested in OSX El Capitan version 10.11.3 (with  and Ubuntu 
+The pipeline has been tested in OSX El Capitan version 10.11.3 and Ubuntu.
+
 # Bugs
 
 Please report any bugs problems as a Github issue.
