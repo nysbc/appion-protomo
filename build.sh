@@ -2,6 +2,8 @@
 
 curdir=$(pwd)
 
+# Download dependencies
+
 mkdir MRC
 cd MRC/
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/5975/06jul12a-mini.tgz'
@@ -10,6 +12,7 @@ cd $curdir
 
 mkdir TGZ
 cd TGZ/
+
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/631/eman-linux-x86_64-cluster-1.9.tar.gz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/4485/spidersmall.13.00.tgz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/4484/ctf_140609.tar.gz'
@@ -22,8 +25,14 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-cen
 wget -nc -c 'https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz'
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/638/spidersmall.18.10.tar.gz'
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/636/Xmipp-2.4-src.tar.gz'
+wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8748/myami-trunk-anoble-20171203.tar.gz'
+
 cd $curdir
 tar zxvf TGZ/findem-docker-centos7.tgz
+tar zxvf myami-trunk-anoble-20171203.tar.gz myami-trunk
 
+# Create a docker volume to persist the database
 docker volume create mariadb-database
+
+# Build the image
 docker build -t semc/appion-protomo .
