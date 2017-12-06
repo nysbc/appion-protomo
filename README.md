@@ -20,15 +20,34 @@ This performs the following operations:
 
 
 # Usage
-To ssh into the appion-protomo container, do:
+To launch the application container, do:
 
-``./exec.sh``
+```./run.sh```
+
+To ssh into the container, do:
+
+```./exec.sh```
+
+To kill the container (does not delete the container), do:
+
+```./kill.sh``` # Warning, this will kill any other Docker containers you have running as well, use with caution!
+
+To remove delete the container, but not the mounted data in /emg/data or the volume at /var/lib/mysql, do:
+
+``` ./rmContainers.sh``` # Warning: This will delete any other inactive containers you may have running as well!
+
+To delete the mariadb-database volume, do:
+
+```./rmVolumes.sh``` # Warning: The volume will be recreated the next time you do ./run.sh, but you will have an empty Appion database!
+
+To re-build the appion-protomo image from scratch, do:
+
+```./build.sh``` # This will take a while!
 
 To access the Appion webviewer, navigate to 
 
-```http://192.168.99.100/myamiweb```
+```http://192.168.99.100/myamiweb``` # Your IP address will vary depending on your Docker installation.
 
-Your ip address may vary depending on your Docker distribution.
 
 # Example
 Make sure your container is running via the ```./run.sh``` script.
