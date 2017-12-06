@@ -1,5 +1,6 @@
 #!/bin/sh
 
+docker volume create mariadb-database
 docker run -d -t \
   -v $(pwd)/emg/data:/emg/data \
   -v mariadb-database:/var/lib/mysql \

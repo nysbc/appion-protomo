@@ -22,8 +22,9 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-cen
 wget -nc -c 'https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz'
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/638/spidersmall.18.10.tar.gz'
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/636/Xmipp-2.4-src.tar.gz'
+wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8748/myami-trunk-anoble-20171203.tar.gz'
+
 cd $curdir
 tar zxvf TGZ/findem-docker-centos7.tgz
-
-docker volume create mariadb-database
+tar zxvf myami-trunk-anoble-20171203.tar.gz myami-trunk
 docker build -t semc/appion-protomo .
