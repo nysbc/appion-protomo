@@ -26,10 +26,10 @@ wget -nc -c 'https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/638/spidersmall.18.10.tar.gz'
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/636/Xmipp-2.4-src.tar.gz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8748/myami-trunk-anoble-20171203.tar.gz'
-
+sleep 1
 cd $curdir
 tar zxvf TGZ/findem-docker-centos7.tgz
-tar zxvf myami-trunk-anoble-20171203.tar.gz myami-trunk
+tar zxvf TGZ/myami-trunk-anoble-20171203.tar.gz myami-trunk/
 
 # Create a docker volume to persist the database
 docker volume create mariadb-database
