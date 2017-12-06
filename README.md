@@ -31,8 +31,41 @@ To access the Appion webviewer, navigate to
 Your ip address may vary depending on your Docker distribution.
 
 # Example
-
 Make sure your container is running via the ```./run.sh``` script.
+
+First, navigate to your web portal at something like ```192.168.99.100/myamiweb```
+Select `Project DB`
+Select `Add a new project`
+Fill in the form for your project and click `add`
+Select `View Projects`
+Select the link on the name of your newly created project (NOT the pencil-editing icon) 
+Select `create processing db`
+Select `upload images to new session`
+
+On the next page,
+Click the dropdown for `Images grouped by` and select `tiltseries`
+Enter a description for `Session Description`
+Enter the number of images in each tilt series (this value is shown as `Number of tilt-images: # ` in the protomo2aligner.py output)
+Enter the tilt info parameter file path in the field `Tilt info path:` (from the protomo2aligner.py output)
+Select `Just show command` at the bottom of the page
+
+On the next page, copy the entire imageloader.py command
+Next, either execute
+`./exec.sh` OR
+VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
+Paste the command to a terminal prompt and hit enter
+Wait for imageuploader.py  to finish processing
+...
+...
+When imageuploader.py is finished processing, navigate to 192.168.99.100/myamiweb
+Select `Image Viewer`
+Make sure your project is selected in the dropdown (you should now see images in the image viewer panel
+Click `processing` at the top
+
+...
+...
+...
+
 From inside the appion-protomo directory (on the host machine, not inside the container), execute the command:
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
@@ -41,6 +74,15 @@ tar -zxvf TILTSERIESFILE.tar.gz emg/data/tiltseries
 
 ./exec.sh
 
-```
+# Now we are inside the container
+cd /emg/data/tiltseries
 
-  
+/emg/sw/myami/appion/bin/protomo2aligner.py \
+  --serialem_stack=apotomo4.st --serialem_mdoc=apotomo4.st.mdoc \
+  --voltage=200
+```
+ 
+ When protomo2aligner is finished, navigate to your web portal at an address like 
+ 
+ ```192.168.99.100/myamiweb```
+ 
