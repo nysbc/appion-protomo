@@ -1,0 +1,68 @@
+
+Global {
+	edge = bottom
+	allign = left
+	margin = 0
+	widthtype = percent
+	width = 100
+	heighttype = pixel
+	height = 24
+	roundcorners = false 
+	transparent = false
+	tintcolor = #ffffff
+	alpha = 39
+}
+
+Plugin {
+	 type = launchbar
+	 padding = 8
+	 config {
+		  button {
+				Image =  /usr/share/pixmaps/xterm_48x48.xpm
+				tooltip = Terminal
+				action = xterm -geometry 110x24
+		  }
+		  button {
+				tooltip = Firefox web browser
+				Image = /usr/lib64/firefox/browser/icons/mozicon128.png
+				action = firefox
+		  }
+	 }
+}
+
+Plugin {
+	type = space
+	config {
+		size = 5
+	}
+}
+
+Plugin {
+	type = taskbar
+	expand = true
+	config {
+		ShowIconified = true
+		ShowMapped    = true
+		ShowAllDesks  = false
+		tooltips = true
+		IconsOnly = false
+		MaxTaskWidth = 150
+	}
+}
+
+Plugin {
+	type = space
+	config {
+		size = 5
+	}
+}
+
+Plugin {
+	type = dclock
+	config {
+		HoursView = 12
+		ShowSeconds = false
+		TooltipFmt = %A %x
+		Action = xmessage Please define some command &
+	}
+}

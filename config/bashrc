@@ -1,0 +1,44 @@
+export TERMCOLOR='1;34'
+if [ $UID == 0 ]
+then
+  PS1="\[\e[1;31m\]\u\[\e[0m\]@\[\e[${TERMCOLOR}m\]\h\[\e[0m\] \W] "
+else
+  PS1="\[\e[1;32m\]\u\[\e[0m\]@\[\e[${TERMCOLOR}m\]\h\[\e[0m\] \W] "
+fi
+
+umask 002
+
+export APPIONPATH=/emg/sw/myami/appion
+export LEGINONPATH=/emg/sw/myami/leginon
+export EMANDIR=/emg/sw/eman1
+export EMAN2DIR=/emg/sw/eman2
+export RELIONDIR=/emg/sw/relion
+export XMIPPDIR=/emg/sw/xmipp
+export MPIPATH=/usr/lib64/openmpi
+export GRIGPATH=/emg/sw/grigorieff
+
+#spider
+export SPIDERDIR=/emg/sw/spider
+export SPBIN_DIR=${SPIDERDIR}/bin/
+export SPPROC_DIR=${SPIDERDIR}/proc/
+export SPMAN_DIR=${SPIDERDIR}/man/
+
+#protomo
+export I3ROOT=/emg/sw/protomo2
+export PROTOMO2PATH=/emg/sw/protomo2:/emg/sw/protomo2/bin:/emg/sw/protomo2/lib/linux/x86-64:/emg/sw/ffmpeg-git-20171128-64bit-static
+
+export PATH=/usr/sbin:/usr/bin:/bin:${APPIONPATH}/bin:${LEGINONPATH}:${EMANDIR}/bin:${XMIPPDIR}/bin:${SPIDERDIR}/bin:
+export PATH=${PATH}:${GRIGPATH}/bin:${MPIPATH}/bin:${EMAN2DIR}/bin:${RELIONDIR}/bin
+export PATH=${PATH}:${I3ROOT}/i3/bin:${PROTOMO2PATH}
+export PYTHONPATH=${EMANDIR}/lib:${EMAN2DIR}/lib:${EMAN2DIR}/bin:${PROTOMO2PATH}/lib/linux/x86-64
+export LD_LIBRARY_PATH=${EMANDIR}/lib:${XMIPPDIR}/lib:${MPIPATH}/lib:${EMAN2DIR}/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${RELIONDIR}/lib:${PROTOMO2PATH}/lib/linux/x86-64
+
+export EDITOR=nano
+export TERM=xterm
+export HISTSIZE=10000
+export HISTFILESIZE=200000
+
+alias dsort="du -sk * | sort -n | tail -50"
+alias ddir="du -sk */ | sort -n | tail -n 50"
+alias ls="ls --color=auto"
