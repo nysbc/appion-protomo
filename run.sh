@@ -8,13 +8,17 @@ else
 fi
 echo Done.
 
+# Change these if you already have other services running on default ports
+WEBPORT=80
+VNCPORT=5901
+DBPORT=3306
 
 docker run -d -t \
   -v $(pwd)/emg/data:/emg/data \
   -v mariadb-database:/var/lib/mysql \
   -v $(pwd):/local_data \
   -w /emg/sw/myami/appion \
-  -p 8080:80 -p 5901:5901 -p 3306:3306 \
+  -p $WEBPORT:80 -p $VNCPORT:5901 -p $DBPORT:3306 \
   semc/appion-protomo
 
 echo Waiting for database...
