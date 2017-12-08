@@ -158,7 +158,13 @@ Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series a
 
 Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., … Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. https://doi.org/10.1101/230276
 
-# Attributions
+# Authors
+
+- Carl J Negro
+
+- Alex J Noble
+
+# License
 
 ...
 
