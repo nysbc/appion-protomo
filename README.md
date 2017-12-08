@@ -136,7 +136,14 @@ Click `processing` at the top
 ...
 
 ...
-
+<details>
+  <summary>Click to expand</summary>
+  whatever
+  <details>
+    <summary>Click to expand</summary>
+    whatever
+  </details>
+</details>
 
 # Attributions
 
