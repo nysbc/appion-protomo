@@ -3,7 +3,8 @@ A Docker-based distribution of the appion-protomo cryoem tomography processing p
 
 
 # Installation
-Download and install Docker from https://docs.docker.com/engine/installation/.
+Download and install Docker 1.21 or greater from https://docs.docker.com/engine/installation/.
+Launch docker according to your Docker engine's instructions, typically ``docker start``.  
 ```
 git clone http://github.com/nysbc/appion-protomo
 cd appion-protomo
