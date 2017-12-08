@@ -1,5 +1,5 @@
 # appion-protomo
-A Docker-based distribution of the appion-protomo cryoem tomography processing pipeline.
+A Docker-based distribution of the Appion-Protomo cryoem tomography processing pipeline.
 
 
 # Installation
@@ -146,6 +146,10 @@ Click `processing` at the top
 
 ...
 
+
+# References
+
+Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
 
 # Attributions
 
