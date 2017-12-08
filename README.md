@@ -18,6 +18,8 @@ Launch Kitematic.
 
 # Installation
 
+## Linux/MacOS
+
 ```
 git clone http://github.com/nysbc/appion-protomo
 cd appion-protomo
@@ -41,6 +43,12 @@ cd appion-protomo
 - waits for the mysqld_safe database daemon to launch (for ~10 seconds, but could in rare instances take longer)
 
 </p></details>
+
+## Windows
+
+In the Kitematic search bar type: `semc appion-protomo`.
+
+Click `Create` next to the `semc` `appion-protomo` and wait for the container to download and start.
 
 # Usage
 - To launch the application container, do:
