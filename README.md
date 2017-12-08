@@ -25,6 +25,12 @@ To launch the application container, do:
 
 ```./run.sh```
 
+To VNC into the container, download and install a VNC viewer like RealVNC:
+
+```https://www.realvnc.com/en/connect/download/viewer/macos/```
+
+Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
+
 To ssh into the container, do:
 
 ```./exec.sh```
