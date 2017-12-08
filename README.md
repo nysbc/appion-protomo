@@ -67,7 +67,7 @@ To access the Appion webviewer, navigate to
 
 
 # Example
-<details><summary>Click to expand</summary><p>
+<details><summary>Upload first SerialEM tilt-series in a session (click to expand)</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
 
@@ -139,16 +139,18 @@ When uploadSerialEM.py is finished processing, navigate to 192.168.99.100/myamiw
 
 Select `Image Viewer`
 
-Make sure your project is selected in the dropdown (you should now see images in the image viewer panel
+Make sure your project is selected in the dropdown (you should now see images in the image viewer panel)
 
 Click `processing` at the top
 
 
 ...
 
-...
+</p></details>
 
-...
+<details><summary>Upload additional SerialEM tilt-series to an existing session (click to expand)</summary><p>
+
+
 
 </p></details>
 
