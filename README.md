@@ -76,7 +76,9 @@ From inside the appion-protomo directory (on the host machine, not inside the co
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
 
-Download this hemagglutinin SerialEM tilt-series: https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
+Download this hemagglutinin SerialEM tilt-series:
+
+https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
 
 tar -zxvf HAslow1.tar.gz emg/data/tiltseries
 
