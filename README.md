@@ -141,6 +141,7 @@ Wait for uploadSerialEM.py  to finish processing
 <details><summary>Upload additional SerialEM tilt-series to an existing session (click to expand)</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
+
 `remove or move the previously-uploaded tilt-series stack and mdoc files`
 
 Navigate to 192.168.99.100/myamiweb
