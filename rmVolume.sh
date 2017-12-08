@@ -1,1 +1,1 @@
-docker volume rm $(docker volume ls -q)
+docker volume rm mariadb-database

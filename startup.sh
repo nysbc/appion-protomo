@@ -9,9 +9,6 @@ nohup /usr/sbin/apachectl -DFOREGROUND &
 echo 'httpd' >> /var/log/startup.log
 sleep 2s && echo 'sleep' >> /var/log/startup.log
 
-#/emg/sw/localdb.sh
-sleep 2s && echo 'sleep' >> /var/log/startup.log
-
 if [ ! -d "/emg/data/appion" ]; then
         echo "Creating appion data folder in /emg/data/appion..." | tee -a /var/log/startup.log
         mkdir /emg/data/appion
