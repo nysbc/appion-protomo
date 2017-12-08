@@ -27,4 +27,4 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8748/myami-trunk-
 cd $curdir
 tar zxvf TGZ/findem-docker-centos7.tgz
 tar zxvf myami-trunk-anoble-20171203.tar.gz myami-trunk
-docker build -t semc/appion-protomo .
+docker build -t semc/appion-protomo:alpha .
