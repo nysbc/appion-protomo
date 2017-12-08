@@ -2,10 +2,14 @@
 A Docker-based distribution of the Appion-Protomo cryoem tomography processing pipeline.
 
 
-# Installation
+# Prerequisites
+
 Download and install Docker 1.21 or greater from https://docs.docker.com/engine/installation/
 
 Launch docker according to your Docker engine's instructions, typically ``docker start``.  
+
+# Installation
+
 ```
 git clone http://github.com/nysbc/appion-protomo
 cd appion-protomo
@@ -141,6 +145,7 @@ Navigate to 192.168.99.100/myamiweb
 Select `Image Viewer`
 
 Make sure your project is selected in the dropdown (you should now see images in the image viewer panel)
+
 `if you don't see images then you first need to upload one tilt-series to a new session`
 
 Click `processing` at the top
