@@ -11,7 +11,7 @@ cd appion-protomo
 ./run.sh
 ```
 
-<details><summary>This performs the following operations:</summary><p>
+This performs the following operations:
 - downloads the semc/appion-protomo docker image from Docker Hub
 - creates a Docker volume to persist the Mariadb database 
 - mounts `~/appion-protomo/emg/data` on the host side to `/emg/data` inside the running container
@@ -19,7 +19,6 @@ cd appion-protomo
 - mounts the `~/appion-protomo` directory to `/local_data` inside the running container
 - opens ports 80 for web traffic, 3306 for database traffic, and 5901 for VNC'ing into the running container
 - waits for the mysqld_safe database daemon to launch (for ~10 seconds, but could in rare instances take longer)
-</p></details>
 
 # Usage
 To launch the application container, do:
