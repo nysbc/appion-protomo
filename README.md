@@ -67,7 +67,7 @@ To access the Appion webviewer, navigate to
 
 
 # Example
-<details><summary>Upload first SerialEM tilt-series in a session (click to expand)</summary><p>
+<details><summary>Upload first SerialEM tilt-series to a new session (click to expand)</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
 
