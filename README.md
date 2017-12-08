@@ -16,7 +16,7 @@ cd appion-protomo
 ./run.sh
 ```
 
-<details><summary>This performs the following operations (click for details):</summary><p>
+<details><summary>This performs the following operations (click to expand):</summary><p>
   
 - downloads the semc/appion-protomo docker image from Docker Hub
   
