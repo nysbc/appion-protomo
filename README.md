@@ -1,5 +1,5 @@
 # appion-protomo
-A Docker-based distribution of the Appion-Protomo cryoem tomography processing pipeline.
+A Docker-based distribution of the Appion-Protomo fiducial-less cryoET processing pipeline.
 
 
 # Prerequisites
