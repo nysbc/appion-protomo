@@ -150,7 +150,7 @@ Select `Image Viewer`
 
 Make sure your project is selected in the dropdown (you should now see images in the image viewer panel)
 
-`if you don't see images then you first need to upload one tilt-series to a new session`
+> if you don't see images then you first need to upload one tilt-series to a new session
 
 Click `processing` at the top
 
