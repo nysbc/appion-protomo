@@ -79,7 +79,7 @@ From inside the appion-protomo directory (on the host machine, not inside the co
 
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
-Download this hemagglutinin SerialEM tilt-series:
+Download the following hemagglutinin SerialEM tilt-series:
 
 https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
 
@@ -90,7 +90,7 @@ tar -zxvf HAslow1.tar.gz emg/data/tiltseries
 # Now we are inside the container
 ```
  
- Navigate to your web portal at an address like 
+Navigate to your web portal at an address like 
  
  ```192.168.99.100/myamiweb```
 
@@ -122,7 +122,7 @@ Enter the `voltage`
 Select `Just show command` at the bottom of the page
 
 
-On the next page, copy the entire imageloader.py command
+On the next page, copy the entire uploadSerialEM.py command
 
 Next, either execute
 
@@ -140,6 +140,9 @@ Wait for uploadSerialEM.py  to finish processing
 
 <details><summary>Upload additional SerialEM tilt-series to an existing session (click to expand)</summary><p>
 
+Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
+`remove or move the previously-uploaded tilt-series stack and mdoc files`
+
 Navigate to 192.168.99.100/myamiweb
 
 Select `Image Viewer`
@@ -149,6 +152,32 @@ Make sure your project is selected in the dropdown (you should now see images in
 `if you don't see images then you first need to upload one tilt-series to a new session`
 
 Click `processing` at the top
+
+On the next page click `Upload more images` on the left
+
+On the next page click the dropdown for `Images grouped by` and select `SerialEM Tilt Series`
+
+Enter the `SerialEM directory path`
+
+Enter the `voltage`
+
+
+Select `Just show command` at the bottom of the page
+
+
+On the next page, copy the entire uploadSerialEM.py command
+
+Next, either execute
+
+`./exec.sh` OR
+
+VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
+
+Paste the command to a terminal prompt and hit enter
+
+Wait for uploadSerialEM.py  to finish processing
+
+...
 
 </p></details>
 
