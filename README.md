@@ -75,7 +75,6 @@ From inside the appion-protomo directory (on the host machine, not inside the co
 
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
-
 Download this hemagglutinin SerialEM tilt-series:
 
 https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
@@ -133,24 +132,18 @@ Wait for uploadSerialEM.py  to finish processing
 
 ...
 
-...
-
-When uploadSerialEM.py is finished processing, navigate to 192.168.99.100/myamiweb
-
-Select `Image Viewer`
-
-Make sure your project is selected in the dropdown (you should now see images in the image viewer panel)
-
-Click `processing` at the top
-
-
-...
-
 </p></details>
 
 <details><summary>Upload additional SerialEM tilt-series to an existing session (click to expand)</summary><p>
 
+Navigate to 192.168.99.100/myamiweb
 
+Select `Image Viewer`
+
+Make sure your project is selected in the dropdown (you should now see images in the image viewer panel)
+`if you don't see images then you first need to upload one tilt-series to a new session`
+
+Click `processing` at the top
 
 </p></details>
 
