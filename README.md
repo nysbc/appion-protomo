@@ -76,19 +76,16 @@ From inside the appion-protomo directory (on the host machine, not inside the co
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
 
-tar -zxvf TILTSERIESFILE.tar.gz emg/data/tiltseries
+Download this hemagglutinin SerialEM tilt-series: https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
+
+tar -zxvf HAslow1.tar.gz emg/data/tiltseries
 
 ./exec.sh
 
 # Now we are inside the container
-cd /emg/data/tiltseries
-
-/emg/sw/myami/appion/bin/protomo2aligner.py \
-  --serialem_stack=apotomo4.st --serialem_mdoc=apotomo4.st.mdoc \
-  --voltage=200
 ```
  
- When protomo2aligner is finished, navigate to your web portal at an address like 
+ Navigate to your web portal at an address like 
  
  ```192.168.99.100/myamiweb```
 
@@ -107,13 +104,15 @@ Select `create processing db`
 Select `upload images to new session`
 
 
-On the next page click the dropdown for `Images grouped by` and select `tiltseries`
+On the next page click the dropdown for `Images grouped by` and select `SerialEM Tilt Series`
 
 Enter a description for `Session Description`
 
-Enter the number of images in each tilt series (this value is shown as `Number of tilt-images: # ` in the protomo2aligner.py output)
+Enter the `SerialEM stack path`
 
-Enter the tilt info parameter file path in the field `Tilt info path:` (from the protomo2aligner.py output)
+Enter the `SerialEM mdoc path`
+
+Enter the `voltage`
 
 Select `Just show command` at the bottom of the page
 
@@ -128,13 +127,13 @@ VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
 
 Paste the command to a terminal prompt and hit enter
 
-Wait for imageuploader.py  to finish processing
+Wait for uploadSerialEM.py  to finish processing
 
 ...
 
 ...
 
-When imageuploader.py is finished processing, navigate to 192.168.99.100/myamiweb
+When uploadSerialEM.py is finished processing, navigate to 192.168.99.100/myamiweb
 
 Select `Image Viewer`
 
