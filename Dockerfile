@@ -38,6 +38,7 @@ RUN updatedb
 RUN mkdir -p /emg/data  && echo 'mkdir /emg/data'
 RUN mkdir -p /emg/sw && echo 'mkdir /emg/sw'
 RUN mkdir -p /emg/sw/sql && echo 'mkdir /emg/sw/sql'
+RUN mkdir -p /emg/data/appion && echo 'mkdir /emg/data/appion'
 RUN chmod 777 -R /emg  && echo 'chmod 777'
 
 ### Apache setup
@@ -187,10 +188,6 @@ COPY config/bashrc /etc/bashrc
 #COPY profiles.ini  /home/appionuser/.mozilla/firefox/
 COPY config/config.php /emg/sw/myami/myamiweb/config.php
 COPY startup.sh /emg/sw/startup.sh
-
-
-### just double check that this directory is missing
-RUN rm -fvr /emg/data/appion
 
 RUN updatedb
 
