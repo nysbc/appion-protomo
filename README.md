@@ -66,6 +66,8 @@ To access the Appion webviewer, navigate to
 
 
 # Example
+<details><summary>Click to expand</summary><p>
+
 Make sure your container is running via the ```./run.sh``` script.
 
 From inside the appion-protomo directory (on the host machine, not inside the container), execute the command:
@@ -146,6 +148,7 @@ Click `processing` at the top
 
 ...
 
+</p></details>
 
 # References
 
