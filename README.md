@@ -14,7 +14,7 @@ Download and install Docker 1.21 or greater from https://docs.docker.com/engine/
 
 Launch docker according to your Docker engine's instructions, typically ``docker start``.  
 
-## Windows
+### Windows
 
 Download and install Docker Toolbox from https://docs.docker.com/toolbox/toolbox_install_windows/
 
