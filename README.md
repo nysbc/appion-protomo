@@ -1,5 +1,5 @@
 # appion-protomo
-A Docker-based distribution of the Appion-Protomo *fiducial-less* cryoET processing pipeline.
+A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
 
 # Prerequisites
@@ -221,7 +221,7 @@ Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., … Ca
 
 # Compatibility
 
-The pipeline has been tested in OSX El Capitan version 10.11.3 and Ubuntu.
+The workflow has been tested in OSX El Capitan version 10.11.3 and Ubuntu.
 
 # Bugs
 
