@@ -76,7 +76,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 # Usage
 
-## Linux/MacOS
+## Linux/MacOS .small[(command line)]
 
 <details><summary>Click to expand</summary><p>
 
