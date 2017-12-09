@@ -20,7 +20,7 @@ Download and install Docker Toolbox from https://docs.docker.com/toolbox/toolbox
 
 Launch Kitematic.
 
-`If on first startup Kitematic displays a red error suggesting that you run using VirtualBox, do so.`
+> If on first startup Kitematic displays a red error suggesting that you run using VirtualBox, do so.
 
 # Installation
 
