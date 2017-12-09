@@ -142,7 +142,7 @@ tar -zxvf HAslow1.tar.gz emg/data/tiltseries
 
 ./exec.sh
 
-# Now we are inside the container
+\> Now we are inside the container
 ```
  
 Navigate to your web portal at an address like 
