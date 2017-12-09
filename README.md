@@ -52,13 +52,13 @@ cd appion-protomo
 
 ## Windows
 
-<details><summary>In the Kitematic search bar type: `semc/appion-protomo`.</summary><p>
+In the Kitematic search bar type: `semc/appion-protomo`.
+
+<details><summary>Click `Create` on the `semc` `appion-protomo` repository and wait for the container to download and start. (click for image)</summary><p>
 
 ![Alt text](https://i.imgur.com/D6P0c3J.png "Optional title")
 
 </p></details>
-
-Click `Create` on the `semc` `appion-protomo` repository and wait for the container to download and start.
 
 <details><summary>You may need to tweak your settings (click to expand)</summary><p>
 
