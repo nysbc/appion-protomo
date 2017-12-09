@@ -6,7 +6,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* cryoET process
 
 - A modern operating system with 16+ GB of RAM.
 
-- Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files)
+- Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
 ## Linux/MacOS
 
