@@ -56,7 +56,30 @@ In the Kitematic search bar type: `semc appion-protomo`.
 
 Click `Create` on the `semc` `appion-protomo` repository and wait for the container to download and start.
 
+<details><summary>You may need to tweak your settings (click to expand)</summary><p>
+
+If you needed to run Docker using VirtualBox, then you will need to increase the amount of RAM allocated to Docker:
+
+- Stop the Docker container,
+
+- Open VirtualBox,
+
+- Shut down the running virtual machine,
+
+- Edit the Settings for the virtual machine you just shut down,
+
+  - Increase the RAM to 8+ GB,
+  
+- Re-start the container.
+
+</p></details>
+
 # Usage
+
+## Linux/MacOS
+
+<details><summary>Click to expand</summary><p>
+
 - To launch the application container, do:
 
 ```./run.sh```
@@ -90,6 +113,16 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
 - To access the Appion webviewer, navigate to 
 
 ```http://192.168.99.100/myamiweb``` # Your IP address will vary depending on your Docker installation.
+
+</p></details>
+
+## Windows
+
+<details><summary>Click to expand</summary><p>
+
+...
+
+</p></details>
 
 
 # Example
