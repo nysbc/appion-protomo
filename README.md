@@ -237,6 +237,30 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
+<details><summary>Coarse align tilt-series (click to expand)</summary><p>
+
+...
+
+</p></details>
+
+<details><summary>Manually fix tilt-series if necessary (click to expand)</summary><p>
+
+...
+
+</p></details>
+
+<details><summary>Refine tilt-series (click to expand)</summary><p>
+
+...
+
+</p></details>
+
+<details><summary>Reconstruct tilt-series (click to expand)</summary><p>
+
+...
+
+</p></details>
+
 # References
 
 Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
