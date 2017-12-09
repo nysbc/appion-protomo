@@ -4,7 +4,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 # Prerequisites
 
-- A modern operating system with 16+ GB of RAM.
+- A modern operating system with 16+ GB of RAM.  .small[(command line)]
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
@@ -76,8 +76,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 # Usage
 
-## Linux/MacOS .small[(command line)]
-
+## Linux/MacOS
 <details><summary>Click to expand</summary><p>
 
 - To launch the application container, do:
