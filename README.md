@@ -2,10 +2,6 @@
 A Docker-based distribution of the Appion-Protomo *fiducial-less* cryoET processing pipeline.
 
 
-
-
-
-
 # Prerequisites
 
 - A modern operating system with 16+ GB of RAM.
@@ -97,7 +93,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
 
 
 # Example
-<details><summary>Upload first SerialEM tilt-series to a new session (click to expand)</summary><p>
+<details><summary>Upload *first* SerialEM tilt-series to a *new session* (click to expand)</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
 
@@ -164,7 +160,7 @@ Wait for uploadSerialEM.py  to finish processing
 
 </p></details>
 
-<details><summary>Upload additional SerialEM tilt-series to an existing session (click to expand)</summary><p>
+<details><summary>Upload *additional* SerialEM tilt-series to an *existing session* (click to expand)</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
 
