@@ -1,8 +1,12 @@
 # appion-protomo
-A Docker-based distribution of the Appion-Protomo fiducial-less cryoET processing pipeline.
+A Docker-based distribution of the Appion-Protomo *fiducial-less* cryoET processing pipeline.
 
 
 # Prerequisites
+
+- A modern operating system with 16+ GB of RAM.
+
+- Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files)
 
 ## Linux/MacOS
 
@@ -16,6 +20,8 @@ Download and install Docker Toolbox from https://docs.docker.com/toolbox/toolbox
 
 Launch Kitematic.
 
+`If on first startup Kitematic displays a red error suggesting that you run using VirtualBox, do so.`
+
 # Installation
 
 ## Linux/MacOS
@@ -28,19 +34,19 @@ cd appion-protomo
 
 <details><summary>This performs the following operations (click to expand):</summary><p>
   
-- downloads the semc/appion-protomo docker image from Docker Hub
+- Downloads the semc/appion-protomo docker image from Docker Hub,
   
-- creates a Docker volume to persist the Mariadb database 
+- Creates a Docker volume to persist the Mariadb database,
 
-- mounts `~/appion-protomo/emg/data` on the host side to `/emg/data` inside the running container
+- Mounts `~/appion-protomo/emg/data` on the host side to `/emg/data` inside the running container,
 
-- mounts the `mariadb-database` Docker volume to `/var/lib/mysql` inside the running container
+- Mounts the `mariadb-database` Docker volume to `/var/lib/mysql` inside the running container,
 
-- mounts the `~/appion-protomo` directory to `/local_data` inside the running container
+- Mounts the `~/appion-protomo` directory to `/local_data` inside the running container,
 
-- opens ports 80 for web traffic, 3306 for database traffic, and 5901 for VNC'ing into the running container
+- Opens ports 80 for web traffic, 3306 for database traffic, and 5901 for VNC'ing into the running container,
 
-- waits for the mysqld_safe database daemon to launch (for ~10 seconds, but could in rare instances take longer)
+- Waits for the mysqld_safe database daemon to launch (for ~10 seconds, but could in rare instances take longer).
 
 </p></details>
 
