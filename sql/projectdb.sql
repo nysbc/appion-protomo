@@ -27,7 +27,7 @@ CREATE TABLE `boxtypes` (
   `image` varchar(100) NOT NULL DEFAULT '0',
   `image_tiny` varchar(100) NOT NULL,
   PRIMARY KEY (`boxtypeId`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -43,7 +43,7 @@ CREATE TABLE `confirmauth` (
   `lastname` text NOT NULL,
   `email` text NOT NULL,
   `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ CREATE TABLE `dataStatusReport` (
   `first_exp_runtime` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=MyISAM AUTO_INCREMENT=90 DEFAULT CHARSET=latin1 AUTO_INCREMENT=90 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -97,7 +97,7 @@ CREATE TABLE `django_migrations` (
   `name` varchar(255) NOT NULL,
   `applied` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -112,7 +112,7 @@ CREATE TABLE `gridboxes` (
   `boxtypeId` int(11) DEFAULT '0',
   `container` text,
   PRIMARY KEY (`gridboxId`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -126,7 +126,7 @@ CREATE TABLE `gridlocations` (
   `gridId` int(11) DEFAULT NULL,
   `location` int(11) DEFAULT NULL,
   PRIMARY KEY (`gridlocationId`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -152,7 +152,7 @@ CREATE TABLE `grids` (
   `specimen` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`gridId`),
   KEY `label` (`label`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -164,7 +164,7 @@ CREATE TABLE `install` (
   `key` varchar(100) NOT NULL,
   `value` varchar(100) NOT NULL,
   KEY `key` (`key`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -185,7 +185,7 @@ CREATE TABLE `privileges` (
   `gridboxes` tinyint(4) NOT NULL,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -202,7 +202,7 @@ CREATE TABLE `processingdb` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|projects|project` (`REF|projects|project`),
   KEY `appiondb` (`appiondb`)
-) ENGINE=MyISAM AUTO_INCREMENT=360 DEFAULT CHARSET=latin1 AUTO_INCREMENT=360 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -219,7 +219,7 @@ CREATE TABLE `projectexperiments` (
   KEY `project` (`REF|projects|project`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `session` (`REF|leginondata|SessionData|session`)
-) ENGINE=MyISAM AUTO_INCREMENT=5309 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5309 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -236,7 +236,7 @@ CREATE TABLE `projectowners` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|projects|project` (`REF|projects|project`),
   KEY `REF|leginondata|UserData|user` (`REF|leginondata|UserData|user`)
-) ENGINE=MyISAM AUTO_INCREMENT=676 DEFAULT CHARSET=latin1 AUTO_INCREMENT=676 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -256,7 +256,7 @@ CREATE TABLE `projects` (
   `hidden` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`DEF_id`),
   KEY `hidden` (`hidden`)
-) ENGINE=MyISAM AUTO_INCREMENT=454 DEFAULT CHARSET=latin1 AUTO_INCREMENT=454 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -273,7 +273,7 @@ CREATE TABLE `shareexperiments` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|leginondata|SessionData|experiment` (`REF|leginondata|SessionData|experiment`),
   KEY `REF|leginondata|UserData|user` (`REF|leginondata|UserData|user`)
-) ENGINE=MyISAM AUTO_INCREMENT=131 DEFAULT CHARSET=latin1 AUTO_INCREMENT=131 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -298,4 +298,4 @@ CREATE TABLE `userdetails` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|leginondata|UserData|user` (`REF|leginondata|UserData|user`)
-) ENGINE=MyISAM AUTO_INCREMENT=503 DEFAULT CHARSET=latin1 AUTO_INCREMENT=503 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;

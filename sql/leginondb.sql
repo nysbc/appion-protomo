@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `AcquisitionFFTData` (
   KEY `REF|ImageListData|list` (`REF|ImageListData|list`),
   KEY `REF|QueueData|queue` (`REF|QueueData|queue`),
   KEY `REF|AcquisitionImageData|source` (`REF|AcquisitionImageData|source`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
 CREATE TABLE IF NOT EXISTS `AcquisitionImageData` (
@@ -88,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `AcquisitionImageData` (
   KEY `REF|TiltSeriesData|tilt series` (`REF|TiltSeriesData|tilt series`),
   KEY `REF|MoverParamsData|mover` (`REF|MoverParamsData|mover`),
   KEY `REF|PhasePlateUsageData|phase plate` (`REF|PhasePlateUsageData|phase plate`)
-) ENGINE=InnoDB AUTO_INCREMENT=4049255 DEFAULT CHARSET=latin1 AUTO_INCREMENT=4049255 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -109,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `AcquisitionImageStatsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=2136093 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2136093 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -149,7 +149,7 @@ CREATE TABLE IF NOT EXISTS `AcquisitionImageTargetData` (
   KEY `REF|AcquisitionImageTargetData|fromtarget` (`REF|AcquisitionImageTargetData|fromtarget`),
   KEY `REF|SpotWellMapData|spotmap` (`REF|SpotWellMapData|spotmap`),
   KEY `REF|ImageTargetListData|last_focused` (`REF|ImageTargetListData|last_focused`)
-) ENGINE=InnoDB AUTO_INCREMENT=9827356 DEFAULT CHARSET=latin1 AUTO_INCREMENT=9827356 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -208,7 +208,7 @@ CREATE TABLE IF NOT EXISTS `AcquisitionSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=38433 DEFAULT CHARSET=latin1 AUTO_INCREMENT=38433 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -235,7 +235,7 @@ CREATE TABLE IF NOT EXISTS `AlignZLPSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=2094 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2094 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -251,7 +251,7 @@ CREATE TABLE IF NOT EXISTS `AlignZeroLossPeakData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=453 DEFAULT CHARSET=latin1 AUTO_INCREMENT=453 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -273,7 +273,7 @@ CREATE TABLE IF NOT EXISTS `AlignmentManagerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -289,7 +289,7 @@ CREATE TABLE IF NOT EXISTS `ApplicationData` (
   `hide` tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=263 DEFAULT CHARSET=latin1 AUTO_INCREMENT=263 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -313,7 +313,7 @@ CREATE TABLE IF NOT EXISTS `AutoFillerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=latin1 AUTO_INCREMENT=294 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -345,7 +345,7 @@ CREATE TABLE IF NOT EXISTS `BeamFixerSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -369,7 +369,7 @@ CREATE TABLE IF NOT EXISTS `BeamSizeCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -394,7 +394,7 @@ CREATE TABLE IF NOT EXISTS `BeamSizeCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -432,7 +432,7 @@ CREATE TABLE IF NOT EXISTS `BeamTiltCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=10813 DEFAULT CHARSET=latin1 AUTO_INCREMENT=10813 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -492,7 +492,7 @@ CREATE TABLE IF NOT EXISTS `BeamTiltFixerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -559,7 +559,7 @@ CREATE TABLE IF NOT EXISTS `BeamTiltImagerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=2457 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2457 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -577,7 +577,7 @@ CREATE TABLE IF NOT EXISTS `BindingSpecData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|ApplicationData|application` (`REF|ApplicationData|application`)
-) ENGINE=InnoDB AUTO_INCREMENT=20786 DEFAULT CHARSET=latin1 AUTO_INCREMENT=20786 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -603,7 +603,7 @@ CREATE TABLE IF NOT EXISTS `BlobFinderSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=latin1 AUTO_INCREMENT=120 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -642,7 +642,7 @@ CREATE TABLE IF NOT EXISTS `BrightImageData` (
   KEY `REF|DarkImageData|dark` (`REF|DarkImageData|dark`),
   KEY `REF|BrightImageData|bright` (`REF|BrightImageData|bright`),
   KEY `REF|NormImageData|norm` (`REF|NormImageData|norm`)
-) ENGINE=InnoDB AUTO_INCREMENT=5146 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5146 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -663,7 +663,7 @@ CREATE TABLE IF NOT EXISTS `BufferCyclerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=142 DEFAULT CHARSET=latin1 AUTO_INCREMENT=142 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -681,7 +681,7 @@ CREATE TABLE IF NOT EXISTS `BufferFramePathData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|BufferHostData|host` (`REF|BufferHostData|host`)
-) ENGINE=InnoDB AUTO_INCREMENT=503 DEFAULT CHARSET=latin1 AUTO_INCREMENT=503 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -699,7 +699,7 @@ CREATE TABLE IF NOT EXISTS `BufferHostData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -717,7 +717,7 @@ CREATE TABLE IF NOT EXISTS `C2ApertureSizeData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`)
-) ENGINE=InnoDB AUTO_INCREMENT=4997 DEFAULT CHARSET=latin1 AUTO_INCREMENT=4997 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -731,7 +731,7 @@ CREATE TABLE IF NOT EXISTS `CameraDarkCurrentUpdatedData` (
   `hostname` text,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=841 DEFAULT CHARSET=latin1 AUTO_INCREMENT=841 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -780,7 +780,7 @@ CREATE TABLE IF NOT EXISTS `CameraEMData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=3693834 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3693834 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -801,7 +801,7 @@ CREATE TABLE IF NOT EXISTS `CameraSensitivityCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -827,7 +827,7 @@ CREATE TABLE IF NOT EXISTS `CameraSettingsData` (
   `readout delay` int(20) DEFAULT NULL,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=746 DEFAULT CHARSET=latin1 AUTO_INCREMENT=746 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -848,7 +848,7 @@ CREATE TABLE IF NOT EXISTS `CenterTargetFilterSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -877,7 +877,7 @@ CREATE TABLE IF NOT EXISTS `ClickTargetFinderSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=743 DEFAULT CHARSET=latin1 AUTO_INCREMENT=743 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -894,7 +894,7 @@ CREATE TABLE IF NOT EXISTS `ClientPortData` (
   `send port end` int(20) DEFAULT NULL,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -911,7 +911,7 @@ CREATE TABLE IF NOT EXISTS `ConditioningDoneData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|ConditioningRequestData|request` (`REF|ConditioningRequestData|request`)
-) ENGINE=InnoDB AUTO_INCREMENT=110123 DEFAULT CHARSET=latin1 AUTO_INCREMENT=110123 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -927,7 +927,7 @@ CREATE TABLE IF NOT EXISTS `ConditioningRequestData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=2637 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2637 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -946,7 +946,7 @@ CREATE TABLE IF NOT EXISTS `ConnectToClientsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=11163 DEFAULT CHARSET=latin1 AUTO_INCREMENT=11163 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -969,7 +969,7 @@ CREATE TABLE IF NOT EXISTS `CorrectorPlanData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraEMData|camera` (`REF|CameraEMData|camera`)
-) ENGINE=InnoDB AUTO_INCREMENT=111 DEFAULT CHARSET=latin1 AUTO_INCREMENT=111 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -999,7 +999,7 @@ CREATE TABLE IF NOT EXISTS `CorrectorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=17002 DEFAULT CHARSET=latin1 AUTO_INCREMENT=17002 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1013,7 +1013,7 @@ CREATE TABLE IF NOT EXISTS `DDinfoKeyData` (
   `name` text,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=88 DEFAULT CHARSET=latin1 AUTO_INCREMENT=88 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1031,7 +1031,7 @@ CREATE TABLE IF NOT EXISTS `DDinfoValueData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|CameraEMData|camera` (`REF|CameraEMData|camera`),
   KEY `REF|DDinfoKeyData|infokey` (`REF|DDinfoKeyData|infokey`)
-) ENGINE=InnoDB AUTO_INCREMENT=5916930 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5916930 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1100,7 +1100,7 @@ CREATE TABLE IF NOT EXISTS `DTFinderSettingsData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|LowPassFilterSettingsData|edge lpf` (`REF|LowPassFilterSettingsData|edge lpf`),
   KEY `REF|LowPassFilterSettingsData|template lpf` (`REF|LowPassFilterSettingsData|template lpf`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=latin1 AUTO_INCREMENT=40 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1139,7 +1139,7 @@ CREATE TABLE IF NOT EXISTS `DarkImageData` (
   KEY `REF|DarkImageData|dark` (`REF|DarkImageData|dark`),
   KEY `REF|BrightImageData|bright` (`REF|BrightImageData|bright`),
   KEY `REF|NormImageData|norm` (`REF|NormImageData|norm`)
-) ENGINE=InnoDB AUTO_INCREMENT=2640 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2640 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1158,7 +1158,7 @@ CREATE TABLE IF NOT EXISTS `DequeuedImageTargetListData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|QueueData|queue` (`REF|QueueData|queue`),
   KEY `REF|ImageTargetListData|list` (`REF|ImageTargetListData|list`)
-) ENGINE=InnoDB AUTO_INCREMENT=223664 DEFAULT CHARSET=latin1 AUTO_INCREMENT=223664 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1226,7 +1226,7 @@ CREATE TABLE IF NOT EXISTS `DoGFinderSettingsData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|LowPassFilterSettingsData|edge lpf` (`REF|LowPassFilterSettingsData|edge lpf`),
   KEY `REF|LowPassFilterSettingsData|template lpf` (`REF|LowPassFilterSettingsData|template lpf`)
-) ENGINE=InnoDB AUTO_INCREMENT=104 DEFAULT CHARSET=latin1 AUTO_INCREMENT=104 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1252,7 +1252,7 @@ CREATE TABLE IF NOT EXISTS `DoseCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=latin1 AUTO_INCREMENT=113 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1293,7 +1293,7 @@ CREATE TABLE IF NOT EXISTS `DoseImageData` (
   KEY `REF|BrightImageData|bright` (`REF|BrightImageData|bright`),
   KEY `REF|NormImageData|norm` (`REF|NormImageData|norm`),
   KEY `REF|PresetData|preset` (`REF|PresetData|preset`)
-) ENGINE=InnoDB AUTO_INCREMENT=2516 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2516 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1309,7 +1309,7 @@ CREATE TABLE IF NOT EXISTS `DoseMeasurementData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1335,7 +1335,7 @@ CREATE TABLE IF NOT EXISTS `DriftData` (
   KEY `REF|AcquisitionImageTargetData|target` (`REF|AcquisitionImageTargetData|target`),
   KEY `REF|ScopeEMData|scope` (`REF|ScopeEMData|scope`),
   KEY `REF|CameraEMData|camera` (`REF|CameraEMData|camera`)
-) ENGINE=InnoDB AUTO_INCREMENT=362736 DEFAULT CHARSET=latin1 AUTO_INCREMENT=362736 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1358,7 +1358,7 @@ CREATE TABLE IF NOT EXISTS `DriftManagerSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=2871 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2871 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1379,7 +1379,7 @@ CREATE TABLE IF NOT EXISTS `DriftMonitorRequestData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|EMTargetData|emtarget` (`REF|EMTargetData|emtarget`)
-) ENGINE=InnoDB AUTO_INCREMENT=193004 DEFAULT CHARSET=latin1 AUTO_INCREMENT=193004 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1397,7 +1397,7 @@ CREATE TABLE IF NOT EXISTS `DriftMonitorResultData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|DriftData|final` (`REF|DriftData|final`)
-) ENGINE=InnoDB AUTO_INCREMENT=192911 DEFAULT CHARSET=latin1 AUTO_INCREMENT=192911 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1418,7 +1418,7 @@ CREATE TABLE IF NOT EXISTS `EMGridData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|WellMappingTypeData|mapping` (`REF|WellMappingTypeData|mapping`),
   KEY `REF|PrepPlateData|plate` (`REF|PrepPlateData|plate`)
-) ENGINE=InnoDB AUTO_INCREMENT=175 DEFAULT CHARSET=latin1 AUTO_INCREMENT=175 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1448,7 +1448,7 @@ CREATE TABLE IF NOT EXISTS `EMTargetData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|PresetData|preset` (`REF|PresetData|preset`),
   KEY `REF|AcquisitionImageTargetData|target` (`REF|AcquisitionImageTargetData|target`)
-) ENGINE=InnoDB AUTO_INCREMENT=2578725 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2578725 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1471,7 +1471,7 @@ CREATE TABLE IF NOT EXISTS `EucentricFocusData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=5706 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5706 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1502,7 +1502,7 @@ CREATE TABLE IF NOT EXISTS `ExposureFixerSettingsData` (
   KEY `isdefault` (`isdefault`),
   KEY `override preset` (`override preset`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=latin1 AUTO_INCREMENT=28 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1524,7 +1524,7 @@ CREATE TABLE IF NOT EXISTS `FFTMakerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=327 DEFAULT CHARSET=latin1 AUTO_INCREMENT=327 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1540,7 +1540,7 @@ CREATE TABLE IF NOT EXISTS `FixBeamData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=426 DEFAULT CHARSET=latin1 AUTO_INCREMENT=426 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1558,7 +1558,7 @@ CREATE TABLE IF NOT EXISTS `FocusSequenceData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=650 DEFAULT CHARSET=latin1 AUTO_INCREMENT=650 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1592,7 +1592,7 @@ CREATE TABLE IF NOT EXISTS `FocusSettingData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=5754 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5754 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1623,7 +1623,7 @@ CREATE TABLE IF NOT EXISTS `FocuserResultData` (
   KEY `REF|PresetData|preset` (`REF|PresetData|preset`),
   KEY `REF|DriftData|drift` (`REF|DriftData|drift`),
   KEY `REF|ScopeEMData|scope` (`REF|ScopeEMData|scope`)
-) ENGINE=InnoDB AUTO_INCREMENT=600577 DEFAULT CHARSET=latin1 AUTO_INCREMENT=600577 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1688,7 +1688,7 @@ CREATE TABLE IF NOT EXISTS `FocuserSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=10566 DEFAULT CHARSET=latin1 AUTO_INCREMENT=10566 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1721,7 +1721,7 @@ CREATE TABLE IF NOT EXISTS `GonModelerSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=1684 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1684 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1738,7 +1738,7 @@ CREATE TABLE IF NOT EXISTS `GridData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|EMGridData|emgrid` (`REF|EMGridData|emgrid`)
-) ENGINE=InnoDB AUTO_INCREMENT=95 DEFAULT CHARSET=latin1 AUTO_INCREMENT=95 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1756,7 +1756,7 @@ CREATE TABLE IF NOT EXISTS `GridEntrySettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=3389 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3389 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1770,7 +1770,7 @@ CREATE TABLE IF NOT EXISTS `GridHolderData` (
   `name` text,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=latin1 AUTO_INCREMENT=33 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1787,7 +1787,7 @@ CREATE TABLE IF NOT EXISTS `GroupData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|projectdata|privileges|privilege` (`REF|projectdata|privileges|privilege`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1837,7 +1837,7 @@ CREATE TABLE IF NOT EXISTS `HoleFinderPrefsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=228443 DEFAULT CHARSET=latin1 AUTO_INCREMENT=228443 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1901,7 +1901,7 @@ CREATE TABLE IF NOT EXISTS `HoleFinderSettingsData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|LowPassFilterSettingsData|template lpf` (`REF|LowPassFilterSettingsData|template lpf`),
   KEY `REF|LowPassFilterSettingsData|edge lpf` (`REF|LowPassFilterSettingsData|edge lpf`)
-) ENGINE=InnoDB AUTO_INCREMENT=114 DEFAULT CHARSET=latin1 AUTO_INCREMENT=114 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1925,7 +1925,7 @@ CREATE TABLE IF NOT EXISTS `HoleStatsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|HoleFinderPrefsData|prefs` (`REF|HoleFinderPrefsData|prefs`)
-) ENGINE=InnoDB AUTO_INCREMENT=970157 DEFAULT CHARSET=latin1 AUTO_INCREMENT=970157 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1948,7 +1948,7 @@ CREATE TABLE IF NOT EXISTS `ImageAssessorSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1973,7 +1973,7 @@ CREATE TABLE IF NOT EXISTS `ImageBeamCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=190 DEFAULT CHARSET=latin1 AUTO_INCREMENT=190 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -1991,7 +1991,7 @@ CREATE TABLE IF NOT EXISTS `ImageCommentData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=4807 DEFAULT CHARSET=latin1 AUTO_INCREMENT=4807 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2008,7 +2008,7 @@ CREATE TABLE IF NOT EXISTS `ImageListData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|ImageTargetListData|targets` (`REF|ImageTargetListData|targets`)
-) ENGINE=InnoDB AUTO_INCREMENT=325625 DEFAULT CHARSET=latin1 AUTO_INCREMENT=325625 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2032,7 +2032,7 @@ CREATE TABLE IF NOT EXISTS `ImageRotationCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=82 DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2056,7 +2056,7 @@ CREATE TABLE IF NOT EXISTS `ImageRotationCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2080,7 +2080,7 @@ CREATE TABLE IF NOT EXISTS `ImageScaleAdditionCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2102,7 +2102,7 @@ CREATE TABLE IF NOT EXISTS `ImageTargetListData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`),
   KEY `REF|QueueData|queue` (`REF|QueueData|queue`)
-) ENGINE=InnoDB AUTO_INCREMENT=393816 DEFAULT CHARSET=latin1 AUTO_INCREMENT=393816 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2126,7 +2126,7 @@ CREATE TABLE IF NOT EXISTS `InstrumentData` (
   `hidden` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=latin1 AUTO_INCREMENT=110 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2143,7 +2143,7 @@ CREATE TABLE IF NOT EXISTS `InternalEnergyShiftData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=7489 DEFAULT CHARSET=latin1 AUTO_INCREMENT=7489 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2217,7 +2217,7 @@ CREATE TABLE IF NOT EXISTS `JAHCFinderSettingsData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|LowPassFilterSettingsData|template lpf` (`REF|LowPassFilterSettingsData|template lpf`),
   KEY `REF|LowPassFilterSettingsData|edge lpf` (`REF|LowPassFilterSettingsData|edge lpf`)
-) ENGINE=InnoDB AUTO_INCREMENT=78623 DEFAULT CHARSET=latin1 AUTO_INCREMENT=78623 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2235,7 +2235,7 @@ CREATE TABLE IF NOT EXISTS `LaunchedApplicationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|ApplicationData|application` (`REF|ApplicationData|application`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=11217 DEFAULT CHARSET=latin1 AUTO_INCREMENT=11217 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2251,7 +2251,7 @@ CREATE TABLE IF NOT EXISTS `LowPassFilterSettingsData` (
   `size` int(20) DEFAULT NULL,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=372 DEFAULT CHARSET=latin1 AUTO_INCREMENT=372 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2267,7 +2267,7 @@ CREATE TABLE IF NOT EXISTS `MagnificationsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|InstrumentData|instrument` (`REF|InstrumentData|instrument`)
-) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=latin1 AUTO_INCREMENT=35 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2302,7 +2302,7 @@ CREATE TABLE IF NOT EXISTS `ManualAcquisitionSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=1412 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1412 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2331,7 +2331,7 @@ CREATE TABLE IF NOT EXISTS `MatrixCalibrationData` (
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`),
   KEY `REF|MatrixCalibrationData|previous` (`REF|MatrixCalibrationData|previous`)
-) ENGINE=InnoDB AUTO_INCREMENT=1467 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1467 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2376,7 +2376,7 @@ CREATE TABLE IF NOT EXISTS `MatrixCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=1723 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1723 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2392,7 +2392,7 @@ CREATE TABLE IF NOT EXISTS `MeasureDoseData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=latin1 AUTO_INCREMENT=83 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2455,7 +2455,7 @@ CREATE TABLE IF NOT EXISTS `MosaicClickTargetFinderSettingsData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|BlobFinderSettingsData|blobs` (`REF|BlobFinderSettingsData|blobs`),
   KEY `REF|LowPassFilterSettingsData|lpf` (`REF|LowPassFilterSettingsData|lpf`)
-) ENGINE=InnoDB AUTO_INCREMENT=993 DEFAULT CHARSET=latin1 AUTO_INCREMENT=993 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2482,7 +2482,7 @@ CREATE TABLE IF NOT EXISTS `MosaicImageData` (
   KEY `REF|ImageListData|list` (`REF|ImageListData|list`),
   KEY `REF|QueueData|queue` (`REF|QueueData|queue`),
   KEY `REF|ImageListData|images` (`REF|ImageListData|images`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=latin1 AUTO_INCREMENT=23 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2509,7 +2509,7 @@ CREATE TABLE IF NOT EXISTS `MosaicTargetMakerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=20532 DEFAULT CHARSET=latin1 AUTO_INCREMENT=20532 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2529,7 +2529,7 @@ CREATE TABLE IF NOT EXISTS `MosaicTileData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|ImageListData|list` (`REF|ImageListData|list`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=214763 DEFAULT CHARSET=latin1 AUTO_INCREMENT=214763 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2545,7 +2545,7 @@ CREATE TABLE IF NOT EXISTS `MoverParamsData` (
   `accept precision` double DEFAULT NULL,
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=latin1 AUTO_INCREMENT=125 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2579,7 +2579,7 @@ CREATE TABLE IF NOT EXISTS `NavigatorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=1433 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1433 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2598,7 +2598,7 @@ CREATE TABLE IF NOT EXISTS `NodeSpecData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|ApplicationData|application` (`REF|ApplicationData|application`)
-) ENGINE=InnoDB AUTO_INCREMENT=5809 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5809 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2637,7 +2637,7 @@ CREATE TABLE IF NOT EXISTS `NormImageData` (
   KEY `REF|DarkImageData|dark` (`REF|DarkImageData|dark`),
   KEY `REF|BrightImageData|bright` (`REF|BrightImageData|bright`),
   KEY `REF|NormImageData|norm` (`REF|NormImageData|norm`)
-) ENGINE=InnoDB AUTO_INCREMENT=6195 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6195 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2658,7 +2658,7 @@ CREATE TABLE IF NOT EXISTS `PPBeamTiltRotationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2679,7 +2679,7 @@ CREATE TABLE IF NOT EXISTS `PPBeamTiltVectorsData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2712,7 +2712,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlateAlignerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=2430 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2430 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2728,7 +2728,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlateData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=164 DEFAULT CHARSET=latin1 AUTO_INCREMENT=164 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2748,7 +2748,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlatePatchStateData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`)
-) ENGINE=InnoDB AUTO_INCREMENT=3236 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3236 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2805,7 +2805,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlateTestImagerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=391 DEFAULT CHARSET=latin1 AUTO_INCREMENT=391 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2827,7 +2827,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlateTestLogData` (
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=4454 DEFAULT CHARSET=latin1 AUTO_INCREMENT=4454 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2888,7 +2888,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlateTesterSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=413 DEFAULT CHARSET=latin1 AUTO_INCREMENT=413 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2907,7 +2907,7 @@ CREATE TABLE IF NOT EXISTS `PhasePlateUsageData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`)
-) ENGINE=InnoDB AUTO_INCREMENT=5797 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5797 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2930,7 +2930,7 @@ CREATE TABLE IF NOT EXISTS `PixelSizeCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=2144 DEFAULT CHARSET=latin1 AUTO_INCREMENT=2144 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -2962,7 +2962,7 @@ CREATE TABLE IF NOT EXISTS `PixelSizeCalibratorSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=1031 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1031 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3022,7 +3022,7 @@ CREATE TABLE IF NOT EXISTS `PresetData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=121681 DEFAULT CHARSET=latin1 AUTO_INCREMENT=121681 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3050,7 +3050,7 @@ CREATE TABLE IF NOT EXISTS `PresetsManagerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=1984 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1984 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3068,7 +3068,7 @@ CREATE TABLE IF NOT EXISTS `ProjectionSubModeMappingData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|MagnificationsData|magnification list` (`REF|MagnificationsData|magnification list`)
-) ENGINE=InnoDB AUTO_INCREMENT=1050 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1050 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3084,7 +3084,7 @@ CREATE TABLE IF NOT EXISTS `QueueData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=7360 DEFAULT CHARSET=latin1 AUTO_INCREMENT=7360 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3160,7 +3160,7 @@ CREATE TABLE IF NOT EXISTS `RCTAcquisitionSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=709 DEFAULT CHARSET=latin1 AUTO_INCREMENT=709 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3225,7 +3225,7 @@ CREATE TABLE IF NOT EXISTS `RasterFCFinderSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=96 DEFAULT CHARSET=latin1 AUTO_INCREMENT=96 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3282,7 +3282,7 @@ CREATE TABLE IF NOT EXISTS `RasterFinderSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=12120 DEFAULT CHARSET=latin1 AUTO_INCREMENT=12120 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3312,7 +3312,7 @@ CREATE TABLE IF NOT EXISTS `RasterTargetFilterSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1 AUTO_INCREMENT=55 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3327,7 +3327,7 @@ CREATE TABLE IF NOT EXISTS `ReferenceSessionData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=155 DEFAULT CHARSET=latin1 AUTO_INCREMENT=155 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3360,7 +3360,7 @@ CREATE TABLE IF NOT EXISTS `ReferenceTargetData` (
   KEY `REF|GridData|grid` (`REF|GridData|grid`),
   KEY `REF|ImageTargetListData|list` (`REF|ImageTargetListData|list`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=949 DEFAULT CHARSET=latin1 AUTO_INCREMENT=949 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3385,7 +3385,7 @@ CREATE TABLE IF NOT EXISTS `ReferenceTimerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3433,7 +3433,7 @@ CREATE TABLE IF NOT EXISTS `RotationCenterData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=179 DEFAULT CHARSET=latin1 AUTO_INCREMENT=179 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3513,7 +3513,7 @@ CREATE TABLE IF NOT EXISTS `ScopeEMData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`)
-) ENGINE=InnoDB AUTO_INCREMENT=3426785 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3426785 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3533,7 +3533,7 @@ CREATE TABLE IF NOT EXISTS `ScreenCurrentData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|ReferenceTargetData|reference` (`REF|ReferenceTargetData|reference`),
   KEY `REF|PresetData|preset` (`REF|PresetData|preset`)
-) ENGINE=InnoDB AUTO_INCREMENT=786 DEFAULT CHARSET=latin1 AUTO_INCREMENT=786 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3549,7 +3549,7 @@ CREATE TABLE IF NOT EXISTS `ScreenCurrentLoggerData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=1751 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1751 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3574,7 +3574,7 @@ CREATE TABLE IF NOT EXISTS `ScreenCurrentLoggerSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=133 DEFAULT CHARSET=latin1 AUTO_INCREMENT=133 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3599,7 +3599,7 @@ CREATE TABLE IF NOT EXISTS `SessionData` (
   KEY `REF|UserData|user` (`REF|UserData|user`),
   KEY `REF|GridHolderData|holder` (`REF|GridHolderData|holder`),
   FULLTEXT KEY `name` (`name`)
-) ENGINE=MyISAM AUTO_INCREMENT=5517 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5517 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3614,7 +3614,7 @@ CREATE TABLE IF NOT EXISTS `SessionReservationData` (
   `reserved` tinyint(1) DEFAULT '0',
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`)
-) ENGINE=InnoDB AUTO_INCREMENT=12435 DEFAULT CHARSET=latin1 AUTO_INCREMENT=12435 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3637,7 +3637,7 @@ CREATE TABLE IF NOT EXISTS `SetupWizardSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=11099 DEFAULT CHARSET=latin1 AUTO_INCREMENT=11099 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3699,7 +3699,7 @@ CREATE TABLE IF NOT EXISTS `SingleFocuserSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=425 DEFAULT CHARSET=latin1 AUTO_INCREMENT=425 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3727,7 +3727,7 @@ CREATE TABLE IF NOT EXISTS `SquareFinderPrefsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|MosaicImageData|image` (`REF|MosaicImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=107 DEFAULT CHARSET=latin1 AUTO_INCREMENT=107 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3749,7 +3749,7 @@ CREATE TABLE IF NOT EXISTS `SquareStatsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|SquareFinderPrefsData|prefs` (`REF|SquareFinderPrefsData|prefs`)
-) ENGINE=InnoDB AUTO_INCREMENT=9227 DEFAULT CHARSET=latin1 AUTO_INCREMENT=9227 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3772,7 +3772,7 @@ CREATE TABLE IF NOT EXISTS `StageLocationData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=742 DEFAULT CHARSET=latin1 AUTO_INCREMENT=742 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3800,7 +3800,7 @@ CREATE TABLE IF NOT EXISTS `StageMeasurementData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=779 DEFAULT CHARSET=latin1 AUTO_INCREMENT=779 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3832,7 +3832,7 @@ CREATE TABLE IF NOT EXISTS `StageModelCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1 AUTO_INCREMENT=71 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3857,7 +3857,7 @@ CREATE TABLE IF NOT EXISTS `StageModelMagCalibrationData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|InstrumentData|tem` (`REF|InstrumentData|tem`),
   KEY `REF|InstrumentData|ccdcamera` (`REF|InstrumentData|ccdcamera`)
-) ENGINE=InnoDB AUTO_INCREMENT=260 DEFAULT CHARSET=latin1 AUTO_INCREMENT=260 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3878,7 +3878,7 @@ CREATE TABLE IF NOT EXISTS `StageReproducibilityData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=296 DEFAULT CHARSET=latin1 AUTO_INCREMENT=296 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3909,7 +3909,7 @@ CREATE TABLE IF NOT EXISTS `StitchTargetFinderSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=537 DEFAULT CHARSET=latin1 AUTO_INCREMENT=537 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -3967,7 +3967,7 @@ CREATE TABLE IF NOT EXISTS `TestAcquisitionSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=71 DEFAULT CHARSET=latin1 AUTO_INCREMENT=71 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4026,7 +4026,7 @@ CREATE TABLE IF NOT EXISTS `TiltAcquisitionSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1 AUTO_INCREMENT=34 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4085,7 +4085,7 @@ CREATE TABLE IF NOT EXISTS `TiltAlternaterSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=256 DEFAULT CHARSET=latin1 AUTO_INCREMENT=256 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4143,7 +4143,7 @@ CREATE TABLE IF NOT EXISTS `TiltListAlternaterSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=234 DEFAULT CHARSET=latin1 AUTO_INCREMENT=234 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4183,7 +4183,7 @@ CREATE TABLE IF NOT EXISTS `TiltSeriesData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=5121 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5121 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4219,7 +4219,7 @@ CREATE TABLE IF NOT EXISTS `TomographyPredictionData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=106711 DEFAULT CHARSET=latin1 AUTO_INCREMENT=106711 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4320,7 +4320,7 @@ CREATE TABLE IF NOT EXISTS `TomographySettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=5653 DEFAULT CHARSET=latin1 AUTO_INCREMENT=5653 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4337,7 +4337,7 @@ CREATE TABLE IF NOT EXISTS `TransformDeclaredData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=188130 DEFAULT CHARSET=latin1 AUTO_INCREMENT=188130 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4361,7 +4361,7 @@ CREATE TABLE IF NOT EXISTS `TransformManagerSettingsData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|CameraSettingsData|camera settings` (`REF|CameraSettingsData|camera settings`)
-) ENGINE=InnoDB AUTO_INCREMENT=164 DEFAULT CHARSET=latin1 AUTO_INCREMENT=164 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4389,7 +4389,7 @@ CREATE TABLE IF NOT EXISTS `TransformMatrixData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image1` (`REF|AcquisitionImageData|image1`),
   KEY `REF|AcquisitionImageData|image2` (`REF|AcquisitionImageData|image2`)
-) ENGINE=InnoDB AUTO_INCREMENT=3724 DEFAULT CHARSET=latin1 AUTO_INCREMENT=3724 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4413,7 +4413,7 @@ CREATE TABLE IF NOT EXISTS `UserData` (
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|GroupData|group` (`REF|GroupData|group`),
   KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=510 DEFAULT CHARSET=latin1 AUTO_INCREMENT=510 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4432,7 +4432,7 @@ CREATE TABLE IF NOT EXISTS `ViewerImageStatus` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`),
   KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=227705 DEFAULT CHARSET=latin1 AUTO_INCREMENT=227705 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4453,7 +4453,7 @@ CREATE TABLE IF NOT EXISTS `ZeroLossCheckData` (
   KEY `REF|SessionData|session` (`REF|SessionData|session`),
   KEY `REF|ReferenceTargetData|reference` (`REF|ReferenceTargetData|reference`),
   KEY `REF|PresetData|preset` (`REF|PresetData|preset`)
-) ENGINE=InnoDB AUTO_INCREMENT=6965 DEFAULT CHARSET=latin1 AUTO_INCREMENT=6965 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4473,7 +4473,7 @@ CREATE TABLE IF NOT EXISTS `ZeroLossIceThicknessData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|AcquisitionImageData|image` (`REF|AcquisitionImageData|image`)
-) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=latin1 AUTO_INCREMENT=55 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4495,7 +4495,7 @@ CREATE TABLE IF NOT EXISTS `ZeroLossIceThicknessSettingsData` (
   PRIMARY KEY (`DEF_id`),
   KEY `DEF_timestamp` (`DEF_timestamp`),
   KEY `REF|SessionData|session` (`REF|SessionData|session`)
-) ENGINE=InnoDB AUTO_INCREMENT=217 DEFAULT CHARSET=latin1 AUTO_INCREMENT=217 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4542,7 +4542,7 @@ CREATE TABLE IF NOT EXISTS `viewer_comment` (
   KEY `sessionId` (`sessionId`),
   KEY `imageId` (`imageId`),
   KEY `type` (`type`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=latin1 AUTO_INCREMENT=56 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -4563,7 +4563,7 @@ CREATE TABLE IF NOT EXISTS `viewer_del_image` (
   KEY `sessionId` (`sessionId`),
   KEY `imageId` (`imageId`),
   KEY `status` (`status`)
-) ENGINE=InnoDB AUTO_INCREMENT=619 DEFAULT CHARSET=latin1 AUTO_INCREMENT=619 ;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

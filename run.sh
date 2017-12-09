@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ !$(docker volume ls -q | grep mariadb) ]]; then
+if [[ ! $(docker volume ls -q | grep mariadb) ]]; then
   echo Creating Docker volume for mariadb-database...
   docker volume create mariadb-database
 else
