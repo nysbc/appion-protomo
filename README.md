@@ -130,7 +130,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
 
 Make sure your container is running via the ```./run.sh``` script.
 
-From inside the appion-protomo directory (on the host machine, not inside the container), execute the command:
+- From inside the appion-protomo directory (on the host machine, not inside the container), do the following:
 
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
@@ -145,7 +145,7 @@ tar -zxvf HAslow1.tar.gz emg/data/tiltseries
 > Now we are inside the container
 ```
  
-Navigate to your web portal at an address like 
+- Navigate to your web portal at an address like 
  
  ```192.168.99.100/myamiweb```
 
@@ -153,18 +153,18 @@ Select `Project DB`
 
 Select `Add a new project`
 
-Fill in the form for your project and click `add`
+- Fill in the form for your project and click `add`
 
 Select `View Projects`
 
 Select the link on the name of your newly created project (NOT the pencil-editing icon) 
 
-Select `create processing db`
+Select `create processing db` and wait for the page to reload
 
 Select `upload images to new session`
 
 
-On the next page click the dropdown for `Images grouped by` and select `SerialEM Tilt Series`
+- On the next page click the dropdown for `Images grouped by` and select `SerialEM Tilt Series`
 
 Enter a description for `Session Description`
 
@@ -177,7 +177,7 @@ Enter the `voltage`
 Select `Just show command` at the bottom of the page
 
 
-On the next page, copy the entire uploadSerialEM.py command
+- On the next page, copy the entire uploadSerialEM.py command
 
 Next, either execute
 
@@ -187,7 +187,7 @@ VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
 
 Paste the command to a terminal prompt and hit enter
 
-Wait for uploadSerialEM.py  to finish processing
+- Wait for uploadSerialEM.py  to finish processing
 
 ...
 
@@ -199,7 +199,7 @@ Place multiple SerialEM stacks and mdoc files (each pair with the same basename)
 
 > remove or move the previously-uploaded tilt-series stack and mdoc files
 
-Navigate to 192.168.99.100/myamiweb
+- Navigate to 192.168.99.100/myamiweb
 
 Select `Image Viewer`
 
@@ -209,9 +209,9 @@ Make sure your project is selected in the dropdown (you should now see images in
 
 Click `processing` at the top
 
-On the next page click `Upload more images` on the left
+- On the next page click `Upload more images` on the left
 
-On the next page click the dropdown for `Images grouped by` and select `SerialEM Tilt Series`
+- On the next page click the dropdown for `Images grouped by` and select `SerialEM Tilt Series`
 
 Enter the `SerialEM directory path`
 
@@ -221,7 +221,7 @@ Enter the `voltage`
 Select `Just show command` at the bottom of the page
 
 
-On the next page, copy the entire uploadSerialEM.py command
+- On the next page, copy the entire uploadSerialEM.py command
 
 Next, either execute
 
@@ -231,7 +231,7 @@ VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
 
 Paste the command to a terminal prompt and hit enter
 
-Wait for uploadSerialEM.py  to finish processing
+- Wait for uploadSerialEM.py  to finish processing
 
 ...
 
