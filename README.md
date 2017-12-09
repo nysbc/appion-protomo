@@ -27,9 +27,9 @@ Launch Kitematic.
 ## Linux/MacOS
 
 ```sh
-$ git clone http://github.com/nysbc/appion-protomo
-$ cd appion-protomo
-$ ./run.sh
+git clone http://github.com/nysbc/appion-protomo
+cd appion-protomo
+./run.sh
 ```
 
 <details><summary>This performs the following operations (click to expand):</summary><p>
