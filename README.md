@@ -136,6 +136,13 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 Use the IP and port found in the running Kitematic container's Settings >> Hostname/Ports next to Docker port 5901 as the VNC address with password `appion-protomo`.
 
+<details><summary>Click for images</summary><p>
+
+![Alt text](https://i.imgur.com/ex5SNzG.png)
+
+</p></details>
+<br />
+
 
 </p></details>
 
