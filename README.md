@@ -1,7 +1,7 @@
 # appion-protomo
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
-<br /><br />
+<br />
 # Prerequisites
 
 - A modern operating system with 16+ GB of RAM.
@@ -22,7 +22,7 @@ Launch Kitematic.
 
 > If on first startup Kitematic displays a red error suggesting that you run using VirtualBox, do so.
 
-<br /><br />
+<br />
 # Installation
 
 ## Linux/MacOS
