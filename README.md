@@ -140,6 +140,8 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 ![Alt text](https://i.imgur.com/LnEVAtr.png)
 
+![Alt text](https://i.imgur.com/zFiviSL.png)
+
 </p></details>
 <br />
 
