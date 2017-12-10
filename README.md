@@ -65,7 +65,7 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 
 <details><summary>You may need to tweak your settings (click to expand)</summary><p>
 
-...If you needed to run Docker using VirtualBox, then you will need to increase the amount of RAM allocated to Docker:
+If you needed to run Docker using VirtualBox, then you will need to increase the amount of RAM allocated to Docker:
 
 - Stop the Docker container,
 
