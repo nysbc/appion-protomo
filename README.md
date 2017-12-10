@@ -154,7 +154,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 # Example
 
 Click to expand:
-<details><summary>Upload first SerialEM tilt-series to a new session (click to expand)</summary><p>
+<details><summary>Upload first SerialEM tilt-series to a new session</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
 
@@ -221,7 +221,7 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary>Upload additional SerialEM tilt-series to an existing session (click to expand)</summary><p>
+<details><summary>Upload additional SerialEM tilt-series to an existing session</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
 
@@ -265,25 +265,25 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary>Coarse align tilt-series (click to expand)</summary><p>
+<details><summary>Coarse align tilt-series</summary><p>
 
 ...
 
 </p></details>
 
-<details><summary>Manually fix tilt-series if necessary (click to expand)</summary><p>
+<details><summary>Manually fix tilt-series if necessary</summary><p>
 
 ...
 
 </p></details>
 
-<details><summary>Refine tilt-series (click to expand)</summary><p>
+<details><summary>Refine tilt-series</summary><p>
 
 ...
 
 </p></details>
 
-<details><summary>Reconstruct tilt-series (click to expand)</summary><p>
+<details><summary>Reconstruct tilt-series</summary><p>
 
 ...
 
