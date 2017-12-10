@@ -273,7 +273,6 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<br />
 
 # References
 
@@ -281,7 +280,6 @@ Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series a
 
 Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., … Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. https://doi.org/10.1101/230276
 
-<br />
 
 # Authors
 
@@ -289,19 +287,16 @@ Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., … Ca
 - Alex J Noble
 - Neil R Voss
 
-<br />
 
 # License
 
 ...
 
-<br />
 
 # Compatibility
 
 The workflow has been tested in OSX El Capitan version 10.11.3 and Ubuntu.
 
-<br />
 
 # Bugs
 
