@@ -98,7 +98,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 ```https://www.realvnc.com/en/connect/download/viewer/macos/```
 
-Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
+Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with password `appion-protomo`.
 
 - To ssh into the container, do:
 
@@ -130,7 +130,12 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
 
 <details><summary>Click to expand</summary><p>
 
-...
+- To VNC into the container, download and install a VNC viewer like TigerVNC vncviewer:
+
+```https://github.com/TigerVNC/tigervnc/releases```
+
+Use the IP and port found in the running Kitematic container's Settings >> Hostname/Ports next to Docker port 5901 as the VNC address with password `appion-protomo`.
+
 
 </p></details>
 
