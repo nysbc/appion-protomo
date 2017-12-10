@@ -152,6 +152,8 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 <br />
 
 # Example
+
+Click to expand:
 <details><summary>Upload first SerialEM tilt-series to a new session (click to expand)</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
