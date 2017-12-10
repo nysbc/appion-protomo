@@ -1,7 +1,6 @@
 # appion-protomo
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
-<br />
 
 # Prerequisites
 
