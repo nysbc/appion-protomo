@@ -138,7 +138,7 @@ Use the IP and port found in the running Kitematic container's Settings >> Hostn
 
 <details><summary>Click for images</summary><p>
 
-![Alt text](https://i.imgur.com/ex5SNzG.png)
+![Alt text](https://i.imgur.com/LnEVAtr.png)
 
 </p></details>
 <br />
