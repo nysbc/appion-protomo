@@ -84,6 +84,8 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 </p></details>
 
+<br />
+
 # Usage
 
 ## Linux/MacOS
@@ -133,6 +135,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address.
 
 </p></details>
 
+<br />
 
 # Example
 <details><summary>Upload first SerialEM tilt-series to a new session (click to expand)</summary><p>
@@ -270,11 +273,15 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
+<br />
+
 # References
 
 Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
 
 Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., … Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. https://doi.org/10.1101/230276
+
+<br />
 
 # Authors
 
@@ -282,13 +289,19 @@ Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., … Ca
 - Alex J Noble
 - Neil R Voss
 
+<br />
+
 # License
 
 ...
 
+<br />
+
 # Compatibility
 
 The workflow has been tested in OSX El Capitan version 10.11.3 and Ubuntu.
+
+<br />
 
 # Bugs
 
