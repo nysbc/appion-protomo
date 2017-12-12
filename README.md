@@ -196,11 +196,13 @@ Select `upload images to new session`
 
 Enter a description for `Session Description`
 
+Enter the microscope's Cs value (2.0 mm for the provided hemagglutinin tilt-series)
+
 Enter the `SerialEM stack path`
 
 Enter the `SerialEM mdoc path`
 
-Enter the `voltage`
+Enter the `voltage` (200 kV for the provided hemagglutinin tilt-series)
 
 Select `Just show command` at the bottom of the page.
 
@@ -312,19 +314,72 @@ Copy the command at the bottom of the Protomo Coarse Alignment webpage beginning
 
 Paste the command into a terminal in the container.
 
-Follow the bolded instructions that first appear after running the manual alignment command.
+Follow the **bolded instructions** that first appear after running the manual alignment command.
 
 </p></details>
 
 <details><summary>Refine tilt-series</summary><p>
 
-...
+- On the Protomo Coarse Alignment Summary webpage click on `[Click here to continue onto Refinement if the Coarse Alignment results are satisfactory] →`.
+
+- On the next page, `Basic` or `Advanced` `Settings Verbosity`.
+
+For most tilt-series, select `10 nm object(s) - Steep lowpass` as the `Object Size` in `Parameter Presets`.
+
+Select the largest `Search Area` that is in common between all tilt-images in the previously-viewed tilt-series in `Parameter Presets`.
+
+- If there are any tilt images that need to be removed, input their tilt angles in the `General Parameters`, either as an `Angle Limit` or under `Exclude Images by Tilt Angles`.
+
+- If the tilt-series was manually aligned, choose `More Manual` for `Begin with Coarse Alignment Results or Initial Alignment?` in the `General Parameters`.
+
+- Under `Window Parameters`, input comma-separated values for the estimated `Thickness(es)`, where the thickness corresponds to the thickness of the objects to be aligned to or their combined thickness.
+
+
+Select `Just show command` at the bottom of the page.
+
+
+- On the next page, copy the entire protomo2multirefine.py or protomo2aligner.py command and run it in the Docker container.
+
+On the left under `Align Tilt-Series` click `## runs processing or finished` to access the main alignment summary webpage.
+
+- On the Protomo Alignment Summary webpage you can watch as each tilt-series aligns.
+
+> Note: The tilt-azimuth for each microscope relative to Appion-Protomo convention needs to be determined experimentally. Protomo will often refine the tilt azimuth properly after 10-50 iterations. Once this value is known, it should be inputted into all future tilt-series alignments for that microscope in the General Parameters.
+
+> Note: The alignment thickness cannot be determined prior to tilt-series alignment. If a tilt-series alignment did not align as well as you wish, try re-aligning with additional alignment thickness values.
+
 
 </p></details>
 
 <details><summary>Reconstruct tilt-series</summary><p>
 
-...
+> Note: Prior to proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. In particular, view the aligned tilt-series video to confirm that there are no visual issues.
+
+From the Protomo Alignment Summary webpage, copy the `runname` of the tilt-series you wish to reconstruct, and take note of the desired reconstruction iteration.
+
+- Click on `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number from the box you wish to reconstruct.
+
+Paste the `runname` in place of the generated `Run name`.
+
+Select `Just show command` at the bottom of the page.
+
+- On the next page click `[or Click here to Go Directly to the Reconstruction Page] →`.
+
+- On the next page, the options and parameters you choose will depend entirely on the desired post-processing of your tilt-series or tomogram.
+
+- For visualization and particle picking, it is recommended that you dose compensate your tilt images before reconstruction if they have not yet been dose compensated and that you reconstruct using Tomo3D SIRT.
+
+Select the correct alignment iteration from which to reconstruct.
+
+Input an appropriate reconstruction thickness.
+
+Exclude any bad tilt images in the alignment.
+
+
+Select `Just show command` at the bottom of the page.
+
+
+- On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
 
 </p></details>
 
