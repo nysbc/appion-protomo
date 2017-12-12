@@ -202,7 +202,7 @@ Enter the `SerialEM mdoc path`
 
 Enter the `voltage`
 
-Select `Just show command` at the bottom of the page
+Select `Just show command` at the bottom of the page.
 
 
 - On the next page, copy the entire uploadSerialEM.py command
@@ -267,7 +267,38 @@ Paste the command to a terminal prompt and hit enter
 
 <details><summary>Coarse align tilt-series</summary><p>
 
-...
+- Navigate to your session in the image viewer and click `processing`.
+
+- On the next page click `Align Tilt-Series` on the left.
+
+- On the next page click `Protomo 2.4.1`.
+
+- On the next page, Protomo Coarse Alignment, select the tilt-series you wish to align from the box.
+
+  - This will fill in the `Run name` and present a number of parameters below.
+
+> Note: All parameters in the Appion-Protomo tilt-series alignment workflow contain extensive help files that are accessible by simply pointing to the parameter name.
+
+For most samples select `10 nm` as the `Object Size` in `Parameter Presets`.
+
+Choose whether you wish to `Estimate Defocus of the Untilted Plane` or `Dose Compensate` the tilt-series.
+
+> Dose compensation often helps tilt-series alignment unless your sample is particularly thick, as is often the case with FIB-milled specimen.
+
+
+Select `Just show command` at the bottom of the page.
+
+
+- On the next page, copy the entire protomo2aligner.py command and run it in the Docker container.
+
+Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --coarse has been run] →`.
+
+- On the next page, Protomo Coarse Alignment Summary, watch the `Tilt-Series After Coarse Alignment` video.
+
+  - If there are any tilt images that are grossly shifted relative to the others then proceed to the next section `Manually fix tilt-series if necessary`. If not, procees onto `Refine tilt-series`.
+  
+  - If there are any tilt images that contain objects that significantly occlude objects of interest, take note of their tilt angles.
+
 
 </p></details>
 
