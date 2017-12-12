@@ -306,11 +306,13 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 - If there are any tilt images that are grossly shifted relative to the others then continue through this section.
 
-Copy the command at the bottom of the Protomo Coarse Alignment webpage beginning with `/usr/bin/python \`which protomo2manualaligner.py\``.
+Copy the command at the bottom of the Protomo Coarse Alignment webpage beginning with `/usr/bin/python`.
 
 - VNC into your Docker container.
 
-Copy
+Paste the command into a terminal in the container.
+
+Follow the bolded instructions that first appear after running the manual alignment command.
 
 </p></details>
 
