@@ -12,7 +12,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 Download and install Docker 1.21 or greater from https://docs.docker.com/engine/installation/
 
-> Consider using a Docker convenience script to install (search on the Docker installation webpage for your OS).
+> Consider using a Docker 'convenience script' to install (search on the Docker installation webpage for your OS).
 
 Launch docker according to your Docker engine's instructions, typically ``docker start``.  
 
