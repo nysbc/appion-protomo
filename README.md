@@ -299,7 +299,7 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 - On the next page, Protomo Coarse Alignment Summary, watch the `Tilt-Series After Coarse Alignment` video.
 
-  - If there are any tilt images that are grossly shifted relative to the others then proceed to the next section `Manually fix tilt-series if necessary`. If not, procees onto `Refine tilt-series`.
+  - If there are any tilt images that are grossly shifted relative to the others then proceed to the next section `Manually fix tilt-series if necessary`. If not, proceed onto `Refine tilt-series`.
   
   - If there are any tilt images that contain objects that significantly occlude objects of interest, take note of their tilt angles.
 
