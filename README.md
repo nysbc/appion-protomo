@@ -168,7 +168,7 @@ Download the following hemagglutinin SerialEM tilt-series:
 
 https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
 
-tar -zxvf HAslow1.tar.gz emg/data/tiltseries
+tar -zxvf HAslow1.tar.gz emg/data/tiltseries/
 
 ./exec.sh
 
