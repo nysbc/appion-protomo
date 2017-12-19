@@ -63,6 +63,7 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 <details><summary>Click for image</summary><p>
 
 ![](https://i.imgur.com/D6P0c3J.png)
+<br />
 ------
 </p></details>
 <br />
