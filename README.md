@@ -10,7 +10,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 ## Linux/MacOS  *(command line)*
 
-Download and install Docker 1.21 or greater from https://docs.docker.com/engine/installation/
+Download and install Docker 1.21 or greater for [Linux](https://docs.docker.com/engine/installation/).
 
 > Consider using a Docker 'convenience script' to install (search on your OS's Docker installation webpage).
 
@@ -18,7 +18,7 @@ Launch docker according to your Docker engine's instructions, typically ``docker
 
 ## Windows/MacOS  *(GUI & command line)*
 
-Download and install Docker Toolbox from https://docs.docker.com/toolbox/toolbox_install_windows/
+Download and install Docker Toolbox for [Windows](https://docs.docker.com/toolbox/toolbox_install_windows/) or [MacOS](https://docs.docker.com/toolbox/toolbox_install_mac/). 
 
 Launch Kitematic.
 
