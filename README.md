@@ -272,9 +272,9 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/j2An6CN.png)
 
-![](https://i.imgur.com/zFiviSL.png)
+![](https://i.imgur.com/fDLwJMk.png)
 
-![](https://i.imgur.com/8BrWwzV.png)
+![](https://i.imgur.com/hjHAxK3.png)
 
 - This allows you to run commands and use the manual tilt-series aligner.
 
