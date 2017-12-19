@@ -36,7 +36,7 @@ cd appion-protomo
 ./run.sh
 ```
 
-<details><summary>This performs the following operations (click to expand):</summary><p>
+*<details><summary>This performs the following operations (click to expand):</summary><p>*
   
 - Downloads the semc/appion-protomo docker image from Docker Hub,
   
@@ -68,7 +68,7 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 </p></details>
 <br />
 
-<details><summary>In Windows, you may need to tweak your settings (click to expand)</summary><p>
+*<details><summary>In Windows, you may need to tweak your settings (click to expand)</summary><p>*
 
 If you needed to run Docker using VirtualBox, then you will need to increase the amount of RAM allocated to Docker:
 
@@ -91,7 +91,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 # Usage
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
-<details><summary>Click to expand</summary><p>
+*<details><summary>Click to expand</summary><p>*
 
 - To launch the application container, do:
 
@@ -131,7 +131,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 ## Windows/MacOS &nbsp;&nbsp; *(GUI & command line)*
 
-<details><summary>Click to expand</summary><p>
+*<details><summary>Click to expand</summary><p>*
 
 - To get to Appion-Protomo in your web browser, in Kitematic click on `Settings` the `Hostname/Ports`. Click on the IP next to Docker Port 80.
 
@@ -184,7 +184,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 # Example
 
-Click to expand:
+*Click to expand:*
 <details><summary>Upload first SerialEM tilt-series to a new session</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
