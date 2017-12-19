@@ -8,7 +8,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
-## Linux/MacOS
+## Linux/MacOS  *(command line)*
 
 Download and install Docker 1.21 or greater from https://docs.docker.com/engine/installation/
 
@@ -16,7 +16,7 @@ Download and install Docker 1.21 or greater from https://docs.docker.com/engine/
 
 Launch docker according to your Docker engine's instructions, typically ``docker start``.  
 
-## Windows
+## Windows/MacOS  *(GUI & command line)*
 
 Download and install Docker Toolbox from https://docs.docker.com/toolbox/toolbox_install_windows/
 
