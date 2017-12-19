@@ -140,6 +140,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 ![](https://i.imgur.com/siObtGj.png)
 
+
 </p></details>
 
 - To VNC into the container, download and install a VNC viewer like TigerVNC vncviewer:
@@ -150,11 +151,11 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <details><summary>Click for images</summary><p>
 
-![Alt text](https://i.imgur.com/LnEVAtr.png)
+![](https://i.imgur.com/LnEVAtr.png)
 
-![Alt text](https://i.imgur.com/zFiviSL.png)
+![](https://i.imgur.com/zFiviSL.png)
 
-![Alt text](https://i.imgur.com/8BrWwzV.png)
+![](https://i.imgur.com/8BrWwzV.png)
 
 </p></details>
 
