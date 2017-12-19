@@ -68,7 +68,7 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 </p></details>
 <br />
 
-<details><summary>You may need to tweak your settings (click to expand)</summary><p>
+<details><summary>In Windows, you may need to tweak your settings (click to expand)</summary><p>
 
 If you needed to run Docker using VirtualBox, then you will need to increase the amount of RAM allocated to Docker:
 
@@ -90,7 +90,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 # Usage
 
-## Linux/MacOS
+## Linux/MacOS  *(command line)*
 <details><summary>Click to expand</summary><p>
 
 - To launch the application container, do:
@@ -129,7 +129,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 </p></details>
 
-## Windows
+## Windows/MacOS  *(GUI & command line)*
 
 <details><summary>Click to expand</summary><p>
 
