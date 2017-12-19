@@ -137,7 +137,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - This should open your web browser to the Apache test page. Append `/myamiweb/` to the URL to access Appion.
 
-<details><summary>Click for images</summary><p>
+&nbsp;&nbsp; <details><summary>Click for images</summary><p>
 
 ![](https://i.imgur.com/siObtGj.png)
 
@@ -161,7 +161,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 Use the IP and port found in the running Kitematic container's `Settings >> Hostname/Ports` next to `Docker port 5901` as the VNC address with password `appion-protomo`.
 
-<details><summary>Click for images</summary><p>
+&nbsp;&nbsp; <details><summary>Click for images</summary><p>
 
 ![](https://i.imgur.com/LnEVAtr.png)
 
