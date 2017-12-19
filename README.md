@@ -62,7 +62,7 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 
 <details><summary>Click for image</summary><p>
 
-![Alt text](https://i.imgur.com/D6P0c3J.png)
+![](https://i.imgur.com/D6P0c3J.png)
 
 </p></details>
 <br />
@@ -140,7 +140,11 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 ![](https://i.imgur.com/siObtGj.png)
 
+- This should open up your web browser to the displayed address:
+
 ![](https://i.imgur.com/ELap1yX.png)
+
+- Append /myamiweb/ to the address:
 
 ![](https://i.imgur.com/T9RMvBX.png)
 
@@ -158,9 +162,15 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 ![](https://i.imgur.com/LnEVAtr.png)
 
+- Type this `ip:port` into your VNC viewer (password: `appion-protomo`):
+
 ![](https://i.imgur.com/zFiviSL.png)
 
+- The VNC viewer to should open:
+
 ![](https://i.imgur.com/8BrWwzV.png)
+
+- This allows you to run commands and use the manual tilt-series aligner.
 
 </p></details>
 
@@ -206,6 +216,8 @@ tar -zxvf HAslow1.tar.gz <your appion-protomo/emg/data/tiltseries/ directory>
 ![](https://i.imgur.com/jsxV7oX.png)
 
 </p></details>
+
+<br />
 
 - Navigate to your web portal at an address like 
  
