@@ -132,6 +132,16 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 <details><summary>Click to expand</summary><p>
 
+- To get to Appion-Protomo in your web browser, in Kitematic click on `Settings` the `Hostname/Ports`. Click on the IP next to Docker Port 80.
+
+- This should open your web browser to the Apache test page. Append `/myamiweb/` to the URL to access Appion.
+
+<details><summary>Click for images</summary><p>
+
+![](https://i.imgur.com/siObtGj.png)
+
+</p></details>
+
 - To VNC into the container, download and install a VNC viewer like TigerVNC vncviewer:
 
 ```https://github.com/TigerVNC/tigervnc/releases```
