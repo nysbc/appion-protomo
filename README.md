@@ -28,7 +28,7 @@ Launch Kitematic.
 
 # Installation
 
-## Linux/MacOS &nbsp&nbsp *(command line)*
+## Linux/MacOS  *(command line)*
 
 ```sh
 git clone http://github.com/nysbc/appion-protomo
@@ -54,7 +54,7 @@ cd appion-protomo
 
 </p></details>
 
-## Windows/MacOS &nbsp&nbsp *(GUI & command line)*
+## Windows/MacOS  *(GUI & command line)*
 
 In the Kitematic search bar type: `semc/appion-protomo`.
 
