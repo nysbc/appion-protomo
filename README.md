@@ -203,7 +203,7 @@ tar -zxvf HAslow1.tar.gz <your appion-protomo/emg/data/tiltseries/ directory>
 > Now we are inside the container
 ```
 
-<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. Click for image instructions</summary><p>
+**_<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. Click for image instructions</summary><p>_**
 
 - Click on `DOCKER CLI` on the bottom-left of Kitematic:
 
