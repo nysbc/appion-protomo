@@ -28,7 +28,7 @@ Launch Kitematic.
 
 # Installation
 
-## Linux/MacOS ###### (command line)
+## Linux/MacOS *(command line)*
 
 ```sh
 git clone http://github.com/nysbc/appion-protomo
