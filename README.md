@@ -140,9 +140,9 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 ![](https://i.imgur.com/siObtGj.png)
 
-<br />
-
 </p></details>
+
+<br />
 
 - To VNC into the container, download and install a VNC viewer like TigerVNC vncviewer:
 
