@@ -137,7 +137,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - This should open your web browser to the Apache test page. Append `/myamiweb/` to the URL to access Appion.
 
-<details><summary>Click for images</summary><p>
+**<details><summary>Click for images</summary><p>**
 
 ![](https://i.imgur.com/siObtGj.png)
 
