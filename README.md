@@ -453,7 +453,7 @@ Winkler, H., & Taylor, K. A. (2006). Accurate marker-free alignment with simulta
 
 Appion may be found [here](http://appion.org).
 
-[Protomo](http://www.electrontomography.org/) source code may be found [here](http://emg.nysbc.org/redmine/projects/appion/repository/revisions/a47dfbe7a956f19b72f88de704054e3a50d7a8f4/show/programs/protomo2)
+[Protomo](http://www.electrontomography.org/) source code may be found [here](http://emg.nysbc.org/redmine/projects/appion/repository/revisions/a47dfbe7a956f19b72f88de704054e3a50d7a8f4/show/programs/protomo2).
 
 # Authors
 
