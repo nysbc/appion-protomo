@@ -149,6 +149,8 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 ![](https://i.imgur.com/T9RMvBX.png)
 
+------
+
 </p></details>
 
 <br />
