@@ -66,7 +66,6 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 
 ------
 </p></details>
-<br />
 
 *<details><summary>In Windows, you may need to tweak your settings (click to expand)</summary><p>*
 
