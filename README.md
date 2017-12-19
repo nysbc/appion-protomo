@@ -65,7 +65,7 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 ![](https://i.imgur.com/D6P0c3J.png)
 
 </p></details>
-<br />
+------<br />
 
 <details><summary>You may need to tweak your settings (click to expand)</summary><p>
 
