@@ -60,7 +60,7 @@ In the Kitematic search bar type: `semc/appion-protomo`.
 
 Click `Create` on the `semc` `appion-protomo` repository and wait for the container to download and start.
 
-<details><summary>Click for image</summary><p>
+**_<details><summary>Click for image</summary><p>_**
 
 ![](https://i.imgur.com/D6P0c3J.png)
 
@@ -161,7 +161,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 Use the IP and port found in the running Kitematic container's `Settings >> Hostname/Ports` next to `Docker port 5901` as the VNC address with password `appion-protomo`.
 
-<details><summary>Click for images</summary><p>
+**_<details><summary>Click for images</summary><p>_**
 
 ![](https://i.imgur.com/LnEVAtr.png)
 
@@ -204,7 +204,7 @@ tar -zxvf HAslow1.tar.gz <your appion-protomo/emg/data/tiltseries/ directory>
 > Now we are inside the container
 ```
 
-<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. Click for image instructions</summary><p>
+<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. **_Click for image instructions</summary><p>_**
 
 - Click on `DOCKER CLI` on the bottom-left of Kitematic:
 
