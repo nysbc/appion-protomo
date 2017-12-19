@@ -279,7 +279,7 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/X3kI7bI.png)
 
-![](https://i.imgur.com/1Jv3Dl9.png)
+![](https://i.imgur.com/miGiYCp.png)
 
 ![](https://i.imgur.com/ACrVR9f.png)
 
