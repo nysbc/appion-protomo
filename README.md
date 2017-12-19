@@ -16,7 +16,7 @@ Download and install Docker 1.21 or greater for [Linux](https://docs.docker.com/
 
 Launch docker according to your Docker engine's instructions, typically ``docker start``.  
 
-## Windows/MacOS  *(GUI & command line)*
+## Windows/MacOS &nbsp;&nbsp; *(GUI & command line)*
 
 Download and install Docker Toolbox for [Windows](https://docs.docker.com/toolbox/toolbox_install_windows/) or [MacOS](https://docs.docker.com/toolbox/toolbox_install_mac/). 
 
@@ -28,7 +28,7 @@ Launch Kitematic.
 
 # Installation
 
-## Linux/MacOS  *(command line)*
+## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
 ```sh
 git clone http://github.com/nysbc/appion-protomo
@@ -54,7 +54,7 @@ cd appion-protomo
 
 </p></details>
 
-## Windows/MacOS  *(GUI & command line)*
+## Windows/MacOS &nbsp;&nbsp; *(GUI & command line)*
 
 In the Kitematic search bar type: `semc/appion-protomo`.
 
@@ -90,7 +90,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 # Usage
 
-## Linux/MacOS  *(command line)*
+## Linux/MacOS &nbsp;&nbsp; *(command line)*
 <details><summary>Click to expand</summary><p>
 
 - To launch the application container, do:
@@ -129,7 +129,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 </p></details>
 
-## Windows/MacOS  *(GUI & command line)*
+## Windows/MacOS &nbsp;&nbsp; *(GUI & command line)*
 
 <details><summary>Click to expand</summary><p>
 
