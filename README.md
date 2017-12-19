@@ -190,7 +190,23 @@ tar -zxvf HAslow1.tar.gz <your appion-protomo/emg/data/tiltseries/ directory>
 
 > Now we are inside the container
 ```
- 
+
+<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. Click for image instructions</summary><p>
+
+- Click on `DOCKER CLI` on the bottom-left of Kitematic:
+
+![](https://i.imgur.com/0INNdwr.png)
+
+- Nativate to the directory containing your tilt-series, use `docker ps` to get your container id, and use `docker cp` to copy the directory's contents to the container:
+
+![](https://i.imgur.com/HJiJZ2q.png)
+
+- Now your tilt-series should be in /home/appionuser/ in your container:
+
+![](https://i.imgur.com/jsxV7oX.png)
+
+</p></details>
+
 - Navigate to your web portal at an address like 
  
  ```192.168.99.100/myamiweb```
