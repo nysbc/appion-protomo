@@ -267,13 +267,9 @@ Paste the command to a terminal prompt and hit enter
 
 <details><summary>Click for images</summary><p>
 
-![](https://i.imgur.com/LnEVAtr.png)
-
-- Type this `ip:port` into your VNC viewer (password: `appion-protomo`):
+![](https://i.imgur.com/j2An6CN.png)
 
 ![](https://i.imgur.com/zFiviSL.png)
-
-- The VNC viewer to should open:
 
 ![](https://i.imgur.com/8BrWwzV.png)
 
