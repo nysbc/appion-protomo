@@ -289,6 +289,14 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/A7drTTq.png)
 
+- The tilt-series has been uploaded. Now let's go see it:
+
+![](https://i.imgur.com/qwEdlMZ.png)
+
+![](https://i.imgur.com/GqnXYWw.png)
+
+- All information from the SerialEM mdoc file has been imported - order of collection (for dose compensation), magnification, defocus, pixelsize, dose, and tilt angles.
+
 </p></details>
 
 </p></details>
