@@ -54,7 +54,7 @@ cd appion-protomo
 
 </p></details>
 
-## Windows
+## Windows/MacOS *(GUI & command line)*
 
 In the Kitematic search bar type: `semc/appion-protomo`.
 
