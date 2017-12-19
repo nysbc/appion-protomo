@@ -451,6 +451,8 @@ Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., Tan Y.
 
 Winkler, H., & Taylor, K. A. (2006). Accurate marker-free alignment with simultaneous geometry determination and reconstruction of tilt series in electron tomography. Ultramicroscopy, 106(3), 240–254. https://doi.org/10.1016/j.ultramic.2005.07.007
 
+Lander, G. C., Stagg, S. M., Voss, N. R., Cheng, A., Fellmann, D., Pulokas, J., Yoshioka C., Irving C., Mulder A., Lau P.-W., Lyumkis D., Potter C. S., Carragher, B. (2009). Appion: An integrated, database-driven pipeline to facilitate EM image processing. Journal of Structural Biology, 166(1), 95–102. https://doi.org/10.1016/j.jsb.2009.01.002
+
 Appion may be found [here](http://appion.org).
 
 [Protomo](http://www.electrontomography.org/) source code may be found [here](http://emg.nysbc.org/redmine/projects/appion/repository/revisions/a47dfbe7a956f19b72f88de704054e3a50d7a8f4/show/programs/protomo2).
