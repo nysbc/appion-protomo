@@ -4,7 +4,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 # Prerequisites
 
-- A modern operating system with 16+ GB of RAM (32+GB is *highly* recommended).
+- A modern operating system with 16+ GB of RAM (32+ GB is *highly* recommended).
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
