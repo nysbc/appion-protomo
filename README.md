@@ -527,8 +527,8 @@ Appion may be found [here](http://appion.org).
   
 - Appion-Protomo.
 
-&nbsp;&nbsp;[Twitter](https://twitter.com/alexjamesnoble)<br />
-&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZectHccFZSFQIgpOzakl7A)
+&nbsp;&nbsp;&nbsp;[Twitter](https://twitter.com/alexjamesnoble)<br />
+&nbsp;&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZectHccFZSFQIgpOzakl7A)
 </p></details>
 <details><summary>Neil R Voss</summary><p>
   
