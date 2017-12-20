@@ -287,7 +287,7 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/9Kj8ZZW.png)
 
-![](https://i.imgur.com/A7drTTq.png)
+![](https://i.imgur.com/Q3d6YYM.png)
 
 - The tilt-series has been uploaded. Now let's go see it:
 
