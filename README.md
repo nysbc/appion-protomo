@@ -87,9 +87,9 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 ![](https://i.imgur.com/VDa8UNj.png)
 
-- **Close Kitematic**
-
 ![](https://i.imgur.com/JOYbNbG.png)
+
+- **Close Kitematic**
 
 ![](https://i.imgur.com/whV3ykr.png)
 
