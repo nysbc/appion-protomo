@@ -526,9 +526,10 @@ Appion may be found [here](http://appion.org).
 - Appion-Protomo.
 
 [Twitter](https://twitter.com/alexjamesnoble)
+
 [Youtube](https://www.youtube.com/channel/UCZectHccFZSFQIgpOzakl7A)
 </p></details>
-<details><summary>Alex J Noble</summary><p>
+<details><summary>Neil R Voss</summary><p>
 - Base Docker image.
 </p></details>
 
