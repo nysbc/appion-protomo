@@ -519,14 +519,18 @@ Appion may be found [here](http://appion.org).
 
 # Authors
 
-- Carl J Negro
+<details><summary>Carl J Negro</summary><p>
+- Docker Appion-Protomo.
+</p></details>
 <details><summary>Alex J Noble</summary><p>
 - Appion-Protomo.
 
 [Twitter](https://twitter.com/alexjamesnoble)
 [Youtube](https://www.youtube.com/channel/UCZectHccFZSFQIgpOzakl7A)
 </p></details>
-- Neil R Voss
+<details><summary>Alex J Noble</summary><p>
+- Base Docker image.
+</p></details>
 
 
 # License
