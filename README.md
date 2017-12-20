@@ -341,7 +341,12 @@ Paste the command to a terminal prompt and hit enter
 
 - Wait for uploadSerialEM.py  to finish processing
 
-...
+
+**_<details><summary>Click for images</summary><p>_**
+
+![](https://i.imgur.com/gSmwREH.png)
+
+</p></details>
 
 </p></details>
 
