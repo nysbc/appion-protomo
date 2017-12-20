@@ -382,6 +382,8 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/1owXNNI.png)
 
+![](https://i.imgur.com/9TjhVD3.png)
+
 </p></details>
 
 </p></details>
