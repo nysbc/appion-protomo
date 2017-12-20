@@ -520,6 +520,7 @@ Appion may be found [here](http://appion.org).
 # Authors
 
 - Carl J Negro
+
 **_<details><summary>Alex J Noble</summary><p>_**
 - Appion-Protomo.
 [Twitter](https://twitter.com/alexjamesnoble)
