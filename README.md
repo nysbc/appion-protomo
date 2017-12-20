@@ -83,6 +83,26 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
   
 - Re-start the container.
 
+**_<details><summary>Click for images</summary><p>_**
+
+![](https://i.imgur.com/VDa8UNj.png)
+
+![](https://i.imgur.com/JOYbNbG.png)
+
+![](https://i.imgur.com/whV3ykr.png)
+
+![](https://i.imgur.com/whV3ykr.png)
+
+![](https://i.imgur.com/whV3ykr.png)
+
+![](https://i.imgur.com/whV3ykr.png)
+
+![](https://i.imgur.com/whV3ykr.png)
+
+![](https://i.imgur.com/whV3ykr.png)
+
+</p></details>
+
 </p></details>
 
 <br />
