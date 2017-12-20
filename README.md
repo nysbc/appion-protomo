@@ -91,15 +91,15 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 ![](https://i.imgur.com/whV3ykr.png)
 
-![](https://i.imgur.com/whV3ykr.png)
+![](https://i.imgur.com/xmz1vhX.png)
 
-![](https://i.imgur.com/whV3ykr.png)
+![](https://i.imgur.com/KQAnxwZ.png)
 
-![](https://i.imgur.com/whV3ykr.png)
+![](https://i.imgur.com/RnDX9ru.png)
 
-![](https://i.imgur.com/whV3ykr.png)
+![](https://i.imgur.com/ZJHwHtO.png)
 
-![](https://i.imgur.com/whV3ykr.png)
+![](https://i.imgur.com/PUAdAS6.png)
 
 </p></details>
 
