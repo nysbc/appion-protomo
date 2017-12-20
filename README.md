@@ -87,15 +87,23 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 ![](https://i.imgur.com/VDa8UNj.png)
 
+- **Close Kitematic**
+
 ![](https://i.imgur.com/JOYbNbG.png)
 
 ![](https://i.imgur.com/whV3ykr.png)
 
 ![](https://i.imgur.com/xmz1vhX.png)
 
+- Increase the allocated RAM for the virtual machine:
+
 ![](https://i.imgur.com/KQAnxwZ.png)
 
+- Optional: Increase the CPUs available for the virtual machine:
+
 ![](https://i.imgur.com/RnDX9ru.png)
+
+- Start Kitematic:
 
 ![](https://i.imgur.com/ZJHwHtO.png)
 
