@@ -295,7 +295,7 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/GqnXYWw.png)
 
-- All information from the SerialEM mdoc file has been imported - order of collection (for dose compensation), magnification, defocus, pixelsize, dose, and tilt angles.
+- All information from the SerialEM mdoc file has been imported - order of collection (for dose compensation), magnification, defocus, pixelsize, dose, and tilt angles. Tilt images are listed in chronological order from bottom to top.
 
 </p></details>
 
