@@ -348,11 +348,11 @@ Paste the command to a terminal prompt and hit enter
 
 ![](https://i.imgur.com/Sgcjz0i.png)
 
-![](https://i.imgur.com/1owXNNI.png)
+![](https://i.imgur.com/5QLB6rj.png)
 
 ![](https://i.imgur.com/FjIySju.png)
 
-![](https://i.imgur.com/5QLB6rj.png)
+![](https://i.imgur.com/1owXNNI.png)
 
 </p></details>
 
