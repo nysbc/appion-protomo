@@ -534,7 +534,7 @@ Appion may be found [here](http://appion.org).
 </p></details>
 <details><summary>Neil R Voss</summary><p>
   
-- Base Docker image.
+- [Base Docker image](https://hub.docker.com/r/vosslab/appion_centos7/).
 </p></details>
 
 
