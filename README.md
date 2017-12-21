@@ -10,7 +10,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
-Download and install Docker 1.21 or greater for [Linux](https://docs.docker.com/engine/installation/).
+Download and install Docker 1.21 or greater for [Linux](https://docs.docker.com/engine/installation/) or [MacOS](https://store.docker.com/editions/community/docker-ce-desktop-mac).
 
 > Consider using a Docker 'convenience script' to install (search on your OS's Docker installation webpage).
 
