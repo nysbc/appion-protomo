@@ -118,9 +118,9 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 # Usage
 
 ## Launch Docker
-Make sure Docker is running:
-On OSX with Docker Toolbox, launch the "Docker Quickstart Terminal".
-On CentOS or Ubuntu, do  `sudo systemctl start docker`.
+Make sure Docker is running:<br />
+On OSX with Docker Toolbox, launch the "Docker Quickstart Terminal".<br />
+On CentOS or Ubuntu, do  `sudo systemctl start docker`.<br />
 On Windows and MacOS, Kitematic launches Docker automatically.
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
