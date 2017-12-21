@@ -427,7 +427,6 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 **_<details><summary>Click for images</summary><p>_**
 
-
 ![](https://i.imgur.com/tGbx3dr.png)
 
 ![](https://i.imgur.com/KkPaeo1.png)
@@ -448,9 +447,11 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 ![](https://i.imgur.com/t8WBDDV.png)
 
-![](https://i.imgur.com/B9WbeaG.png)
+![](https://i.imgur.com/N1c7w5L.png)
 
 ![](https://i.imgur.com/YkEmuM2.png)
+
+![](https://i.imgur.com/sSffNLy.png)
 
 </p></details>
 
