@@ -292,7 +292,7 @@ Next, either execute
 
 `./exec.sh` OR
 
-VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
+VNC to `vnc://192.168.99.100:5901` (replace with your VNC ip:port) with password `appion-protomo`
 
 Paste the command to a terminal prompt and hit enter
 
