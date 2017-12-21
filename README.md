@@ -442,6 +442,16 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 ![](https://i.imgur.com/dO6Q15F.png)
 
+![](https://i.imgur.com/Hlo8Q8X.png)
+
+![](https://i.imgur.com/vYGI6rg.png)
+
+![](https://i.imgur.com/t8WBDDV.png)
+
+![](https://i.imgur.com/B9WbeaG.png)
+
+![](https://i.imgur.com/YkEmuM2.png)
+
 </p></details>
 
 </p></details>
