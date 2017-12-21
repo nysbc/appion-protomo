@@ -548,6 +548,14 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 </p></details>
 
+<br />
+
+<details><summary>Additional features and in-depth explanations</summary><p>
+
+...
+
+</p></details>
+
 </p></details>
 
 <details><summary>Reconstruct tilt-series</summary><p>
