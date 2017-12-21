@@ -548,14 +548,6 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 </p></details>
 
-<br />
-
-<details><summary>Additional features and in-depth explanations</summary><p>
-
-...
-
-</p></details>
-
 </p></details>
 
 <details><summary>Reconstruct tilt-series</summary><p>
@@ -587,6 +579,14 @@ Select `Just show command` at the bottom of the page.
 
 
 - On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
+
+</p></details>
+
+<br />
+
+<details><summary>Additional features and in-depth explanations</summary><p>
+
+...
 
 </p></details>
 
