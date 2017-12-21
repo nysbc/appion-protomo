@@ -522,6 +522,31 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 > Note: The alignment thickness cannot be determined prior to tilt-series alignment. If a tilt-series alignment did not align as well as you wish, try re-aligning with additional alignment thickness values.
 
+**_<details><summary>Click for images</summary><p>_**
+
+![](https://i.imgur.com/hyJq6x1.png)
+
+![](https://i.imgur.com/vzd1Kw8.png)
+
+![](https://i.imgur.com/9q8uzlr.png)
+
+![](https://i.imgur.com/hOKeulX.png)
+
+![](https://i.imgur.com/zYD4po0.png)
+
+![](https://i.imgur.com/jymIaoC.png)
+
+![](https://i.imgur.com/W4UUxNL.png)
+
+![](https://i.imgur.com/bT21cWe.png)
+
+![](https://i.imgur.com/nMdUXnq.jpg)
+
+![](https://i.imgur.com/h5fz2g6.png)
+
+![](https://i.imgur.com/4wWvNG1.png)
+
+</p></details>
 
 </p></details>
 
