@@ -425,6 +425,22 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
   
   - If there are any tilt images that contain objects that significantly occlude objects of interest, take note of their tilt angles.
 
+**_<details><summary>Click for images</summary><p>_**
+
+
+![](https://i.imgur.com/tGbx3dr.png)
+
+![](https://i.imgur.com/KkPaeo1.png)
+
+![](https://i.imgur.com/vYGI6rg.png)
+
+![](https://i.imgur.com/dO6Q15F.png)
+
+![](https://i.imgur.com/hvx2wPB.png)
+
+![](https://i.imgur.com/ocasnZ7.png)
+
+</p></details>
 
 </p></details>
 
