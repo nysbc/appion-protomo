@@ -528,7 +528,7 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 ![](https://i.imgur.com/vzd1Kw8.png)
 
-![](https://i.imgur.com/9q8uzlr.png)
+![](https://i.imgur.com/Nn3echA.png)
 
 ![](https://i.imgur.com/hOKeulX.png)
 
