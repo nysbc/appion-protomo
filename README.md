@@ -586,7 +586,23 @@ Select `Just show command` at the bottom of the page.
 
 <details><summary>Additional features and in-depth explanations</summary><p>
 
+<details><summary>Batch alignment</summary><p>
+
 ...
+
+</p></details>
+
+<details><summary>Defocus refinement</summary><p>
+
+...
+
+</p></details>
+
+<details><summary>Understanding Protomo refinement metrics</summary><p>
+
+...
+
+</p></details>
 
 </p></details>
 
