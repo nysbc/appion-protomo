@@ -557,6 +557,7 @@ Select `Just show command` at the bottom of the page.
 
 </p></details>
 
+<br />
 
 # References
 
