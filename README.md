@@ -453,9 +453,21 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 ![](https://i.imgur.com/sSffNLy.png)
 
+![](https://i.imgur.com/N0RICUS.png)
+
+- Watch the tilt-series video to estimate
+ - The amount of central area in common between all tilt images,
+ - The tilt azimuth (vertical is ±90°, horizontal is 0° or 180°)
+
 <p align="center"> 
 <img src="https://i.imgur.com/kwF8kbA.gif">
 </p>
+
+![](https://i.imgur.com/EzzwYXg.png)
+
+![](https://i.imgur.com/UdPITmc.png)
+
+![](https://i.imgur.com/bKNB98I.png)
 
 <p align="center"> 
 <img src="https://i.imgur.com/RE3kuXI.gif">
