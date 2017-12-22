@@ -8,7 +8,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
-**<details><summary>Do you have Docker installed? If not, click here to expand</summary><p>**
+**<details><summary>Do you have Docker installed? If not, click here</summary><p>**
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
@@ -31,6 +31,8 @@ Launch Kitematic.
 <br />
 
 # Installation
+
+**<details><summary>Do you have Appion-Protomo installed in your Docker? If not, click here</summary><p>**
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
@@ -112,6 +114,8 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 ![](https://i.imgur.com/ZJHwHtO.png)
 
 ![](https://i.imgur.com/PUAdAS6.png)
+
+</p></details>
 
 </p></details>
 
