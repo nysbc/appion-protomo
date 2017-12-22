@@ -646,7 +646,22 @@ Tilt-series alignment quality is then assessed automatically by plotting the ite
 
 <details><summary>Understanding Protomo refinement metrics</summary><p>
 
-...
+As described in the Protomo refinement basics section above, Protomo estimates the accuracy with which it could align each tilt image rotationally, translationally, and/or with stretching. These errors, called correction factors, are expressed as a percentage of image length.
+
+When you click on a refinement iteration summary, you will see four correction factor plots that show the estimated alignment error for each tilt image in the x-direction, y-direction, rotationally, and/or in stretching. The goal is to select the iteration (given sufficiently accurate alignment parameters - binning, lowpass, alignment thickness, etc.) with the least amount of errors. A good rule of thumb is that all tilt images should have correction factors below 1% (and 1° for rotation) before considering reconstruction and post-processing.
+
+Each correction factor plot, except for rotation, additionally has plotted the mean correction factor (solid line) plus/minus one standard deviation (dotted lines). Green lines are good, red lines are bad.
+
+To simplify the assessment of these correction factors, a combined metric (CCMS plot) is plotted on the main refinement summary webpages:
+
+- The dotted orange line records the average + 1 standard deviation of the x correction factor and y correction factor, summed.
+- The x'd orange line records the average + 1 standard deviation of the stretching correction factor.
+- The blue line records the average + 1 standard deviation of the rotation correction factor.
+- The black line is a scaled sum of the above three lines
+
+The goal then becomes to minimize the black line.
+
+To simplify this process further, the main Protomo Alignment Summary webpage locates the lowest points on the black line and grades the alignment quality depending on how low the line is at that iteration: Bad, Okay, Good, Very Good, Excellent, Perfection!, and Suspiciously Perfect...
 
 </p></details>
 
