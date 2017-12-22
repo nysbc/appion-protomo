@@ -286,7 +286,7 @@ Enter the `SerialEM mdoc path`
 
 Enter the `voltage` (200 kV for the provided hemagglutinin tilt-series)
 
-Select `Just show command` at the bottom of the page.
+Select `Just Show Command` at the bottom of the page.
 
 
 - On the next page, copy the entire uploadSerialEM.py command
@@ -360,7 +360,7 @@ Enter the `SerialEM directory path`
 Enter the `voltage`
 
 
-Select `Just show command` at the bottom of the page
+Select `Just Show Command` at the bottom of the page
 
 
 - On the next page, copy the entire uploadSerialEM.py command
@@ -415,7 +415,7 @@ Choose whether you wish to `Estimate Defocus of the Untilted Plane` or `Dose Com
 > Dose compensation often helps tilt-series alignment unless your sample is particularly thick, as is often the case with FIB-milled specimen.
 
 
-Select `Just show command` at the bottom of the page.
+Select `Just Show Command` at the bottom of the page.
 
 
 - On the next page, copy the entire protomo2aligner.py command and run it in the Docker container.
@@ -509,7 +509,7 @@ Select the largest `Search Area` that is in common between all tilt-images in th
 - Under `Window Parameters`, input comma-separated values for the estimated `Thickness(es)`, where the thickness corresponds to the thickness of the objects to be aligned to or their combined thickness.
 
 
-Select `Just show command` at the bottom of the page.
+Select `Just Show Command` at the bottom of the page.
 
 
 - On the next page, copy the entire protomo2multirefine.py or protomo2aligner.py command and run it in the Docker container.
@@ -560,7 +560,7 @@ From the Protomo Alignment Summary webpage, copy the `runname` of the tilt-serie
 
 Paste the `runname` in place of the generated `Run name`.
 
-Select `Just show command` at the bottom of the page.
+Select `Just Show Command` at the bottom of the page.
 
 - On the next page click `[or Click here to Go Directly to the Reconstruction Page] →`.
 
@@ -575,7 +575,7 @@ Input an appropriate reconstruction thickness.
 Exclude any bad tilt images in the alignment.
 
 
-Select `Just show command` at the bottom of the page.
+Select `Just Show Command` at the bottom of the page.
 
 
 - On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
