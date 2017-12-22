@@ -8,7 +8,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM-formatted stacks and mdoc files).
 
-**<details><summary>Do you have Docker installed? If not, click here</summary><p>**
+**<details><summary>Do you have Docker installed? If not, *click here*</summary><p>**
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
@@ -685,7 +685,7 @@ To simplify this process further, the main Protomo Alignment Summary webpage loc
 
 <details><summary>Common alignment issues</summary><p>
 
-[Discuss thickness, tilt azimuth, search area, ...]
+[Discuss thickness, tilt azimuth, search area, individual bad/misaligned tilt images...]
 
 </p></details>
 
