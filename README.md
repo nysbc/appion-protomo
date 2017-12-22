@@ -654,6 +654,12 @@ This process (4. and 5.) continues until all tilt images have been aligned.
 
 Tilt-series alignment quality is then assessed automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, that the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series videos.
 
+**_<details><summary>Click for Protomo alignment schematic</summary><p>_**
+
+![](https://i.imgur.com/fCLAe6Q.png)
+
+</p></details>
+
 </p></details>
 
 <details><summary>Understanding Protomo refinement metrics</summary><p>
