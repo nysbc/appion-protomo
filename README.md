@@ -231,8 +231,6 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 *Click to expand:*
 
-<p> <img src="https://i.imgur.com/kwF8kbA.gif" img src="https://i.imgur.com/kwF8kbA.gif"> </p>
-
 <!--- SUMMARY OF EXPECTED RESULTS (SHOW TILT-SERIES AND RECONSTRUCTION BEFORE AND AFTER VIDEOS) --->
 <details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
