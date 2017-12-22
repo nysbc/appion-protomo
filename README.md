@@ -230,6 +230,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 # Example
 
 *Click to expand:*
+<!--- SUMMARY OF EXPECTED RESULTS (SHOW TILT-SERIES AND RECONSTRUCTION BEFORE AND AFTER VIDEOS) --->
 <details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
