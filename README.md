@@ -584,7 +584,7 @@ Select `Just show command` at the bottom of the page.
 
 <br />
 
-<details><summary>Additional features and in-depth explanations</summary><p>
+<details><summary>Additional features</summary><p>
 
 <details><summary>Batch alignment</summary><p>
 
@@ -598,9 +598,25 @@ Select `Just show command` at the bottom of the page.
 
 </p></details>
 
+</p></details>
+
+<details><summary>In-depth explanations & discussions</summary><p>
+
 <details><summary>Understanding Protomo refinement metrics</summary><p>
 
 ...
+
+</p></details>
+
+<details><summary>Common alignment issues</summary><p>
+
+[Discuss thickness, tilt azimuth, search area, ...]
+
+</p></details>
+
+<details><summary>Common collection issues</summary><p>
+
+[Discuss grid hole edge in images, drift, doming, ...]
 
 </p></details>
 
