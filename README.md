@@ -762,4 +762,4 @@ The workflow has been tested in Mac OSX El Capitan 10.11.3, Ubuntu, CentOS 7, an
 
 # Bugs
 
-Please report any bugs problems as a Github issue.
+Please report any bugs problems as a [Github issue](https://github.com/nysbc/appion-protomo/issues).
