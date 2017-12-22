@@ -242,14 +242,14 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 - **Tilt-series and reconstruction after coarse alignment:**
 
 <p float="left">
-  <img src="https://i.imgur.com/n0bmnfM.gif" width="320">
+  <img src="https://i.imgur.com/n0bmnfM.gif" height="418">
   <img src="https://i.imgur.com/TEp1TkG.gif">
 </p>
 
 - **Tilt-series and reconstruction after Appion-Protomo refinement:**
 
 <p float="left">
-  <img src="https://i.imgur.com/wKHNNO7.gif" width="320">
+  <img src="https://i.imgur.com/wKHNNO7.gif" height="393">
   <img src="https://i.imgur.com/SMHTuAR.gif">
 </p>
 
