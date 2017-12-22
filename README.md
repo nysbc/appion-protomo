@@ -32,7 +32,7 @@ Launch Kitematic.
 
 # Installation
 
-**<details><summary>Do you have Appion-Protomo installed in your Docker? If not, click here</summary><p>**
+**<details><summary>Do you have Appion-Protomo installed in your Docker? If not, *click here*</summary><p>**
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
@@ -125,7 +125,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 # Usage
 
-**<details><summary>Is this your first time using Appion-Protomo in your Docker? If so, click here</summary><p>**
+**<details><summary>Is this your first time using Appion-Protomo in your Docker? If so, *click here*</summary><p>**
 
 ## Launch Docker
 Make sure Docker is running:<br />
