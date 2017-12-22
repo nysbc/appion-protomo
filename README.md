@@ -614,7 +614,33 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>Protomo refinement basics</summary><p>
 
-...
+Protomo refinement is described with some mathematical clarity in the Protomo user's guide found on the original [Protomo website](http://www.electrontomography.org/).
+
+Conceptually, Protomo alignment combines common lines and iterative preliminary weighted back-projection > reprojection correlation methods along with a robust geometry model of the entire stage and sample in order to effectively maximize SNR/contrast in the weighted back-projection, which might be equivalent to aligning the tilt-series if alignment parameters are chosen appropriately.
+
+Appion-Protomo refinement on a coarsely aligned tilt-series generally proceeds as follows:
+
+1. Pre-process all tilt images with lowpass and highpass filters, a median or gaussian filter, gradient subtraction, pixel intensity thresholds, masks, and mask lowpass and highpass apodization filters. All images are then binned during the first several Round of refinement.
+
+2. A reference image is chosen (usually the tilt image closest to 0°). This image will not be moved during each refinement iteration.
+
+3. The two images on either side of the reference image are aligned to the reference image by correlation inside of a given search area.
+
+4. These three aligned tilt images are weighted back-projected into a preliminary 3D reconstruction.
+
+5. The preliminary 3D reconstruction is then re-projected in the direction of the next highest tilt angle and the corresponding tilt image is then aligned (rotation, translation, and/or isotropic stretching) to this reprojection inside of a given search area.
+
+   - Alignment by correlation allows for sub-pixel accuracy. The alignment algorithm also allows for an estimation of the alignment error in rotation, translation, and/or stretching because it is calculated by matrix diagnolization, which numerically results in non-zero off-diagonal terms left over.
+
+6. These four aligned tilt images are weighted back-projected into a preliminary 3D reconstruction, and 5. proceeds with the next highest tilt image on the opposite side of the last-aligned tilt image (ie. alternating alignment).
+
+This process (4. and 5.) continues until all tilt images have been aligned.
+
+7. After all tilt images are aligned, Protomo re-estimates the entire tilt model geometry (tilt azimuth, tilt elevation, and/or sample orientation in the ice).
+
+8. 1. through 7. are repeated over dozens of iterations with less and less strict binning and filtering.
+
+Tilt-series alignment quality is then assessed automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, if the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series videos.
 
 </p></details>
 
