@@ -8,7 +8,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
-<details><summary>Do you have Docker installed? If not, click here to expand</summary><p>
+**<details><summary>Do you have Docker installed? If not, click here to expand</summary><p>**
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
