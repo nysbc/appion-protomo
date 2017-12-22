@@ -662,7 +662,7 @@ Tilt-series alignment quality is then assessed automatically by plotting the ite
 
 </p></details>
 
-<details><summary>Understanding Protomo refinement metrics</summary><p>
+<details><summary>Protomo refinement metrics</summary><p>
 
 As described in the Protomo refinement basics section above, Protomo estimates the accuracy with which it could align each tilt image rotationally, translationally, and/or with stretching. These errors, called correction factors, are expressed as a percentage of image length.
 
