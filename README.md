@@ -612,6 +612,12 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>In-depth explanations & discussions</summary><p>
 
+<details><summary>Protomo refinement basics</summary><p>
+
+...
+
+</p></details>
+
 <details><summary>Understanding Protomo refinement metrics</summary><p>
 
 ...
