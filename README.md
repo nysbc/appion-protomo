@@ -592,6 +592,12 @@ Select `Just show command` at the bottom of the page.
 
 </p></details>
 
+<details><summary>Restarting a refinement</summary><p>
+
+...
+
+</p></details>
+
 <details><summary>Defocus refinement</summary><p>
 
 ...
@@ -616,7 +622,7 @@ Select `Just show command` at the bottom of the page.
 
 <details><summary>Common collection issues</summary><p>
 
-[Discuss grid hole edge in images, drift, doming, ...]
+[Discuss grid hole edge in images, drift, doming, tracking, dose (SNR), ...]
 
 </p></details>
 
