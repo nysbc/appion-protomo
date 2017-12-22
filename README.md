@@ -628,7 +628,7 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 Protomo refinement is described with some mathematical clarity in the Protomo user's guide found on the original [Protomo website](http://www.electrontomography.org/).
 
-Conceptually, Protomo alignment combines common lines and iterative preliminary weighted back-projection > reprojection correlation methods along with a robust geometry model of the entire stage and sample in order to effectively maximize SNR/contrast in the weighted back-projection, which might be equivalent to aligning the tilt-series if alignment parameters are chosen appropriately.
+Conceptually, Protomo alignment combines common lines and iterative preliminary weighted back-projection > reprojection correlation methods along with a robust geometry model of the entire stage and sample in order to effectively maximize SNR/contrast in the weighted back-projection, which might be equivalent to aligning the tilt-series if alignment parameters are chosen appropriately. As a result, tilt-series alignment with Protomo does not require fiducials or features, only SNR.
 
 Appion-Protomo refinement on a coarsely aligned tilt-series generally proceeds as follows:
 
