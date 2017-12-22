@@ -125,6 +125,8 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 # Usage
 
+**<details><summary>Is this your first time using Appion-Protomo in your Docker? If so, click here</summary><p>**
+
 ## Launch Docker
 Make sure Docker is running:<br />
 On OSX with Docker Toolbox, launch the 'Docker Quickstart Terminal'.<br />
@@ -218,6 +220,8 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 </p></details>
 
+
+</p></details>
 
 </p></details>
 
