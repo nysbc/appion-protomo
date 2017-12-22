@@ -8,6 +8,8 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
 
+<details><summary>Do you have Docker installed? If not, click here to expand</summary><p>
+
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 
 Download and install Docker 1.21 or greater for [Linux](https://docs.docker.com/engine/installation/) or [MacOS](https://store.docker.com/editions/community/docker-ce-desktop-mac).
@@ -23,6 +25,8 @@ Download and install Docker Toolbox for [Windows](https://docs.docker.com/toolbo
 Launch Kitematic.
 
 > If on first startup Kitematic displays a red error suggesting that you run using VirtualBox, do so.
+
+</p></details>
 
 <br />
 
