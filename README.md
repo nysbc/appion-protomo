@@ -6,7 +6,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - A modern operating system (Linux, MacOS, Windows) with 16+ GB of RAM (32+ GB is *highly* recommended).
 
-- Tilt-series stacks and tilt image information (ideally in the form of SerialEM stacks and mdoc files).
+- Tilt-series stacks and tilt image information (ideally in the form of SerialEM-formatted stacks and mdoc files).
 
 **<details><summary>Do you have Docker installed? If not, click here</summary><p>**
 
@@ -230,7 +230,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 # Example
 
 *Click to expand:*
-<details><summary>Upload first SerialEM tilt-series to a new session</summary><p>
+<details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
 
@@ -347,7 +347,7 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary>Upload additional SerialEM tilt-series to an existing session</summary><p>
+<details><summary>Upload additional SerialEM-formatted tilt-series to an existing session</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
 
