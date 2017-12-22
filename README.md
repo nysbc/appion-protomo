@@ -231,6 +231,32 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 *Click to expand:*
 
+<details><summary>Expected results after following this example tutorial</summary><p>
+
+- **Initial tilt-series before any alignment:**
+
+<p float="left">
+  <img src="https://i.imgur.com/NCPEQhS.gif" width="320">
+</p>
+
+- **Tilt-series and reconstruction after coarse alignment:**
+
+<p float="left">
+  <img src="https://i.imgur.com/n0bmnfM.gif" width="320">
+  <img src="https://i.imgur.com/TEp1TkG.gif">
+</p>
+
+- **Tilt-series and reconstruction after Appion-Protomo refinement:**
+
+<p float="left">
+  <img src="https://i.imgur.com/wKHNNO7.gif" width="320">
+  <img src="https://i.imgur.com/SMHTuAR.gif">
+</p>
+
+</p></details>
+
+<br />
+
 <!--- SUMMARY OF EXPECTED RESULTS (SHOW TILT-SERIES AND RECONSTRUCTION BEFORE AND AFTER VIDEOS) --->
 <details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
