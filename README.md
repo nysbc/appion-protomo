@@ -640,7 +640,7 @@ This process (4. and 5.) continues until all tilt images have been aligned.
 
 8. Steps 1. through 7. are repeated over dozens of iterations with less and less strict binning and filtering.
 
-Tilt-series alignment quality is then assessed automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, if the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series videos.
+Tilt-series alignment quality is then assessed automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, that the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series videos.
 
 </p></details>
 
