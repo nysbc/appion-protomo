@@ -704,6 +704,12 @@ When you click on a refinement iteration summary, you will see four correction f
 
 Each correction factor plot, except for rotation, additionally has plotted the mean correction factor (solid line) plus/minus one standard deviation (dotted lines). Green lines are good, red lines are bad.
 
+**_<details><summary>Click for image</summary><p>_**
+
+...
+
+</p></details>
+
 To simplify the assessment of these correction factors, a combined metric (CCMS plot) is plotted on the main refinement summary webpages:
 
 - The dotted orange line records the average + 1 standard deviation of the x correction factor and y correction factor, summed.
@@ -713,7 +719,19 @@ To simplify the assessment of these correction factors, a combined metric (CCMS 
 
 The goal then becomes to minimize the black line.
 
+**_<details><summary>Click for image</summary><p>_**
+
+...
+
+</p></details>
+
 To simplify this process further, the main Protomo Alignment Summary webpage locates the lowest points on the black line and grades the alignment quality depending on how low the line is at that iteration: Bad, Okay, Good, Very Good, Excellent, Perfection!, and Suspiciously Perfect...
+
+**_<details><summary>Click for image</summary><p>_**
+
+...
+
+</p></details>
 
 </p></details>
 
