@@ -736,6 +736,15 @@ To simplify this process further, the main Protomo Alignment Summary webpage loc
 </p></details>
 <br />
 
+As a secondary metric, the stability of the geometry model should be checked.
+
+**_<details><summary>Click for image</summary><p>_**
+
+...
+
+</p></details>
+<br />
+
 </p></details>
 
 <details><summary>Common alignment issues</summary><p>
