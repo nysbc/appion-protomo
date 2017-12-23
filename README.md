@@ -709,6 +709,7 @@ Each correction factor plot, except for rotation, additionally has plotted the m
 ...
 
 </p></details>
+<br />
 
 To simplify the assessment of these correction factors, a combined metric (CCMS plot) is plotted on the main refinement summary webpages:
 
@@ -724,6 +725,7 @@ The goal then becomes to minimize the black line.
 ...
 
 </p></details>
+<br />
 
 To simplify this process further, the main Protomo Alignment Summary webpage locates the lowest points on the black line and grades the alignment quality depending on how low the line is at that iteration: Bad, Okay, Good, Very Good, Excellent, Perfection!, and Suspiciously Perfect...
 
@@ -732,6 +734,7 @@ To simplify this process further, the main Protomo Alignment Summary webpage loc
 ...
 
 </p></details>
+<br />
 
 </p></details>
 
