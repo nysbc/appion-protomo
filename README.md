@@ -725,7 +725,7 @@ To simplify this process further, the main Protomo Alignment Summary webpage loc
 
 <details><summary>Common collection issues</summary><p>
 
-[Discuss grid hole edge in images, drift, doming, tracking, dose (SNR), ...]
+[Discuss grid hole edge in images, drift, beam-induced motion, doming, charging, tracking, dose (SNR), ...]
 
 </p></details>
 
