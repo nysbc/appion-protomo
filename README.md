@@ -698,7 +698,7 @@ Tilt-series alignment quality is then assessed automatically by plotting the ite
 
 <details><summary>Protomo refinement metrics</summary><p>
 
-As described in the Protomo refinement basics section above, Protomo estimates the accuracy with which it could align each tilt image rotationally, translationally, and/or with stretching. These errors, called correction factors, are expressed as a percentage of image length.
+As described in the Protomo refinement basics section above, Protomo estimates the accuracy with which it could align each tilt image rotationally, translationally, and/or with stretching. These errors, called correction factors, are expressed as a percentage of image length for translation and stretching, and in degrees for rotation. Correction factors are a measure of uncorrectable tilt image alignment error given the geometry model and the amount of uncorrectable drift, beam-induced motion, doming, and charging of the specimen during collection.
 
 When you click on a refinement iteration summary, you will see four correction factor plots that show the estimated alignment error for each tilt image in the x-direction, y-direction, rotationally, and/or in stretching. The goal is to select the iteration (given sufficiently accurate alignment parameters - binning, lowpass, alignment thickness, etc.) with the least amount of errors. A good rule of thumb is that all tilt images should have correction factors below 1% (and 1° for rotation) before considering reconstruction and post-processing.
 
