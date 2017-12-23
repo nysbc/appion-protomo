@@ -690,7 +690,7 @@ Tilt-series alignment quality is then assessed automatically by plotting the ite
 
 **_<details><summary>Click for Protomo alignment schematic</summary><p>_**
 
-![](https://i.imgur.com/fCLAe6Q.png)
+![](https://i.imgur.com/gtTBrD9.png)
 
 </p></details>
 
