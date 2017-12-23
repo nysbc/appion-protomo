@@ -588,6 +588,10 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 ![](https://i.imgur.com/4wWvNG1.png)
 
+![](https://i.imgur.com/YZq420k.png)
+
+- From the Protomo Alignment Summary webpage you can easily assess the alignment quality of all of your tilt-series run with multiple different alignment thicknesses. You can easily navigate to the best iteration, defocus refinement, and the alignment summary webpage.
+
 </p></details>
 
 </p></details>
