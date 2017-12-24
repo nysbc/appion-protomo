@@ -730,7 +730,7 @@ Each correction factor plot, except for rotation, additionally has plotted the m
 
 **_<details><summary>Click for image</summary><p>_**
 
-...
+![](https://i.imgur.com/dnPfPXw.png)
 
 </p></details>
 <br />
@@ -746,7 +746,7 @@ The goal then becomes to minimize the black line.
 
 **_<details><summary>Click for image</summary><p>_**
 
-...
+![](https://i.imgur.com/YjuEzSP.png)
 
 </p></details>
 <br />
@@ -762,11 +762,6 @@ To simplify this process further, the main Protomo Alignment Summary webpage loc
 
 As a secondary metric, the stability of the geometry model should be checked.
 
-**_<details><summary>Click for image</summary><p>_**
-
-...
-
-</p></details>
 <br />
 
 </p></details>
