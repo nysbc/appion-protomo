@@ -809,6 +809,8 @@ The following list orders CTF estimation and correction methods by their approxi
 
 - Per-particle tilt image fine estimation and correction that takes into account overlapping objects in each tilt image of each particle and accounts for the 3D location of each particle.
 
+- Per-particle tilt image fine estimation and correction that accounts for the 3D location of each particle.
+
 - Collecting high-dose focus images on either side of the target along the tilt axis for every tilt image and using the average of those defocus estimations along with the known 3D locations of particles to correct (given that the focus images are at a known height relative to the field of view of interest).
 
 - Per-tilt-series estimation and correction based on the accumulated SNR of the entire tilt-series, often found by tiling each tilt image together.
