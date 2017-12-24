@@ -650,6 +650,18 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>Defocus refinement</summary><p>
 
+Defocus estimation in Appion-Protomo is performed using TomoCTF, which measures the defocus of the untilted plane by tiling all tilt images together while taking into account the relative heights of each tile in order to use all of the signal in the tilt-series. This method of defocus estimation assumes that the 
+
+After tiling, TomoCTF searches monotonically from just below the lower defocus range requested to the top of the range. Often, the search finds the defocus that is one zero off from the correct defocus and so needs to be refined using a proper search range.
+
+- From the Protomo Alignment Summary webpage, click on `Refine defocus`.
+
+- On the next page, select the correct tilt-series number, change the defocus range appropriately, and edit other parameters appropriately.
+
+Select `Just Show Command` at the bottom of the page.
+
+- On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
+
 **_<details><summary>Click for images</summary><p>_**
 
 ![](https://i.imgur.com/BFBjnuF.png)
