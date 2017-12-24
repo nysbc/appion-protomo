@@ -851,7 +851,9 @@ Appion may be found [here](http://appion.org).
 </p></details>
 <details><summary>Neil R Voss</summary><p>
   
-- [Base Docker image](https://hub.docker.com/r/vosslab/appion_centos7/).
+- [Base CentOS 7 Appion Docker image](https://hub.docker.com/r/vosslab/appion_centos7/).
+
+&nbsp;&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA)
 </p></details>
 
 
