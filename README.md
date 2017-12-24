@@ -650,7 +650,7 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>Defocus refinement</summary><p>
 
-Defocus estimation in Appion-Protomo is performed using TomoCTF, which measures the defocus of the untilted plane by tiling all tilt images together while taking into account the relative heights of each tile in order to use all of the signal in the tilt-series. This method of defocus estimation assumes that the 
+Defocus estimation in Appion-Protomo is performed using TomoCTF, which measures the defocus of the untilted plane by tiling all tilt images together while taking into account the relative heights of each tile in order to use all of the signal in the tilt-series. This method of defocus estimation assumes that each tilt image's center was recorded with the sample at the same z-height in the microscope. This requires perfect tracking during collection, which is rarely achieved. As a result, Thon rings often become incoherent before they fade away towards Nyquist.
 
 After tiling, TomoCTF searches monotonically from just below the lower defocus range requested to the top of the range. Often, the search finds the defocus that is one zero off from the correct defocus and so needs to be refined using a proper search range.
 
