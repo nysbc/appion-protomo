@@ -799,10 +799,6 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
 
 </p></details>
 
-</p></details>
-
-<br />
-
 <details><summary>CTF correction</summary><p>
 
 Currently Appion-Protomo in Docker does not include tilt-series CTF correction. We have not yet robustly tested TomoCTF correction in Appion-Protomo to ensure that tilt-series are being CTF corrected properly.
@@ -820,6 +816,10 @@ The following list orders CTF estimation and correction methods by their approxi
 - Per-tomogram estimation based on sufficient sub-tomogram processing where the zeros are found in the resulting sub-tomogram alignment's FSC curve.
 
 - Per-tilt image estimation and correction.
+
+</p></details>
+
+<br />
 
 </p></details>
 
