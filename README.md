@@ -755,7 +755,7 @@ To simplify this process further, the main Protomo Alignment Summary webpage loc
 
 **_<details><summary>Click for image</summary><p>_**
 
-...
+![](https://i.imgur.com/7t89LBZ.png)
 
 </p></details>
 <br />
