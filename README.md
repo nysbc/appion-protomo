@@ -805,7 +805,7 @@ Currently Appion-Protomo in Docker does not include tilt-series CTF correction. 
 
 CTF correction can be accomplished through a number of different methods that are not discussed in depth here.
 
-The following list orders CTF estimation and correction methods by their approximate accuracy (from most accurate to least) based on a typically-collected tilt-series of a reasonably thick specimen (~100+ nm):
+The following list orders CTF estimation and correction methods by their approximate accuracy (from most accurate to least) based on a typically-collected tilt-series of a reasonably thick specimen (~100+ nm) with uniformly-distributed particles in the z-direction:
 
 - Per-particle tilt image fine estimation and correction that takes into account overlapping objects in each tilt image of each particle and accounts for the 3D location of each particle.
 
