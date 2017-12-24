@@ -650,7 +650,19 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>Defocus refinement</summary><p>
 
-...
+**_<details><summary>Click for images</summary><p>_**
+
+![](https://i.imgur.com/BFBjnuF.png)
+
+![](https://i.imgur.com/SyLn16x.png)
+
+![](https://i.imgur.com/IDBffjq.png)
+
+![](https://i.imgur.com/mnKH45a.png)
+
+![](https://i.imgur.com/MqsLC4s.png)
+
+</p></details>
 
 </p></details>
 
