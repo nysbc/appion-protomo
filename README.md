@@ -803,6 +803,26 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
 
 <br />
 
+<details><summary>CTF correction</summary><p>
+
+Currently Appion-Protomo in Docker does not include tilt-series CTF correction. We have not yet robustly tested TomoCTF correction in Appion-Protomo to ensure that tilt-series are being CTF corrected properly.
+
+CTF correction can be accomplished through a number of different methods that are not discussed in depth here.
+
+The following list orders CTF estimation and correction methods by their approximate accuracy (from most accurate to least) based on a typically-collected tilt-series of a reasonably thick specimen (~100+ nm):
+
+- Per-particle tilt image fine estimation and correction that takes into account overlapping objects in each tilt image of each particle and accounts for the 3D location of each particle.
+
+- Collecting high-dose focus images on either side of the target along the tilt axis for every tilt image and using the average of those defocus estimations along with the known 3D locations of particles to correct (given that the focus images are at a known height relative to the field of view of interest).
+
+- Per-tilt-series estimation and correction based on the accumulated SNR of the entire tilt-series, often found by tiling each tilt image together.
+
+- Per-tomogram estimation based on sufficient sub-tomogram processing where the zeros are found in the resulting sub-tomogram alignment's FSC curve.
+
+- Per-tilt image estimation and correction.
+
+</p></details>
+
 # References
 
 Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
