@@ -200,7 +200,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - To VNC into the container, download and install a VNC viewer like TigerVNC vncviewer:
 
-<a href="https://github.com/TigerVNC/tigervnc/releases" target="_blank">https://github.com/TigerVNC/tigervnc/releases</a>
+<a href="https://github.com/TigerVNC/tigervnc/releases" target="_blank">test</a>
 
 Use the IP and port found in the running Kitematic container's `Settings >> Hostname/Ports` next to `Docker port 5901` as the VNC address with password `appion-protomo`.
 
