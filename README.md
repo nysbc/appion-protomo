@@ -820,6 +820,20 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
 
 </p></details>
 
+# ChangeLog
+
+<details><summary>Docker Appion-Protomo</summary><p>
+
+- `12-05-2017` Initial commit.
+
+</p></details>
+
+<details><summary>Appion-Protomo</summary><p>
+  
+- `12-05-2017` Initial commit.
+
+</p></details>
+
 # References
 
 Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
@@ -837,7 +851,7 @@ Appion may be found [here](http://appion.org).
 # Authors
 
 <details><summary>Carl J Negro</summary><p>
-  
+
 - Docker Appion-Protomo.
 
 &nbsp;&nbsp;&nbsp;[Github](https://github.com/carl9384)<br />
