@@ -564,6 +564,13 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 > Note: The alignment thickness cannot be determined prior to tilt-series alignment. If a tilt-series alignment did not align as well as you wish, try re-aligning with additional alignment thickness values.
 
+```
+**Critical Note:** The objects in the search area (technically, search *volume*) in a reconstruction video are the objects that are being used for tilt-series refinement. If the alignment thickness is not chosen appropriately, this can cause the following issues:
+- If the sample consists of single particles in 200 nm thick ice, for instance, where the particles are on both air-water interfaces, then an alignment thickness less than ~200 nm will likely align to only one of the layers of particles whereas an alignment thickness greater than ~200 nm will likely align to both layers of particles. In this scenario, if the particle is ~10 nm in extent, then two completely different alignment thicknesses might be found to be ideal: ~10 nm and ~200 nm. However, if the alignment using the ~10 nm alignment thickness is reconstructed, the layer of particles that was aligned to will be well resolved while the layer of particles that was not aligned to will not be well resolved. If the alignment using the ~200 nm alignment thickness is reconstructed, both layers of particles will be well resolved. Thus the ~200 nm alignment should be used and the ~10 nm alignment should be discarded even though they both report that they are well aligned.
+- If the sample consists of a roughly uniformly dense set of objects, such as a FIB-milled cellular lamella or reconstituted proteins on liposomes, then alignment thicknesses up to and including the thickness of the entire sample slab in the search area might align well, however the alignment closest to the thickness of the sample slab will likely be aligned most accurately.
+- Alignment thicknesses chosen to be significantly larger than the sample thickness will likely align worse than alignment thicknesses that are roughly the same as the sample thickness.
+```
+
 **_<details><summary>Click for images</summary><p>_**
 
 ![](https://i.imgur.com/hyJq6x1.png)
