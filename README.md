@@ -824,7 +824,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-- `12-05-2017` Initial commit.
+- `12-05-2017`
+  - Initial commit.
 
 <!--- - [TBD] IMOD 4.10.10 Added. --->
 
@@ -832,7 +833,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
 
 <details><summary>Appion-Protomo</summary><p>
   
-- `12-05-2017` Initial commit.
+- `12-05-2017`
+  - Initial commit.
 
 <!--- - [TBD] IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.  --->
 
