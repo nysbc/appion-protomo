@@ -838,6 +838,16 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
 
 <!--- - [TBD] IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.  --->
 
+<!--- - [TBD] Image transformations for reconstruction/stack export are now performed with a single 5th order interpolation. Before, three interpolations were performed sequentially (translation, scaling, rotation). --->
+
+<!--- - [TBD] The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement.  --->
+
+<!--- - [TBD] Unaligned tilt-series stacks and SerialEM-formatted mdoc files can easily be exported (useful with Leginon-collected tilt-series where the user wishes to align their tilt-series using their Docker Appion-Protomo).  --->
+
+<!--- - [TBD] The Translational Limit is now implemented properly.  --->
+
+<!--- - [TBD]   --->
+
 </p></details>
 
 # References
