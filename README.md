@@ -702,9 +702,9 @@ Appion-Protomo refinement on a coarsely aligned tilt-series generally proceeds a
 
    - Alignment by correlation allows for sub-pixel accuracy. The alignment algorithm also allows for an estimation of the alignment error in rotation, translation, and/or scaling because it is calculated by matrix diagnolization, which numerically results in non-zero off-diagonal terms left over.
 
-6. These four aligned tilt images are weighted back-projected into a preliminary 3D reconstruction, and 5. proceeds with the next highest tilt image on the opposite side of the last-aligned tilt image (ie. alternating alignment).
+6. These four aligned tilt images are weighted back-projected into a preliminary 3D reconstruction, and step 5. proceeds with the next highest tilt image on the opposite side of the last-aligned tilt image (ie. alternating alignment between positive and negative tilt angles).
 
-This process (4. and 5.) continues until all tilt images have been aligned.
+This process (steps 4. through 6.) continues until all tilt images have been aligned.
 
 7. After all tilt images are aligned, Protomo re-estimates the entire tilt model geometry (tilt azimuth, tilt elevation, and/or sample orientation in the ice).
 
