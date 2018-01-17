@@ -698,9 +698,9 @@ Appion-Protomo refinement on a coarsely aligned tilt-series generally proceeds a
 
 4. These three aligned tilt images are weighted back-projected into a preliminary 3D reconstruction.
 
-5. The preliminary 3D reconstruction is then re-projected in the direction of the next highest tilt angle and the corresponding tilt image is then aligned (rotation, translation, and/or isotropic stretching) to this reprojection inside of a given search area.
+5. The preliminary 3D reconstruction is then re-projected in the direction of the next highest tilt angle and the corresponding tilt image is then aligned (rotation, translation, and/or isotropic scaling) to this reprojection inside of a given search area.
 
-   - Alignment by correlation allows for sub-pixel accuracy. The alignment algorithm also allows for an estimation of the alignment error in rotation, translation, and/or stretching because it is calculated by matrix diagnolization, which numerically results in non-zero off-diagonal terms left over.
+   - Alignment by correlation allows for sub-pixel accuracy. The alignment algorithm also allows for an estimation of the alignment error in rotation, translation, and/or scaling because it is calculated by matrix diagnolization, which numerically results in non-zero off-diagonal terms left over.
 
 6. These four aligned tilt images are weighted back-projected into a preliminary 3D reconstruction, and 5. proceeds with the next highest tilt image on the opposite side of the last-aligned tilt image (ie. alternating alignment).
 
@@ -722,9 +722,9 @@ Tilt-series alignment quality is then assessed automatically by plotting the ite
 
 <details><summary>Protomo refinement metrics</summary><p>
 
-As described in the Protomo refinement basics section above, Protomo estimates the accuracy with which it could align each tilt image rotationally, translationally, and/or with stretching. These errors, called correction factors, are expressed as a percentage of image length for translation and stretching, and in degrees for rotation. Correction factors are a measure of uncorrectable tilt image alignment error given the geometry model and the amount of uncorrectable drift, beam-induced motion, doming, and charging of the specimen during collection.
+As described in the Protomo refinement basics section above, Protomo estimates the accuracy with which it could align each tilt image rotationally, translationally, and/or with scaling. These errors, called correction factors, are expressed as a percentage of image length for translation and scaling, and in degrees for rotation. Correction factors are a measure of uncorrectable tilt image alignment error given the geometry model and the amount of uncorrectable drift, beam-induced motion, doming, and charging of the specimen during collection.
 
-When you click on a refinement iteration summary, you will see four correction factor plots that show the estimated alignment error for each tilt image in the x-direction, y-direction, rotationally, and/or in stretching. The goal is to select the iteration (given sufficiently accurate alignment parameters - binning, lowpass, alignment thickness, etc.) with the least amount of errors. A good rule of thumb is that all tilt images should have correction factors below 1% (and 1° for rotation) before considering reconstruction and post-processing.
+When you click on a refinement iteration summary, you will see four correction factor plots that show the estimated alignment error for each tilt image in the x-direction, y-direction, rotationally, and/or in scaling. The goal is to select the iteration (given sufficiently accurate alignment parameters - binning, lowpass, alignment thickness, etc.) with the least amount of errors. A good rule of thumb is that all tilt images should have correction factors below 1% (and 1° for rotation) before considering reconstruction and post-processing.
 
 Each correction factor plot, except for rotation, additionally has plotted the mean correction factor (solid line) plus/minus one standard deviation (dotted lines). Green lines are good, red lines are bad.
 
@@ -738,7 +738,7 @@ Each correction factor plot, except for rotation, additionally has plotted the m
 To simplify the assessment of these correction factors, a combined metric (CCMS plot) is plotted on the main refinement summary webpages:
 
 - The dotted orange line records the average + 1 standard deviation of the x correction factor and y correction factor, summed.
-- The x'd orange line records the average + 1 standard deviation of the stretching correction factor.
+- The x'd orange line records the average + 1 standard deviation of the scaling correction factor.
 - The blue line records the average + 1 standard deviation of the rotation correction factor.
 - The black line is a scaled sum of the above three lines
 
