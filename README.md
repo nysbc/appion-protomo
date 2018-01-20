@@ -819,7 +819,7 @@ The following list orders CTF estimation and correction methods by their approxi
 
 Appion's, and thus Appion-Protomo's, front-end is built on PHP and thus inherits PHP's complications. The main issue that you as a user may find annoying is that sometimes it seems that Appion-Protomo webpages forget the tilt-series you were working on or complain that you haven't entered in something basic like pixelsize. This is often because PHP SESSION variables have been been cleared from your browser's cache. To refresh Appion-Protomo you must reload these SESSION variables. You can do this by:
 
-- Navigate to Align Tilt-Series
+- Navigate to `Align Tilt-Series`.
 
 - On the next page click `Protomo 2.4.1`.
 
@@ -827,7 +827,7 @@ Appion's, and thus Appion-Protomo's, front-end is built on PHP and thus inherits
 
 At this point all SESSION variables required for using Batch Align Tilt-Series, for instance, should be loaded.
 
-Note that clicking on Align Tilt-Series forcefully clears all PHP variables.
+Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Selecting a tilt-series in Protomo Coarse Alignment populates basic PHP variables.
 
 </p></details>
 
