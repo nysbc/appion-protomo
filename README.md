@@ -619,6 +619,10 @@ Select `Just Show Command` at the bottom of the page.
 
 - For visualization and particle picking, it is recommended that you dose compensate your tilt images before reconstruction if they have not yet been dose compensated and that you reconstruct using Tomo3D SIRT.
 
+- For sub-volume alignment, it is recommended that WBP be used (either Protomo WBP or Tomo3D WBP).
+
+- You may also export an aligned tilt-series stack. If you wish to export a non-dose compensated stack, choose `Dose Compensate > Reconstruct` under `Reconstruction Actions`, then change `Dose Compensation Type` accordingly. If you choose a `Dose Compensation Type` other than `None`, then the stack will not be dose compensated, instead a dose compensation script will be outputted so that you may process the aligned tilt-series stack further and dose compensate at a later time. This can be useful for CTF estimation and correction outside of Appion-Protomo.
+
 Select the correct alignment iteration from which to reconstruct.
 
 Input an appropriate reconstruction thickness.
@@ -630,6 +634,10 @@ Select `Just Show Command` at the bottom of the page.
 
 
 - On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
+
+> **Note:** Protomo reconstruction will orient the tomogram in accordance with the refined tilt geometry while Tomo3D reconstruction will not. Thus if you pick particles in a Tomo3D SIRT reconstruction and wish to perform subvolume processing with WBP, you should choose reconstruct with Tomo3D WBP.
+
+> **Note:** If Tomo3D WBP is being used for sub-volume processing, consider using the additional Tomo3D option `-m 0.5`. This will remove the default application of a Hamming filter intended for cutting off high frequency noise. Hamming filters applied during reconstruction might cause anomalous high frequency correlation during subvolume alignment.
 
 </p></details>
 
