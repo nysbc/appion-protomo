@@ -793,7 +793,7 @@ As a secondary metric, the stability of the geometry model should be checked.
 
 </p></details>
 
-<details><summary>CTF correction</summary><p>
+<details><summary>CTF estimation and correction</summary><p>
 
 Currently Appion-Protomo in Docker does not include tilt-series CTF correction. We have not yet robustly tested TomoCTF correction in Appion-Protomo to ensure that tilt-series are being CTF corrected properly.
 
