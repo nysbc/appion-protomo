@@ -817,7 +817,7 @@ The following list orders CTF estimation and correction methods by their approxi
 
 <details><summary>Reasons for not using fiducials</summary><p>
 
-...
+[Fiducials may move differently than the sample, additional sample optimization (sparcity, aggregation), reduced targeting options (loss of collection efficiency), reduced tilt-series alignment efficiency (need sufficient well-behaved fiducials in the tilt-series), fiducials change the contrast and power spectrum of objects nearby in 3D, fiducials distant from the sample in 3D may still be in individual tilt images used for reconstructing the sample]
 
 </p></details>
 
