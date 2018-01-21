@@ -870,6 +870,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   
 - `12-05-2017`
   - Initial commit.
+  - Backup of `/emg/sw/myami/`: https://drive.google.com/open?id=1zOKzIVpatgY1FNsCYjvhBDyZiwEEXnBS
 
 <!--- - [TBD] IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.  --->
 
