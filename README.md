@@ -827,8 +827,6 @@ The following list orders CTF estimation and correction methods by their approxi
 
 </p></details>
 
-</p></details>
-
 <details><summary>Resolution Limits in CryoET</summary><p>
 
 [Drift, doming, CTF estimation and correction, dose fractionation with respect to sample geometry]
@@ -850,6 +848,8 @@ Appion's, and thus Appion-Protomo's, front-end is built on PHP and thus inherits
 At this point all SESSION variables required for using Batch Align Tilt-Series, for instance, should be loaded.
 
 Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Selecting a tilt-series in Protomo Coarse Alignment populates basic PHP variables.
+
+</p></details>
 
 </p></details>
 
