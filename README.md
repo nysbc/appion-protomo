@@ -833,8 +833,6 @@ The following list orders CTF estimation and correction methods by their approxi
 
 </p></details>
 
-</p></details>
-
 <details><summary>PHP issues</summary><p>
 
 Appion's, and thus Appion-Protomo's, front-end is built on PHP and thus inherits PHP's complications. The main issue that you as a user may find annoying is that sometimes it seems that Appion-Protomo webpages forget the tilt-series you were working on or complain that you haven't entered in something basic like pixelsize. This is often because PHP SESSION variables have been been cleared from your browser's cache. To refresh Appion-Protomo you must reload these SESSION variables. You can do this by:
