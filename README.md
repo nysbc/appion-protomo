@@ -787,6 +787,12 @@ As a secondary metric, the stability of the geometry model should be checked.
 
 </p></details>
 
+<details><summary>Protomo Limitations</summary><p>
+
+[Global alignment using a section of all tilt images]
+
+</p></details>
+
 <details><summary>Common collection issues</summary><p>
 
 [Discuss grid hole edge in images, drift, beam-induced motion, doming, charging, tracking, dose (SNR), ...]
@@ -818,6 +824,16 @@ The following list orders CTF estimation and correction methods by their approxi
 <details><summary>Reasons for not using fiducials</summary><p>
 
 [Fiducials may move differently than the sample, additional sample optimization (sparcity, aggregation), reduced targeting options (loss of collection efficiency), reduced tilt-series alignment efficiency (need sufficient well-behaved fiducials in the tilt-series), fiducials change the contrast and power spectrum of objects nearby in 3D, fiducials distant from the sample in 3D may still be in individual tilt images used for reconstructing the sample]
+
+</p></details>
+
+</p></details>
+
+<details><summary>Resolution Limits in CryoET</summary><p>
+
+[Drift, doming, CTF estimation and correction, dose fractionation with respect to sample geometry]
+
+</p></details>
 
 </p></details>
 
