@@ -866,6 +866,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] Tomo3D Added. --->
 
+<!--- - [TBD] TomoCTF Added. --->
+
+<!--- - [TBD] Root password has been changed to appion-protomo`. --->
+
+<!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to user (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail. --->
+
 </p></details>
 
 <details><summary>Appion-Protomo</summary><p>
