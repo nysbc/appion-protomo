@@ -233,7 +233,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <details><summary>Expected results after following this example tutorial</summary><p>
 
-- **Tutorial overview:**
+- **Appion-Protomo tilt-series alignment overview:**
 
 1) Upload tilt-series,
 2) Coarse align tilt-series,
