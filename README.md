@@ -850,9 +850,15 @@ Resolution in cryoET is limited critically by pixelsize, SNR from the microscope
 
 > **Note:** CFlat carbon grids in particular can drift up to 100 angstroms during a ~3e-/A^2 exposure at tilts > 45 degrees.
 
+- Several factors can contribute to the anisotropic motion of objects of interest in 3D in the ice during tilt-series collection. Two such factors are ice doming and differences between electron absorption between objects.
+
+Ice doming is the effect where the ice bends in the direction normal to the grid during electron exposure. This is sometimes noticeable in grid holes. If this occurs and if the motion is not uniformly normal to the grid, then the objects of interest will move relative to one another during collection. If the possibility of this movement is not taken into account during tilt-series alignment and/or sub-tilt-series refinement, then this will limit the resolution of the tomogram and subvolumes extracted from it. Protomo uses a central search area to align tilt images and thus if there is any doming in that area, then the alignment accuracy and resolution of objects in that area will be limited. Any objects outside of that search area will also be limited in alignment accuracy and resolution.
+
+Differences in electron absorption between objects might occur because the objects of interest (including potentially fiducials) might be composed of atoms with significantly different electron cross sections. Different objects might absorb different amounts of energy and be deflected in different directions with different momentum transfers. As a result, objects might move with complicated relative motions during the full tilt-series exposure. Like with ice doming, if a sample is behaving in this way, then Protomo and fiducial alignment will be limited due to the global nature of the alignment methods. Refinement of sub-tilt-series may be able to track this movement and thus recover this resolution loss.
+
 > The lower bound of the overall resolution limit of a tilt-series might be expressed conceptually as:
 >
-> max(Nyquist, CTF correction accuracy, maximum uncorrectable drift, anisotropic/3D motion of objects of interest, beam-induced specimen damage, tilt-series alignment accuracy, [remaining factors])
+> max(Nyquist, CTF correction accuracy, maximum uncorrectable drift, anisotropic/3D motion of objects of interest, beam-induced specimen damage with respect to the orientations of the objects of interest, tilt-series alignment accuracy, [remaining factors])
 
 [Drift, doming, CTF estimation and correction, dose fractionation with respect to sample geometry]
 
