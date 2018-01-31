@@ -851,6 +851,7 @@ Resolution in cryoET is limited critically by pixelsize, SNR from the microscope
 > **Note:** CFlat carbon grids in particular can drift up to 100 angstroms during a ~3e-/A^2 exposure at tilts > 45 degrees.
 
 > The lower bound of the overall resolution limit of a tilt-series might be expressed conceptually as:
+>
 > max(Nyquist, CTF correction accuracy, maximum uncorrectable drift, anisotropic/3D motion of objects of interest, beam-induced specimen damage, tilt-series alignment accuracy, [remaining factors])
 
 [Drift, doming, CTF estimation and correction, dose fractionation with respect to sample geometry]
