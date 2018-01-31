@@ -856,11 +856,11 @@ Ice doming is the effect where the ice bends in the direction normal to the grid
 
 Differences in electron absorption between objects might occur because the objects of interest (including potentially fiducials) might be composed of atoms with significantly different electron cross sections. Different objects might absorb different amounts of energy and be deflected in different directions with different momentum transfers. As a result, objects might move with complicated relative motions during the full tilt-series exposure. Like with ice doming, if a sample is behaving in this way, then Protomo and fiducial alignment will be limited due to the global nature of the alignment methods. Refinement of sub-tilt-series may be able to track this movement and thus recover this resolution loss.
 
+- [electron damage]
+
 > The lower bound of the overall resolution limit of a tilt-series might be expressed conceptually as:
 >
 > max(Nyquist, CTF correction accuracy, maximum uncorrectable drift, anisotropic/3D motion of objects of interest, beam-induced specimen damage with respect to the orientations of the objects of interest, tilt-series alignment accuracy, [remaining factors])
-
-[Drift, doming, CTF estimation and correction, dose fractionation with respect to sample geometry]
 
 </p></details>
 
