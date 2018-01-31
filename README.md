@@ -838,6 +838,21 @@ The following list orders CTF estimation and correction methods by their approxi
 
 <details><summary>Resolution limits in cryoET</summary><p>
 
+Resolution in cryoET is limited critically by pixelsize, SNR from the microscope/camera combination, the motion of objects of interest over the course of frame/image collection, the motion of objects of interest in 3D in the ice, and the accumulated dose on the sample. Here we will discuss these resolution limits in some detail.
+
+- The pixelsize of a tilt-series will determine the maximum possible resolution of any objects imaged (Nyquist = 2 x pixelsize = resolution limit). As with single particle cryoEM, this is a fundamental information limit due to the digitization of the electron beam at the image plane.
+
+- The SNR delivered by the microscope/camera combination determines the maximum resolution where the CTF can be estimated (if collection is done with defocus) and the maximum resolution where coherent structures can be aligned and averaged during sub-tomogram alignment and averaging.
+
+> **Note:** If tilt images are collected with a low dose (~< 5e-/A^2 per tilt image), it is common to find that more SNR exists in the power spectrum of the summed frames rather than the sum of the power spectra of all frames. The opposite is often true with higher dose images in single particle cryoEM.
+
+- Tilt image collection of high magnification can cause beam-induced motion, often in the direction of tilt. Additionally, non-gold grids also often drift in the direction of tilt. The combination of uncorrectable directional movement between frames (or over the course of a whole whole image exposure if no frames are collected) will be the drift resolution limit of that tilt image. The drift resolution limit of the tilt-series will vary, depending on the dose weighting applied.
+
+> **Note:** CFlat carbon grids in particular can drift up to 100 angstroms during a ~3e-/A^2 exposure at tilts > 45 degrees.
+
+> The lower bound of the overall resolution limit of a tilt-series might be expressed conceptually as:
+> max(Nyquist, CTF correction accuracy, maximum uncorrectable drift, anisotropic/3D motion of objects of interest, beam-induced specimen damage, tilt-series alignment accuracy, [remaining factors])
+
 [Drift, doming, CTF estimation and correction, dose fractionation with respect to sample geometry]
 
 </p></details>
