@@ -18,6 +18,8 @@ Download and install Docker 1.21 or greater for [Linux](https://docs.docker.com/
 
 Launch docker according to your Docker engine's instructions, typically ``docker start``.  
 
+> **Note:** You must have sudo or root access to install Docker. If you do not wish to run Docker as sudo/root, you need to configure user groups as described here: https://docs.docker.com/install/linux/linux-postinstall/
+
 ## Windows/MacOS &nbsp;&nbsp; *(GUI & command line)*
 
 Download and install Docker Toolbox for [Windows](https://docs.docker.com/toolbox/toolbox_install_windows/) or [MacOS](https://docs.docker.com/toolbox/toolbox_install_mac/). 
