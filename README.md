@@ -948,13 +948,13 @@ Appion may be found [here](http://appion.org).
 
 <details><summary>Carl J Negro</summary><p>
 
-- Docker Appion-Protomo.
+- Docker Appion-Protomo
 
 &nbsp;&nbsp;&nbsp;[Github](https://github.com/carl9384)<br />
 </p></details>
 <details><summary>Alex J Noble</summary><p>
   
-- Appion-Protomo.
+- [Appion-Protomo](https://doi.org/10.1016/j.jsb.2015.10.003)
 
 &nbsp;&nbsp;&nbsp;[Twitter](https://twitter.com/alexjamesnoble)<br />
 &nbsp;&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZectHccFZSFQIgpOzakl7A)
