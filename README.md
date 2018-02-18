@@ -902,9 +902,15 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] TomoCTF Added. --->
 
-<!--- - [TBD] Root password has been changed to appion-protomo`. --->
+<!--- - [TBD] Root password has been changed to `appion-protomo`. --->
 
 <!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to user (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail. --->
+
+<!--- - [TBD]   --->
+
+<!--- - [TBD]   --->
+
+<!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
 
 </p></details>
 
@@ -927,10 +933,6 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 <!--- - [TBD] If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series. https://i.imgur.com/RCLcLv8.png --->
 
 <!--- - [TBD]   --->
-
-<!--- - [TBD]   --->
-
-<!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
 
 </p></details>
 
