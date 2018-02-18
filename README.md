@@ -928,6 +928,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD]   --->
 
+<!--- - [TBD]   --->
+
+<!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
+
 </p></details>
 
 # References
