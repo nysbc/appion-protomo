@@ -948,6 +948,8 @@ Lander, G. C., Stagg, S. M., Voss, N. R., Cheng, A., Fellmann, D., Pulokas, J., 
 
 Appion may be found [here](http://appion.org).
 
+Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/projects/appion/repository?utf8=%E2%9C%93&rev=appion-protomo).
+
 [Protomo](http://www.electrontomography.org/) source code may be found [here](http://emg.nysbc.org/redmine/projects/appion/repository/revisions/a47dfbe7a956f19b72f88de704054e3a50d7a8f4/show/programs/protomo2).
 
 # Authors
