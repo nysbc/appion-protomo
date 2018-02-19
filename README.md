@@ -234,9 +234,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 *Click to expand:*
 
-<details><summary>Expected results after following this example tutorial</summary><p>
-
-- **Appion-Protomo tilt-series alignment overview:**
+<details><summary>Appion-Protomo tilt-series alignment overview</summary><p>
 
 1) Upload tilt-series,
 2) Coarse align tilt-series,
@@ -244,6 +242,10 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 3) Refine tilt-series,
 <br>3b. Assess refinement,
 4) Reconstruct tilt-series.
+
+</p></details>
+
+<details><summary>Expected results after following this example tutorial</summary><p>
 
 - **Initial tilt-series before any alignment:**
 
@@ -269,7 +271,8 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <br />
 
-<!--- SUMMARY OF EXPECTED RESULTS (SHOW TILT-SERIES AND RECONSTRUCTION BEFORE AND AFTER VIDEOS) --->
+======
+
 <details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
@@ -658,6 +661,8 @@ Select `Just Show Command` at the bottom of the page.
 </p></details>
 
 <br />
+
+======
 
 <details><summary>Additional features</summary><p>
 
