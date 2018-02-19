@@ -480,6 +480,8 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
   
   - If there are any tilt images that contain objects that significantly occlude objects of interest, take note of their tilt angles.
 
+> **Note:** The objects in the tilt-series that move the least image-to-image will have a higher chance of being closest to the center of the tomogram after refinement. See the **_Critical Note_** in the upcoming 'Refine tilt-series' section.
+
 **_<details><summary>Click for images</summary><p>_**
 
 ![](https://i.imgur.com/tGbx3dr.png)
@@ -543,6 +545,8 @@ Copy the command at the bottom of the Protomo Coarse Alignment webpage beginning
 Paste the command into a terminal in the container.
 
 Follow the **bolded instructions** that first appear after running the manual alignment command.
+
+> **Note:** The objects in the tilt-series that move the least image-to-image will have a higher chance of being closest to the center of the tomogram after refinement. See the **_Critical Note_** in the upcoming 'Refine tilt-series' section.
 
 </p></details>
 
