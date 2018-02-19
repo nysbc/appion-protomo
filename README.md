@@ -980,7 +980,7 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 
 # License
 
-Appion and thus Appion-Protomo are open source software packages released under the Apache License, Version 2.0.
+Appion and thus Appion-Protomo are open source software packages released under the [Apache License, Version 2.0](https://github.com/nysbc/appion-protomo/blob/master/LICENSE).
 
 
 # Compatibility
