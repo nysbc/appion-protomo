@@ -271,7 +271,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <br />
 
-======
+------
 
 <details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
@@ -662,7 +662,7 @@ Select `Just Show Command` at the bottom of the page.
 
 <br />
 
-======
+------
 
 <details><summary>Additional features</summary><p>
 
