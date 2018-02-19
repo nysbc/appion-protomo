@@ -195,8 +195,6 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 ![](https://i.imgur.com/T9RMvBX.png)
 
-------
-
 </p></details>
 
 <br />
@@ -270,8 +268,6 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 </p></details>
 
 <br />
-
-------
 
 <details><summary>Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
