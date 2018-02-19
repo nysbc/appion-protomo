@@ -658,8 +658,6 @@ Select `Just Show Command` at the bottom of the page.
 
 <br />
 
-------
-
 <details><summary>Additional features</summary><p>
 
 <details><summary>Batch alignment</summary><p>
