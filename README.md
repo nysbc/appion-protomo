@@ -933,6 +933,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] The Translational Limit in Refinement is now implemented properly.  --->
 
+<!--- - [TBD] Batch coarse alignment now tries to find an existing coarse_series####.param file.  --->
+
 <!--- - [TBD] If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series. https://i.imgur.com/RCLcLv8.png --->
 
 <!--- - [TBD]   --->
