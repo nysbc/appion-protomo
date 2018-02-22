@@ -177,7 +177,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 </p></details>
 
-## Windows/MacOS &nbsp;&nbsp; *(GUI & command line)*
+## Windows &nbsp;&nbsp; *(GUI & command line)*
 
 *<details><summary>Click to expand</summary><p>*
 
