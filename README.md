@@ -664,7 +664,7 @@ Select `Just Show Command` at the bottom of the page.
 
 <details><summary>Batch alignment</summary><p>
 
-Since it is very difficult to determine the sample thickness *a priori*, **batch refinement** is **rarely recommended**, and is thus left to the user to test on their own.
+Since it is often difficult to determine the sample thickness *a priori*, **batch refinement** is **rarely recommended**, and is thus left to the user to test on their own.
 
 However, **batch coarse alignment** is **very useful** for being able to quickly visualize and assess large datasets.
 
