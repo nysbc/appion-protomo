@@ -215,7 +215,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 ![](https://i.imgur.com/zFiviSL.png)
 
-- The VNC viewer to should open:
+- The VNC viewer should open:
 
 ![](https://i.imgur.com/8BrWwzV.png)
 
