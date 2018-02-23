@@ -4,9 +4,9 @@
 # http://localhost:8080/ami/project/getproject.php?projectId=2
 
 #run within docker
-# /emg/sw/myami/appion/docker/centos7/ctf_suite.sh
+# /sw/myami/appion/docker/centos7/ctf_suite.sh
 
-cd /emg/sw/myami/appion/docker/centos7/
+cd /sw/myami/appion/docker/centos7/
 
 mkdir CTF/
 cd CTF/
@@ -191,7 +191,7 @@ ctfestimate.py --runname=ctffindrun2 \
 	--expid=5 --jobtype=ctfestimate 
 echo "--------------------------------------------"
 
-echo /emg/sw/myami/appion/docker/centos7/ctf_suite.sh
+echo /sw/myami/appion/docker/centos7/ctf_suite.sh
 
 echo "done"
 

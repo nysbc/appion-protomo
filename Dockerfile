@@ -36,8 +36,8 @@ RUN python -c 'from sklearn import svm' # test for function
 RUN updatedb
 
 RUN mkdir -p /emg/data  && echo 'mkdir /emg/data'
-RUN mkdir -p /emg/sw && echo 'mkdir /emg/sw'
-RUN mkdir -p /emg/sw/sql && echo 'mkdir /emg/sw/sql'
+RUN mkdir -p /sw && echo 'mkdir /sw'
+RUN mkdir -p /sw/sql && echo 'mkdir /sw/sql'
 RUN mkdir -p /emg/data/appion && echo 'mkdir /emg/data/appion'
 RUN chmod 777 -R /emg  && echo 'chmod 777'
 
@@ -55,9 +55,9 @@ RUN sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/m
 #EXPOSE 3306
 
 ### Myami setup
-#RUN git clone -b myami-beta http://emg.nysbc.org/git/myami.git /emg/sw/myami/
-COPY myami-trunk /emg/sw/myami
-RUN ln -sv /emg/sw/myami/myamiweb /var/www/html/myamiweb
+#RUN git clone -b myami-beta http://emg.nysbc.org/git/myami.git /sw/myami/
+COPY myami-trunk /sw/myami
+RUN ln -sv /sw/myami/myamiweb /var/www/html/myamiweb
 
 COPY config/sinedon.cfg /etc/myami/sinedon.cfg
 COPY config/leginon.cfg /etc/myami/leginon.cfg
@@ -65,71 +65,71 @@ COPY config/instruments.cfg /etc/myami/instruments.cfg
 COPY config/appion.cfg /etc/myami/appion.cfg
 COPY config/redux.cfg /etc/myami/redux.cfg
 
-RUN mkdir -p /emg/sw/sql
-#COPY sql/docker.sql /emg/sw/sql/docker.sql
-#COPY sql/leginondb.sql /emg/sw/sql/leginondb.sql
-#COPY sql/projectdb.sql /emg/sw/sql/projectdb.sql
-COPY sql/ /emg/sw/sql/
-#COPY particledata.dat /emg/sw/particledata.dat
+RUN mkdir -p /sw/sql
+#COPY sql/docker.sql /sw/sql/docker.sql
+#COPY sql/leginondb.sql /sw/sql/leginondb.sql
+#COPY sql/projectdb.sql /sw/sql/projectdb.sql
+COPY sql/ /sw/sql/
+#COPY particledata.dat /sw/particledata.dat
 RUN mkdir -p /var/cache/myami/redux/ && chmod 777 /var/cache/myami/redux/
-RUN ln -sv /emg/sw/myami/appion/appionlib /usr/lib64/python2.7/site-packages/
-RUN ln -sv /emg/sw/myami/redux/bin/reduxd /usr/bin/ && chmod 755 /usr/bin/reduxd
+RUN ln -sv /sw/myami/appion/appionlib /usr/lib64/python2.7/site-packages/
+RUN ln -sv /sw/myami/redux/bin/reduxd /usr/bin/ && chmod 755 /usr/bin/reduxd
 RUN for i in pyami imageviewer leginon pyscope sinedon redux; \
-	do ln -sv /emg/sw/myami/$i /usr/lib64/python2.7/site-packages/; done
+	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
 
 ### Compile radermacher, libcv, numextension, and redux
-WORKDIR /emg/sw/myami/modules/radermacher
+WORKDIR /sw/myami/modules/radermacher
 RUN python ./setup.py install
-WORKDIR /emg/sw/myami/modules/libcv
+WORKDIR /sw/myami/modules/libcv
 RUN python ./setup.py install
-WORKDIR /emg/sw/myami/modules/numextension
+WORKDIR /sw/myami/modules/numextension
 RUN python ./setup.py install
-WORKDIR /emg/sw/myami/redux
+WORKDIR /sw/myami/redux
 RUN python ./setup.py install
 
 RUN mkdir /etc/fftw
-RUN python /emg/sw/myami/pyami/fft/fftwsetup.py 2 4096 4096 && mv -v ~/fftw3-wisdom-* /etc/fftw/wisdom
-RUN cp -v /emg/sw/myami/redux/init.d/reduxd /etc/init.d/reduxd
-COPY findem-docker-centos7/findem64.exe /emg/sw/myami/appion/bin/
-WORKDIR /emg/sw/myami/
+RUN python /sw/myami/pyami/fft/fftwsetup.py 2 4096 4096 && mv -v ~/fftw3-wisdom-* /etc/fftw/wisdom
+RUN cp -v /sw/myami/redux/init.d/reduxd /etc/init.d/reduxd
+COPY findem-docker-centos7/findem64.exe /sw/myami/appion/bin/
+WORKDIR /sw/myami/
 
-#ADD Xmipp-2.4-src.tar.gz /emg/sw
-#RUN mv -v /emg/sw/Xmipp-2.4-src /emg/sw/xmipp
-#WORKDIR /emg/sw/xmipp
+#ADD Xmipp-2.4-src.tar.gz /sw
+#RUN mv -v /sw/Xmipp-2.4-src /sw/xmipp
+#WORKDIR /sw/xmipp
 #ENV MPIPATH /usr/lib64/openmpi
 #ENV PATH /bin:/usr/bin:/sbin:/usr/sbin:/usr/lib64/openmpi/bin
 #RUN ./scons.configure MPI_LIBDIR=/usr/lib64/openmpi/lib  MPI_LIB=mpi  MPI_INCLUDE=/usr/include/openmpi-x86_64
 #RUN ./scons.compile
 #FIXME: mpirun does not run as root
-ADD TGZ/xmipp_centos6_docker.tgz /emg/sw
+ADD TGZ/xmipp_centos6_docker.tgz /sw
 
 ### EMAN 1
-ADD TGZ/eman-linux-x86_64-cluster-1.9.tar.gz /emg/sw
-RUN mv -v /emg/sw/EMAN /emg/sw/eman1
-RUN ln -sv /emg/sw/eman1/lib/libpyEM.so.ucs4.py2.6 /emg/sw/eman1/lib/libpyEM.so #FIX ME
+ADD TGZ/eman-linux-x86_64-cluster-1.9.tar.gz /sw
+RUN mv -v /sw/EMAN /sw/eman1
+RUN ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so #FIX ME
 
 ### EMAN 2
 ### http://emg.nysbc.org/redmine/projects/appion/wiki/Install_EMAN2
-ADD TGZ/eman2_centos6_docker.tgz /emg/sw/
+ADD TGZ/eman2_centos6_docker.tgz /sw/
 
 ### RELION
-ADD TGZ/relion-1.4.tgz /emg/sw/
+ADD TGZ/relion-1.4.tgz /sw/
 
-ADD TGZ/spidersmall.13.00.tgz /emg/sw
-#RUN ln -sv /emg/sw/spider/bin/spider_linux_mp_opt64 /emg/sw/spider/bin/spider
+ADD TGZ/spidersmall.13.00.tgz /sw
+#RUN ln -sv /sw/spider/bin/spider_linux_mp_opt64 /sw/spider/bin/spider
 
-RUN mkdir -p /emg/sw/grigorieff/bin
-ADD TGZ/ctf_140609.tar.gz /emg/sw/grigorieff/
-ADD TGZ/ctffind-4.1.5.tgz /emg/sw/grigorieff/
-RUN mv -v /emg/sw/grigorieff/ctf /emg/sw/grigorieff/ctffind3
-RUN chmod 777 /emg/sw/grigorieff/ctffind3/ctffind3_mp.exe 
-RUN chmod 777 /emg/sw/grigorieff/ctffind4/ctffind-4.1.5
-RUN ln -sv /emg/sw/grigorieff/ctffind4/ctffind-4.1.5 /emg/sw/grigorieff/bin/ctffind4
-RUN ln -sv /emg/sw/grigorieff/ctffind3/ctffind3_mp.exe /emg/sw/grigorieff/bin/ctffind64.exe
+RUN mkdir -p /sw/grigorieff/bin
+ADD TGZ/ctf_140609.tar.gz /sw/grigorieff/
+ADD TGZ/ctffind-4.1.5.tgz /sw/grigorieff/
+RUN mv -v /sw/grigorieff/ctf /sw/grigorieff/ctffind3
+RUN chmod 777 /sw/grigorieff/ctffind3/ctffind3_mp.exe 
+RUN chmod 777 /sw/grigorieff/ctffind4/ctffind-4.1.5
+RUN ln -sv /sw/grigorieff/ctffind4/ctffind-4.1.5 /sw/grigorieff/bin/ctffind4
+RUN ln -sv /sw/grigorieff/ctffind3/ctffind3_mp.exe /sw/grigorieff/bin/ctffind64.exe
 
 ### PROTOMO
-ADD TGZ/protomo2-centos7-docker.tgz /emg/sw/
-ADD TGZ/ffmpeg-git-64bit-static.tar.xz /emg/sw/
+ADD TGZ/protomo2-centos7-docker.tgz /sw/
+ADD TGZ/ffmpeg-git-64bit-static.tar.xz /sw/
 
 ### Trying to do VNC
 #RUN yum -y upgrade && yum -y install  \
@@ -186,10 +186,10 @@ RUN chown -R appionuser:users /emg/data
 COPY config/bashrc /etc/bashrc
 #RUN mkdir -p /home/appionuser/.mozilla/firefox/yvn3wpn8.default
 #COPY profiles.ini  /home/appionuser/.mozilla/firefox/
-COPY config/config.php /emg/sw/myami/myamiweb/config.php
-COPY startup.sh /emg/sw/startup.sh
+COPY config/config.php /sw/myami/myamiweb/config.php
+COPY startup.sh /sw/startup.sh
 
 RUN updatedb
 
-CMD /emg/sw/startup.sh
+CMD /sw/startup.sh
 

@@ -17,7 +17,7 @@ docker run -d -t \
   -v $(pwd)/emg/data:/emg/data \
   -v mariadb-database:/var/lib/mysql \
   -v $(pwd):/local_data \
-  -w /emg/sw/myami/appion \
+  -w /sw/myami/appion \
   -p $WEBPORT:80 -p $VNCPORT:5901 -p $DBPORT:3306 \
   semc/appion-protomo
 

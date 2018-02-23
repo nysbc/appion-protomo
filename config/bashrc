@@ -8,24 +8,24 @@ fi
 
 umask 002
 
-export APPIONPATH=/emg/sw/myami/appion
-export LEGINONPATH=/emg/sw/myami/leginon
-export EMANDIR=/emg/sw/eman1
-export EMAN2DIR=/emg/sw/eman2
-export RELIONDIR=/emg/sw/relion
-export XMIPPDIR=/emg/sw/xmipp
+export APPIONPATH=/sw/myami/appion
+export LEGINONPATH=/sw/myami/leginon
+export EMANDIR=/sw/eman1
+export EMAN2DIR=/sw/eman2
+export RELIONDIR=/sw/relion
+export XMIPPDIR=/sw/xmipp
 export MPIPATH=/usr/lib64/openmpi
-export GRIGPATH=/emg/sw/grigorieff
+export GRIGPATH=/sw/grigorieff
 
 #spider
-export SPIDERDIR=/emg/sw/spider
+export SPIDERDIR=/sw/spider
 export SPBIN_DIR=${SPIDERDIR}/bin/
 export SPPROC_DIR=${SPIDERDIR}/proc/
 export SPMAN_DIR=${SPIDERDIR}/man/
 
 #protomo
-export I3ROOT=/emg/sw/protomo2
-export PROTOMO2PATH=/emg/sw/protomo2:/emg/sw/protomo2/bin:/emg/sw/protomo2/lib/linux/x86-64:/emg/sw/ffmpeg-git-20171128-64bit-static
+export I3ROOT=/sw/protomo2
+export PROTOMO2PATH=/sw/protomo2:/sw/protomo2/bin:/sw/protomo2/lib/linux/x86-64:/sw/ffmpeg-git-20171128-64bit-static
 
 export PATH=/usr/sbin:/usr/bin:/bin:${APPIONPATH}/bin:${LEGINONPATH}:${EMANDIR}/bin:${XMIPPDIR}/bin:${SPIDERDIR}/bin:
 export PATH=${PATH}:${GRIGPATH}/bin:${MPIPATH}/bin:${EMAN2DIR}/bin:${RELIONDIR}/bin
