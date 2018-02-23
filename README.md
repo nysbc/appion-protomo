@@ -913,7 +913,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] Root password has been changed to `appion-protomo`. [Add `RUN echo "root:appion-protomo" | chpasswd` to the Dockerfile] --->
 
-<!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to user (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail. --->
+<!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to user (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail). --->
 
 <!--- - [TBD] /emg/sw/ and /emg/data have been re-located to /sw/ and /data/. This was creating issues because since data/ is shared between the host and Docker container, this was also locking the sw/ directory, preventing the user from removing software if they wish.  --->
 
@@ -947,7 +947,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series. https://i.imgur.com/RCLcLv8.png --->
 
-<!--- - [TBD]   --->
+<!--- - [TBD] Backup of `/sw/myami/`: https://drive.google.com/open?id=1djw1s0GiK64mV-Dz4H2Mv5fKMUP8cRlB  --->
 
 </p></details>
 
