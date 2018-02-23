@@ -929,13 +929,13 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation). --->
 
-<!--- - [TBD] The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.  --->
+<!--- - [TBD] The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement, which increases the reliability of the quality metrics. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.  --->
 
 <!--- - [TBD] Unaligned tilt-series stacks and SerialEM-formatted mdoc files can easily be exported (useful with Leginon-collected tilt-series where the user wishes to align their tilt-series using their Docker Appion-Protomo).  --->
 
-<!--- - [TBD] The Translational Limit in Refinement is now implemented properly.  --->
+<!--- - [TBD] The Translational Limit in Refinement is now implemented properly. Default is 10% of image length. This decreases the likelihood of alignment to false correlation peaks, as long as the tilt-series was properly coarsely aligned before refinement.  --->
 
-<!--- - [TBD] Batch coarse alignment now tries to find an existing coarse_series####.param file.  --->
+<!--- - [TBD] Batch coarse alignment now tries to find an existing coarse_series####.param file in the current run directory.  --->
 
 <!--- - [TBD] If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series. https://i.imgur.com/RCLcLv8.png --->
 
