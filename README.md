@@ -151,6 +151,9 @@ On Windows and MacOS, Kitematic launches Docker automatically.
 
 Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with password `appion-protomo`.
 
+> You might try `docker-machine ip` to find your IP.
+> Here are some more possible IP addresses/names: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1.
+
 - To ssh into the container, do:
 
 ```./exec.sh```
