@@ -90,7 +90,7 @@ RUN python ./setup.py install
 RUN mkdir /etc/fftw
 RUN python /sw/myami/pyami/fft/fftwsetup.py 2 4096 4096 && mv -v ~/fftw3-wisdom-* /etc/fftw/wisdom
 RUN cp -v /sw/myami/redux/init.d/reduxd /etc/init.d/reduxd
-COPY findem-docker-centos7/findem64.exe /sw/myami/appion/bin/
+#COPY findem-docker-centos7/findem64.exe /sw/myami/appion/bin/
 WORKDIR /sw/myami/
 
 #ADD Xmipp-2.4-src.tar.gz /sw
@@ -101,7 +101,7 @@ WORKDIR /sw/myami/
 #RUN ./scons.configure MPI_LIBDIR=/usr/lib64/openmpi/lib  MPI_LIB=mpi  MPI_INCLUDE=/usr/include/openmpi-x86_64
 #RUN ./scons.compile
 #FIXME: mpirun does not run as root
-ADD TGZ/xmipp_centos6_docker.tgz /sw
+#ADD TGZ/xmipp_centos6_docker.tgz /sw
 
 ### EMAN 1
 ADD TGZ/eman-linux-x86_64-cluster-1.9.tar.gz /sw
@@ -113,19 +113,19 @@ RUN ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so #FIX ME
 ADD TGZ/eman2_centos6_docker.tgz /sw/
 
 ### RELION
-ADD TGZ/relion-1.4.tgz /sw/
+#ADD TGZ/relion-1.4.tgz /sw/
 
-ADD TGZ/spidersmall.13.00.tgz /sw
+#ADD TGZ/spidersmall.13.00.tgz /sw
 #RUN ln -sv /sw/spider/bin/spider_linux_mp_opt64 /sw/spider/bin/spider
 
-RUN mkdir -p /sw/grigorieff/bin
-ADD TGZ/ctf_140609.tar.gz /sw/grigorieff/
-ADD TGZ/ctffind-4.1.5.tgz /sw/grigorieff/
-RUN mv -v /sw/grigorieff/ctf /sw/grigorieff/ctffind3
-RUN chmod 777 /sw/grigorieff/ctffind3/ctffind3_mp.exe 
-RUN chmod 777 /sw/grigorieff/ctffind4/ctffind-4.1.5
-RUN ln -sv /sw/grigorieff/ctffind4/ctffind-4.1.5 /sw/grigorieff/bin/ctffind4
-RUN ln -sv /sw/grigorieff/ctffind3/ctffind3_mp.exe /sw/grigorieff/bin/ctffind64.exe
+#RUN mkdir -p /sw/grigorieff/bin
+#ADD TGZ/ctf_140609.tar.gz /sw/grigorieff/
+#ADD TGZ/ctffind-4.1.5.tgz /sw/grigorieff/
+#RUN mv -v /sw/grigorieff/ctf /sw/grigorieff/ctffind3
+#RUN chmod 777 /sw/grigorieff/ctffind3/ctffind3_mp.exe 
+#RUN chmod 777 /sw/grigorieff/ctffind4/ctffind-4.1.5
+#RUN ln -sv /sw/grigorieff/ctffind4/ctffind-4.1.5 /sw/grigorieff/bin/ctffind4
+#RUN ln -sv /sw/grigorieff/ctffind3/ctffind3_mp.exe /sw/grigorieff/bin/ctffind64.exe
 
 ### PROTOMO
 ADD TGZ/protomo2-centos7-docker.tgz /sw/
@@ -154,6 +154,7 @@ RUN mkdir -p .vnc
 RUN touch .Xauthority
 RUN chmod 777 .vnc
 RUN echo appion-protomo | vncpasswd -f > .vnc/passwd
+RUN echo "root:appion-protomo" | chpasswd
 RUN chmod 600 .vnc/passwd
 RUN ls .vnc/
 COPY config/xstartup .vnc/xstartup
