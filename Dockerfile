@@ -137,6 +137,10 @@ ADD TGZ/tomo3d_January2015.tar.gz /sw/tomo3d/
 ### TomoCTF
 ADD TGZ/tomoctf_x86_64_July2013.tar.gz /sw/tomoctf/
 
+### IMOD
+ADD TGZ/imod_4.10.11_docker.tar.gz /sw/
+RUN ln -s /sw/imod_4.10.11/ /sw/IMOD/
+
 ### Trying to do VNC
 #RUN yum -y upgrade && yum -y install  \
 # ftp://ftp.pbone.net/mirror/ftp.scientificlinux.org/linux/scientific/6.5/x86_64/os/Packages/xorg-x11-twm-1.0.3-5.1.el6.x86_64.rpm \
