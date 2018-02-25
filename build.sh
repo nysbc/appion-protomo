@@ -31,4 +31,5 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9189/imod_4.10.11
 cd $curdir
 #tar zxvf TGZ/findem-docker-centos7.tgz
 tar zxvf TGZ/myami-trunk-2-22-18.tar.gz myami-trunk
+chmod -R 777 /emg/
 docker build -t semc/appion-protomo .
