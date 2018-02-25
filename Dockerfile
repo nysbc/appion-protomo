@@ -136,6 +136,7 @@ ADD TGZ/tomo3d_January2015.tar.gz /sw/tomo3d/
 
 ### TomoCTF
 ADD TGZ/tomoctf_x86_64_July2013.tar.gz /sw/tomoctf/
+RUN chmod +x /sw/tomoctf/bin/*
 
 ### IMOD
 ADD TGZ/imod_4.10.11_docker.tar.gz /sw/
