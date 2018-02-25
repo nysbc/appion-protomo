@@ -34,6 +34,8 @@ export PYTHONPATH=${EMANDIR}/lib:${EMAN2DIR}/lib:${EMAN2DIR}/bin:${PROTOMO2PATH}
 export LD_LIBRARY_PATH=${EMANDIR}/lib:${XMIPPDIR}/lib:${MPIPATH}/lib:${EMAN2DIR}/lib
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${RELIONDIR}/lib:${PROTOMO2PATH}/lib/linux/x86-64
 
+export PATH=${PATH}:/sw/tomo3d/bin:/sw/tomoctf/bin
+
 export EDITOR=nano
 export TERM=xterm
 export HISTSIZE=10000
@@ -42,3 +44,4 @@ export HISTFILESIZE=200000
 alias dsort="du -sk * | sort -n | tail -50"
 alias ddir="du -sk */ | sort -n | tail -n 50"
 alias ls="ls --color=auto"
+alias ll="ls -la"
