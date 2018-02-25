@@ -139,7 +139,7 @@ ADD TGZ/tomoctf_x86_64_July2013.tar.gz /sw/tomoctf/
 
 ### IMOD
 ADD TGZ/imod_4.10.11_docker.tar.gz /sw/
-RUN ln -s /sw/imod_4.10.11/ /sw/IMOD/
+RUN ln -sv /sw/imod_4.10.11 /sw/IMOD
 
 ### Trying to do VNC
 #RUN yum -y upgrade && yum -y install  \
