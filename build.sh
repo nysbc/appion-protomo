@@ -15,6 +15,9 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz'
 wget -nc -c 'https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9186/myami-trunk-2-22-18.tar.gz'
+wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9187/tomo3d_January2015.tar.gz'
+wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9188/tomoctf_x86_64_July2013.tar.gz'
+wget -nc -c 'http://bio3d.colorado.edu/ftp/latestIMOD/RHEL7-64_CUDA8.0/imod_4.10.11_nolibs6_RHEL7-64_CUDA8.0.sh'
 
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/4485/spidersmall.13.00.tgz'
 #wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/4484/ctf_140609.tar.gz'
