@@ -173,7 +173,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - To delete the mariadb-database volume, do:
 
-```./rmVolume.sh``` (Warning: The volume will be recreated the next time you do ./run.sh, but you will have an empty Appion database!)
+```./rmVolume.sh``` (Warning: This will delete the database! The volume will be recreated the next time you do ./run.sh, but you will have an empty Appion database!)
 
 - To re-build the appion-protomo image from scratch, do:
 
@@ -636,7 +636,7 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 From the Protomo Alignment Summary webpage, copy the `runname` of the tilt-series you wish to reconstruct, and take note of the desired reconstruction iteration.
 
-- Click on `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number from the box you wish to reconstruct.
+- Click on `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number you wish to reconstruct from the box.
 
 Paste the `runname` in place of the generated `Run name`.
 
@@ -686,15 +686,15 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>Restarting a refinement</summary><p>
 
-...
+If you would like to refine a tilt-series that has already been refined, navigate to `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number you wish to refine from the box. Change the Run name if you wish. Click on 'Just Show Command'. Click on 'View Coarse Alignment Results'. Click on the link to continue onto Refinement. Choose 'Advanced' Settings Verbosity. Under 'General Parameters', input the run name of the tilt-series and the iteration you wish to restart from. If you manually aligned the previously-refined tilt-series (to fix grossly misaligned images, for instance), then change the Starting Alignment under 'Parameter Presets' to Manual AND under 'General Parameters' in the restart iteration box, type in 'Manual'. If you do not want to re-refine beginning with binned by 8 alignment iterations, then click the '<- Shift Rounds Left' link at the top of 'General Parameters'.
 
 </p></details>
 
 <details><summary>Defocus refinement</summary><p>
 
-Defocus estimation in Appion-Protomo is performed using TomoCTF, which measures the defocus of the untilted plane by tiling all tilt images together while taking into account the relative heights of each tile in order to use all of the signal in the tilt-series. This method of defocus estimation assumes that each tilt image's center was recorded with the sample at the same z-height in the microscope. This requires perfect tracking during collection, which is rarely achieved. As a result, Thon rings often become incoherent before they fade away towards Nyquist.
+Defocus estimation in Appion-Protomo is performed using [TomoCTF](https://sites.google.com/site/3demimageprocessing/tomoctf}, which measures the defocus of the untilted plane by tiling all tilt images together while taking into account the relative heights of each tile in order to use all of the signal in the tilt-series. This method of defocus estimation assumes that each tilt image's center was recorded with the sample at the same z-height in the microscope. This requires perfect tracking during collection, which is rarely achieved. As a result, Thon rings often become incoherent before they fade away towards Nyquist.
 
-After tiling, TomoCTF searches monotonically from just below the lower defocus range requested to the top of the range. Often, the search finds the defocus that is one zero off from the correct defocus and so needs to be refined using a proper search range.
+After tiling, TomoCTF searches monotonically from just below the lower defocus range requested to the top of the range. Often, the search finds the defocus that is one zero off from the correct defocus and so needs to be refined using a proper search range. During refinement, also consider adjusting the maximum reslution used for defocus searching - look at the upper-half of the previous defocus estimations (ie. the SNR of the untilted plane) to determine whether to increase or decrease the maximum reslution used for defocus searching.
 
 - From the Protomo Alignment Summary webpage, click on `Refine defocus`.
 
