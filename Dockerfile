@@ -130,6 +130,7 @@ ADD TGZ/eman2_centos6_docker.tgz /sw/
 ### PROTOMO
 ADD TGZ/protomo2-centos7-docker.tgz /sw/
 ADD TGZ/ffmpeg-git-64bit-static.tar.xz /sw/
+RUN ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static
 
 ### Tomo3D
 ADD TGZ/tomo3d_January2015.tar.gz /sw/tomo3d/
