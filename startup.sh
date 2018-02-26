@@ -1,5 +1,7 @@
 #!/bin/sh
 
+chmod -R 777 /emg/
+
 /etc/init.d/reduxd start && echo 'reduxd' >> /var/log/startup.log
 rm -fr /tmp/.X* && \
   /usr/sbin/runuser -l appionuser -c 'vncserver -autokill :1 -name vnc -geometry 1440x900' \
