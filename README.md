@@ -242,7 +242,8 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <br />
 
-# Example
+# Example #1
+**Start here!**<br>*Single particle tilt-series ([EMPIAR-10129](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10129/))*
 
 *Click to expand:*
 
@@ -291,7 +292,7 @@ Make sure your container is running via the ```./run.sh``` script.
 
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
-Download the following hemagglutinin SerialEM tilt-series (collected on an F20 with a DE-20; from EMPIAR-10129):
+Download the following hemagglutinin SerialEM tilt-series (collected on an F20 with a DE-20; from [EMPIAR-10129](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10129/)):
 
 https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
 
@@ -686,7 +687,9 @@ However, **batch coarse alignment** is **very useful** for being able to quickly
 
 <details><summary>Restarting a refinement</summary><p>
 
-If you would like to refine a tilt-series that has already been refined, navigate to `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number you wish to refine from the box. Change the Run name if you wish. Click on 'Just Show Command'. Click on 'View Coarse Alignment Results'. Click on the link to continue onto Refinement. Choose 'Advanced' Settings Verbosity. Under 'General Parameters', input the run name of the tilt-series and the iteration you wish to restart from. If you manually aligned the previously-refined tilt-series (to fix grossly misaligned images, for instance), then change the Starting Alignment under 'Parameter Presets' to Manual AND under 'General Parameters' in the restart iteration box, type in 'Manual'. If you do not want to re-refine beginning with binned by 8 alignment iterations, then click the '<- Shift Rounds Left' link at the top of 'General Parameters'.
+If you would like to refine a tilt-series that has already been refined, navigate to `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number you wish to refine from the box. Change the Run name if you wish. Click on `Just Show Command`, Click on `View Coarse Alignment Results`. Click on the link to continue onto Refinement.
+
+Choose `Advanced` Settings Verbosity. Under `General Parameters`, input the run name of the tilt-series and the iteration you wish to restart from. If you manually aligned the previously-refined tilt-series (to fix grossly misaligned images, for instance), then change the Starting Alignment under `Parameter Presets` to Manual AND under `General Parameters` in the restart iteration box, type in 'Manual'. If you do not want to re-refine beginning with binned by 8 alignment iterations, then click the `<- Shift Rounds Left` link at the top of `General Parameters`.
 
 </p></details>
 
@@ -905,6 +908,29 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 <br />
 
 </p></details>
+
+# Example #2
+*...*
+
+*Click to expand:*
+
+<details><summary>Expected results after following this example tutorial</summary><p>
+
+- **Initial tilt-series before any alignment:**
+
+...
+
+- **Tilt-series (*left*) and reconstruction (*right*) after coarse alignment:**
+
+...
+
+- **Tilt-series (*left*) and reconstruction (*right*) after Appion-Protomo refinement:**
+
+...
+
+</p></details>
+
+<br />
 
 # ChangeLog
 
