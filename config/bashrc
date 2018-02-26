@@ -25,7 +25,7 @@ export EMAN2DIR=/sw/eman2
 
 #protomo
 export I3ROOT=/sw/protomo2
-export PROTOMO2PATH=/sw/protomo2:/sw/protomo2/bin:/sw/protomo2/lib/linux/x86-64:/sw/ffmpeg-git-20171128-64bit-static
+export PROTOMO2PATH=/sw/protomo2:/sw/protomo2/bin:/sw/protomo2/lib/linux/x86-64:/sw/ffmpeg-64bit-static
 
 export PATH=/usr/sbin:/usr/bin:/bin:${APPIONPATH}/bin:${LEGINONPATH}:${EMANDIR}/bin:${XMIPPDIR}/bin:${SPIDERDIR}/bin:
 export PATH=${PATH}:${GRIGPATH}/bin:${MPIPATH}/bin:${EMAN2DIR}/bin:${RELIONDIR}/bin
