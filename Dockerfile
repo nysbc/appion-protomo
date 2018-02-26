@@ -12,7 +12,7 @@ RUN yum -y upgrade && yum -y install \
  python-tools python-devel python-matplotlib \
  ImageMagick grace gnuplot bash-completion colordiff \
  wxPython numpy scipy python-imaging python2-pip  \
- gcc-gfortran opencv-python tcsh gedit \
+ gcc-gfortran opencv-python  \
  gcc-objc fftw3-devel gsl-devel boost148-python PyQt4 \
  mariadb mariadb-server MySQL-python ftgl \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
@@ -131,6 +131,7 @@ ADD TGZ/eman2_centos6_docker.tgz /sw/
 ADD TGZ/protomo2-centos7-docker.tgz /sw/
 ADD TGZ/ffmpeg-git-64bit-static.tar.xz /sw/
 RUN ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static
+RUN yum -y install tcsh gedit
 
 ### Tomo3D
 ADD TGZ/tomo3d_January2015.tar.gz /sw/tomo3d/
