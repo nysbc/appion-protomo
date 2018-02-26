@@ -134,20 +134,22 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 ## Launch Docker
 Make sure Docker is running:<br />
-On OSX with Docker Toolbox, launch the 'Docker Quickstart Terminal'.<br />
-On CentOS or Ubuntu, type:  `sudo systemctl start docker`.<br />
-On Windows and MacOS, Kitematic launches Docker automatically.
+- On OSX with Docker Toolbox, launch the 'Docker Quickstart Terminal'.<br />
+- On CentOS or Ubuntu, type:  `sudo systemctl start docker`.<br />
+- On Windows and MacOS, Kitematic launches Docker automatically.
 
 ## Linux/MacOS &nbsp;&nbsp; *(command line)*
 *<details><summary>Click to expand</summary><p>*
 
-- To launch the application container, do:
+- If you have not already launched the Appion-Protomo container, do:
 
 ```./run.sh```
 
-- To VNC into the container, download and install a VNC viewer like RealVNC:
+- You should run Appion-Protomo commands from inside a VNC viewer and not as the root user. First, download and install a VNC viewer such as TigerVNC or RealVNC:
 
-```https://www.realvnc.com/en/connect/download/viewer/macos/```
+https://bintray.com/tigervnc/stable/tigervnc/1.8.0
+
+https://www.realvnc.com/en/connect/download/viewer/macos/
 
 Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with password `appion-protomo`.
 
@@ -155,11 +157,13 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 > Here are some more possible IP addresses/names: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1.
 
-- To ssh into the container, do:
+- To ssh into the container as root, do:
 
 ```./exec.sh```
 
-- To kill the container (does not delete the container), do:
+*<details><summary>Click for additional Docker Appion-Protomo container commands</summary><p>*
+  
+- To kill the container (this does not delete the container), do:
 
 ```./kill.sh``` (Warning, this will kill any other Docker containers you have running as well, use with caution!)
 
@@ -178,6 +182,8 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 - To access the Appion webviewer, navigate to 
 
 ```http://192.168.99.100/myamiweb``` (Your IP address will vary depending on your Docker installation.)
+
+</p></details>
 
 </p></details>
 
@@ -205,9 +211,11 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 <br />
 
-- To VNC into the container, download and install a VNC viewer like TigerVNC vncviewer:
+- To VNC into the container, download and install a VNC viewer such as TigerVNC or RealVNC:
 
-<a href="https://github.com/TigerVNC/tigervnc/releases" target="_blank">https://github.com/TigerVNC/tigervnc/releases</a>
+https://bintray.com/tigervnc/stable/tigervnc/1.8.0
+
+https://www.realvnc.com/en/connect/download/viewer/windows/
 
 Use the IP and port found in the running Kitematic container's `Settings >> Hostname/Ports` next to `Docker port 5901` as the VNC address with password `appion-protomo`.
 
@@ -905,19 +913,19 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 - `12-05-2017`
   - Initial commit.
 
-<!--- - [TBD] IMOD 4.10.11 Added. http://bio3d.colorado.edu/ftp/latestIMOD/RHEL7-64_CUDA8.0/ --->
+<!--- - [TBD] IMOD 4.10.11 Added. --->
 
-<!--- - [TBD] Tomo3D Added. http://goo.gl/QSS4nC --->
+<!--- - [TBD] Tomo3D Added. --->
 
-<!--- - [TBD] TomoCTF Added. https://www.dropbox.com/s/wu4zv4nrjef5wba/tomoctf_x86_64_July2013.zip?dl=0 --->
+<!--- - [TBD] TomoCTF Added. --->
 
-<!--- - [TBD] Root password has been changed to `appion-protomo`. [Add `RUN echo "root:appion-protomo" | chpasswd` to the Dockerfile] --->
+<!--- - [TBD] Root password has been changed to `appion-protomo`. --->
 
-<!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to user (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail). --->
+<!--- - [TBD] /emg/sw/ has been re-located to /sw/. This was creating issues because since data/ is shared between the host and Docker container, this was also locking the sw/ directory, preventing the user from removing software if they wish.  --->
 
-<!--- - [TBD] /sw/ and /emg/data have been re-located to /sw/ and /data/. This was creating issues because since data/ is shared between the host and Docker container, this was also locking the sw/ directory, preventing the user from removing software if they wish.  --->
+<!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to appionuser (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail). --->
 
-<!--- - [TBD] Spider, Xmipp, Relion, and FindEM have been removed from the container.  --->
+<!--- - [TBD] Spider, Xmipp, Relion, CTFfind3&4, and FindEM have been removed from the container.  --->
 
 <!--- - [TBD]   --->
 
@@ -931,7 +939,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   
 - `12-05-2017`
   - Initial commit.
-  - Backup of `/sw/myami/`: https://drive.google.com/open?id=1zOKzIVpatgY1FNsCYjvhBDyZiwEEXnBS
+  - Backup of `/emg/sw/myami/`: https://drive.google.com/open?id=1zOKzIVpatgY1FNsCYjvhBDyZiwEEXnBS
 
 <!--- - [TBD] IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.  --->
 
@@ -997,9 +1005,9 @@ Appion and thus Appion-Protomo are open source software packages released under 
 
 # Compatibility
 
-The workflow has been tested in Mac OSX El Capitan 10.11.3, Ubuntu, CentOS 7, and Windows 10.
+The workflow has been tested in Mac OSX El Capitan 10.11.3, Ubuntu 14.04.3 LTS, CentOS 7, and Windows 10.
 
 
-# Bugs
+# Bugs & Suggestions
 
-Please report any bugs problems as a [Github issue](https://github.com/nysbc/appion-protomo/issues).
+Please report any bugs, problems, suggestions, or requests as a [Github issue](https://github.com/nysbc/appion-protomo/issues).
