@@ -1,6 +1,7 @@
 #!/bin/sh
 
 chmod -R 777 /emg/
+chmod 777 /home/appionuser/.Xauthority
 
 /etc/init.d/reduxd start && echo 'reduxd' >> /var/log/startup.log
 rm -fr /tmp/.X* && \
