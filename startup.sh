@@ -1,10 +1,5 @@
 #!/bin/sh
 
-chmod -R 777 /emg/
-chown -R appionuser:users /emg/
-chmod 777 /home/appionuser/.Xauthority
-chown -R appionuser:users /home/appionuser/.Xauthority
-
 /etc/init.d/reduxd start && echo 'reduxd' >> /var/log/startup.log
 rm -fr /tmp/.X* && \
   /usr/sbin/runuser -l appionuser -c 'vncserver -autokill :1 -name vnc -geometry 1440x900' \
@@ -42,6 +37,10 @@ else
         echo 'Leginon and Project databases initialized.' | tee -a /var/log/startup.log
 fi
 
+chmod -R 777 /emg/
+chown -R appionuser:users /emg/
+chmod 777 /home/appionuser/.Xauthority
+chown -R appionuser:users /home/appionuser/.Xauthority
 
 #need a command that does not end to keep container alive
 tail -f /home/appionuser/.vnc/*:1.log
