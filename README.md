@@ -936,7 +936,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-- `2-27-2018`
+- `02-27-2018`
   - IMOD 4.10.11 Added.
   - Tomo3D Added.
   - TomoCTF Added.
@@ -945,8 +945,11 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - /home/appionuser/.Xauthority permissions have been changed from root to appionuser (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail).
   - Spider, Xmipp, Relion, CTFfind3&4, and FindEM have been removed from the container.
 
-- `12-05-2017`
+<details><summary>12-05-2017</summary><p>
+
   - Initial commit.
+
+</p></details>
 
 <!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
 
@@ -956,7 +959,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-- `2-27-2018`
+- `02-27-2018`
   - IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.
   - Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation).
   - The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement, which increases the reliability of the quality metrics. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.
@@ -966,9 +969,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series, like this: https://i.imgur.com/RCLcLv8.png
   - Backup of `/sw/myami/`: https://drive.google.com/open?id=1djw1s0GiK64mV-Dz4H2Mv5fKMUP8cRlB
 
-- `12-05-2017`
+<details><summary>12-05-2017</summary><p>
+
   - Initial commit.
   - Backup of `/emg/sw/myami/`: https://drive.google.com/open?id=1zOKzIVpatgY1FNsCYjvhBDyZiwEEXnBS
+
+</p></details>
 
 <!--- - [TBD]  --->
 
