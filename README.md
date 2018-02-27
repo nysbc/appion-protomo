@@ -910,7 +910,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 </p></details>
 
 # Example #2
-*...*
+*to be added*
 
 *Click to expand:*
 
