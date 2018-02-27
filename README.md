@@ -936,52 +936,41 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
+- `2-27-2018`
+  - IMOD 4.10.11 Added.
+  - Tomo3D Added.
+  - TomoCTF Added.
+  - Root password has been changed to `appion-protomo`.
+  - /emg/sw/ has been re-located to /sw/. This was creating issues because since /emg/data/ is shared between the host and Docker container, this was also locking the sw/ directory, preventing the user from removing software if they wish.
+  - /home/appionuser/.Xauthority permissions have been changed from root to appionuser (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail).
+  - Spider, Xmipp, Relion, CTFfind3&4, and FindEM have been removed from the container.
+
 - `12-05-2017`
   - Initial commit.
 
-<!--- - [TBD] IMOD 4.10.11 Added. --->
-
-<!--- - [TBD] Tomo3D Added. --->
-
-<!--- - [TBD] TomoCTF Added. --->
-
-<!--- - [TBD] Root password has been changed to `appion-protomo`. --->
-
-<!--- - [TBD] /emg/sw/ has been re-located to /sw/. This was creating issues because since data/ is shared between the host and Docker container, this was also locking the sw/ directory, preventing the user from removing software if they wish.  --->
-
-<!--- - [TBD] /home/appionuser/.Xauthority permissions have been changed from root to appionuser (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail). --->
-
-<!--- - [TBD] Spider, Xmipp, Relion, CTFfind3&4, and FindEM have been removed from the container.  --->
-
-<!--- - [TBD]   --->
-
-<!--- - [TBD]   --->
-
 <!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
+
+<!--- - [TBD]   --->
 
 </p></details>
 
 <details><summary>Appion-Protomo</summary><p>
   
+- `2-27-2018`
+  - IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.
+  - Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation).
+  - The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement, which increases the reliability of the quality metrics. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.
+  - Unaligned tilt-series stacks and SerialEM-formatted mdoc files can easily be exported (useful with Leginon-collected tilt-series where the user wishes to align their tilt-series using their Docker Appion-Protomo).
+  - The Translational Limit in Refinement is now implemented properly. Default is 10% of image length. This decreases the likelihood of alignment to false correlation peaks, as long as the tilt-series was properly coarsely aligned before refinement.
+  - Batch coarse alignment now tries to find an existing coarse_series####.param file in the current run directory.
+  - If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series, like this: https://i.imgur.com/RCLcLv8.png
+  - Backup of `/sw/myami/`: https://drive.google.com/open?id=1djw1s0GiK64mV-Dz4H2Mv5fKMUP8cRlB
+
 - `12-05-2017`
   - Initial commit.
   - Backup of `/emg/sw/myami/`: https://drive.google.com/open?id=1zOKzIVpatgY1FNsCYjvhBDyZiwEEXnBS
 
-<!--- - [TBD] IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.  --->
-
-<!--- - [TBD] Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation). --->
-
-<!--- - [TBD] The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement, which increases the reliability of the quality metrics. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.  --->
-
-<!--- - [TBD] Unaligned tilt-series stacks and SerialEM-formatted mdoc files can easily be exported (useful with Leginon-collected tilt-series where the user wishes to align their tilt-series using their Docker Appion-Protomo).  --->
-
-<!--- - [TBD] The Translational Limit in Refinement is now implemented properly. Default is 10% of image length. This decreases the likelihood of alignment to false correlation peaks, as long as the tilt-series was properly coarsely aligned before refinement.  --->
-
-<!--- - [TBD] Batch coarse alignment now tries to find an existing coarse_series####.param file in the current run directory.  --->
-
-<!--- - [TBD] If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series. https://i.imgur.com/RCLcLv8.png --->
-
-<!--- - [TBD] Backup of `/sw/myami/`: https://drive.google.com/open?id=1djw1s0GiK64mV-Dz4H2Mv5fKMUP8cRlB  --->
+<!--- - [TBD]  --->
 
 </p></details>
 
