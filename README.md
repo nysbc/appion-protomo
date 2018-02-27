@@ -909,6 +909,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 </p></details>
 
+# More Examples
+
+<details><summary>Click here</summary><p>
+
 # Example #2
 *to be added*
 
@@ -931,6 +935,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 </p></details>
 
 <br />
+
+</p></details>
 
 # ChangeLog
 
