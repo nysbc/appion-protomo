@@ -910,11 +910,11 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 </p></details>
 
 # More Examples
+*Here you will find additional example tilt-series alignments showing different samples types and alignment scenarios.*
 
 <details><summary>Click here</summary><p>
 
 # Example #2
-*Here you will find additional example tilt-series alignments showing different samples types and alignment scenarios.*
 *to be added*
 
 *Click to expand:*
