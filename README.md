@@ -911,8 +911,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 # More Examples
 *Here you will find additional example tilt-series alignments showing different samples types and alignment scenarios.*
-
-**_to be added_**
+<br>**_[to be added]_**
 
 <details><summary>Click here</summary><p>
 
