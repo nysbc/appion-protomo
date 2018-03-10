@@ -77,7 +77,6 @@ Click `Create` on the `semc` `appion-protomo` repository and wait for the contai
 
 ![](https://i.imgur.com/D6P0c3J.png)
 
-------
 </p></details>
 
 *<details><summary>In Windows, you may need to tweak your settings (click to expand)</summary><p>*
