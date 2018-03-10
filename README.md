@@ -182,7 +182,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - To access the Appion webviewer, navigate to:
 
-```http://192.168.99.100/myamiweb``` (Your IP address will vary depending on your Docker installation. Possible addresses: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1)
+```http://192.168.99.100``` (Your IP address will vary depending on your Docker installation. Possible addresses: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1)
 
 </p></details>
 
