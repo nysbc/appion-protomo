@@ -146,7 +146,7 @@ Make sure Docker is running:<br />
 
 ```./run.sh```
 
-- You should run Appion-Protomo commands from inside a VNC viewer and not as the root user. First, download and install a VNC viewer such as TigerVNC or RealVNC:
+- You should run Appion-Protomo commands from inside a VNC viewer as appionuser and not as the root user. First, download and install a VNC viewer such as TigerVNC or RealVNC:
 
 https://bintray.com/tigervnc/stable/tigervnc/1.8.0
 
