@@ -465,7 +465,7 @@ Paste the command to a terminal prompt and hit enter
 
   - This will fill in the `Run name` and present a number of parameters below.
 
-> **Note:** All parameters in the Appion-Protomo tilt-series alignment workflow contain extensive help files that are accessible by simply pointing to the parameter name.
+> **Note:** All parameters in the Appion-Protomo tilt-series alignment workflow contain extensive help files that are accessible by simply pointing at the parameter name.
 
 For most samples select `10 nm` as the `Object Size` in `Parameter Presets`.
 
