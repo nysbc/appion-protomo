@@ -567,7 +567,7 @@ For most tilt-series, select `10 nm object(s) - Steep lowpass` as the `Object Si
 
 Select the largest `Search Area` that is in common between all tilt-images in the previously-viewed tilt-series in `Parameter Presets`.
 
-- If there are any tilt images that need to be removed, input their tilt angles in the `General Parameters`, either as an `Angle Limit` or under `Exclude Images by Tilt Angles`.
+- If there are any tilt images that need to be removed, input their tilt angles in the `General Parameters`, as an `Angle Limit` or using `Exclude Images by Tilt Angles`.
 
 - If the tilt-series was manually aligned, choose `More Manual` for `Begin with Coarse Alignment Results or Initial Alignment?` in the `General Parameters`.
 
