@@ -29,7 +29,7 @@ Launch Kitematic.
 
 > If on first startup Kitematic displays a red error suggesting that you run using VirtualBox, do so.
 
-> **Note:** Kitematic for [MacOS](https://docs.docker.com/toolbox/toolbox_install_mac/) has not yet been tested.
+> **Note:** [Docker Toolbox for MacOS](https://docs.docker.com/toolbox/toolbox_install_mac/) has not yet been tested.
 
 </p></details>
 
