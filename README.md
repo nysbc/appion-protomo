@@ -561,7 +561,7 @@ Follow the **bolded instructions** that first appear after running the manual al
 
 - On the Protomo Coarse Alignment Summary webpage click on `[Click here to continue onto Refinement if the Coarse Alignment results are satisfactory] →`.
 
-- On the next page, `Basic` or `Advanced` `Settings Verbosity`.
+- On the next page, select `Basic` or `Advanced` `Settings Verbosity`.
 
 For most tilt-series, select `10 nm object(s) - Steep lowpass` as the `Object Size` in `Parameter Presets`.
 
