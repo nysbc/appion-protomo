@@ -583,7 +583,7 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 - On the Protomo Alignment Summary webpage you can watch as each tilt-series aligns.
 
-> **Note:** The tilt-azimuth for each microscope relative to Appion-Protomo convention needs to be determined experimentally. Protomo will often refine the tilt azimuth properly after 10-50 iterations. Once this value is known, it should be inputted into all future tilt-series alignments for that microscope in the General Parameters.
+> **Note:** The tilt-azimuth for each microscope relative to Appion-Protomo convention needs to be determined experimentally. Protomo will often refine the tilt azimuth properly after 10-50 iterations. Once this value is known, it should be inputted into all future tilt-series alignments for that microscope in the General Parameters during Coarse Alignment.
 
 > **Note:** The alignment thickness cannot be determined prior to tilt-series alignment. If a tilt-series alignment did not align as well as you wish, try re-aligning with additional alignment thickness values.
 
