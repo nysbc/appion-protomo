@@ -402,7 +402,7 @@ Paste the command to a terminal prompt and hit enter
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
 
-> remove or move the previously-uploaded tilt-series stack and mdoc files
+> Remove or move the previously-uploaded tilt-series stack and mdoc files.
 
 - Navigate to 192.168.99.100/myamiweb
 
@@ -410,7 +410,7 @@ Select `Image Viewer`
 
 Make sure your project is selected in the dropdown (you should now see images in the image viewer panel)
 
-> if you don't see images then you first need to upload one tilt-series to a new session
+> If you don't see images then you first need to upload one tilt-series to a new session.
 
 Click `processing` at the top
 
