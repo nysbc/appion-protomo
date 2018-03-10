@@ -23,7 +23,7 @@ Launch docker according to your Docker engine's instructions, typically ``docker
 
 ## Windows &nbsp;&nbsp; *(GUI & command line)*
 
-Download and install Docker Toolbox for [Windows](https://docs.docker.com/toolbox/toolbox_install_windows/). 
+Download and install [Docker Toolbox for Windows](https://docs.docker.com/toolbox/toolbox_install_windows/). 
 
 Launch Kitematic.
 
