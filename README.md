@@ -658,6 +658,8 @@ Select `Just Show Command` at the bottom of the page.
 
 - On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
 
+> **Note:** The objects in the middle of the resulting tomogram were the objects in the middle of the search volume during tilt-series refinement.
+
 > **Note:** Protomo reconstruction will orient the tomogram in accordance with the refined tilt geometry while Tomo3D reconstruction will not. Thus if you pick particles in a Tomo3D SIRT reconstruction and wish to perform subvolume processing with WBP, you should choose reconstruct with Tomo3D WBP.
 
 > **Note:** If Tomo3D WBP is being used for sub-volume processing, consider using the additional Tomo3D option `-m 0.5`. This will remove the default application of a Hamming filter intended for cutting off high frequency noise. Hamming filters applied during reconstruction might cause anomalous high frequency correlation during subvolume alignment.
