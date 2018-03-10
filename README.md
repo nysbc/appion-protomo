@@ -626,7 +626,7 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 <details><summary>Reconstruct tilt-series</summary><p>
 
-> **Note:** Before proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. In particular, view the aligned tilt-series video to confirm that there are no visual issues.
+> **Note:** Before proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. In particular, *view the aligned tilt-series video to confirm that there are no visual issues.*
 
 From the Protomo Alignment Summary webpage, copy the `runname` of the tilt-series you wish to reconstruct, and take note of the desired reconstruction iteration.
 
