@@ -47,6 +47,8 @@ cd appion-protomo
 ./run.sh
 ```
 
+> **Note:** The installation directory will contain the data directory. It is recommended that you reserve at least 10 GB of space for each tilt-series alignment.
+
 *<details><summary>This performs the following operations (click to expand):</summary><p>*
   
 - Downloads the semc/appion-protomo docker image from Docker Hub,
