@@ -244,7 +244,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 <br />
 
 # Example #1
-**Start here!**<br>*Single particle tilt-series EMPIAR-10129*
+**Start here!**<br>*Single particle tilt-series [EMPIAR-10129](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10129/))*
 
 *Click to expand:*
 
@@ -293,7 +293,7 @@ Make sure your container is running via the ```./run.sh``` script.
 
 
 ```wget http://<TILTSERIESDOWNLOADLINKHERE>
-Download the following hemagglutinin SerialEM tilt-series (collected on an F20 with a DE-20; from [EMPIAR-10129](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10129/)):
+Download the following hemagglutinin SerialEM tilt-series (collected on an F20 with a DE-20; from [EMPIAR-10129]):
 
 https://drive.google.com/open?id=1remm05G-R7w_6GLjW1R_jmV6Qzg0fcMx
 
