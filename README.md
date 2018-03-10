@@ -51,7 +51,7 @@ cd appion-protomo
 
 *<details><summary>This performs the following operations (click to expand):</summary><p>*
   
-- Downloads the semc/appion-protomo docker image from Docker Hub,
+- Downloads the [semc/appion-protomo docker image from Docker Hub](https://hub.docker.com/r/semc/appion-protomo/),
   
 - Creates a Docker volume to persist the Mariadb database,
 
