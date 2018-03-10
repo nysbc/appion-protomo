@@ -362,7 +362,7 @@ Next, VNC to `vnc://192.168.99.100:5901` (replace with your VNC ip:port) with pa
 
 Paste the command to a terminal prompt and hit enter
 
-- Wait for uploadSerialEM.py  to finish processing
+- Wait for uploadSerialEM.py  to finish processing.
 
 **_<details><summary>Click for images</summary><p>_**
 
@@ -432,7 +432,7 @@ Next, VNC to `vnc://192.168.99.100:5901` with password `appion-protomo`
 
 Paste the command to a terminal prompt and hit enter
 
-- Wait for uploadSerialEM.py  to finish processing
+- Wait for uploadSerialEM.py  to finish processing.
 
 
 **_<details><summary>Click for images</summary><p>_**
