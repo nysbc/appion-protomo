@@ -156,7 +156,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 > You might try `docker-machine ip` to find your IP.
 
-> Here are some more possible IP addresses/names: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1.
+> Here are some more possible IP addresses/names: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1
 
 - To ssh into the container as root, do:
 
@@ -174,15 +174,15 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - To delete the mariadb-database volume, do:
 
-```./rmVolume.sh``` (Warning: This will delete the database! The volume will be recreated the next time you do ./run.sh, but you will have an empty Appion database!)
+```./rmVolume.sh``` (Warning: This will delete the database and anything you have uploaded in Appion! The volume will be recreated the next time you do ./run.sh, but you will have an empty Appion database!)
 
 - To re-build the appion-protomo image from scratch, do:
 
 ```./build.sh``` (This will take a while!)
 
-- To access the Appion webviewer, navigate to 
+- To access the Appion webviewer, navigate to:
 
-```http://192.168.99.100/myamiweb``` (Your IP address will vary depending on your Docker installation.)
+```http://192.168.99.100/myamiweb``` (Your IP address will vary depending on your Docker installation. Possible addresses: localhost, 0.0.0.0, 127.0.0.1, 192.168.0.1)
 
 </p></details>
 
