@@ -33,7 +33,7 @@ Launch Kitematic.
 
 > **Note:** [Docker Toolbox for MacOS](https://docs.docker.com/toolbox/toolbox_install_mac/) has not yet been tested.
 
-### What is Docker
+## What is Docker
 
 [This tutorial explains why Docker is used.](https://www.youtube.com/watch?v=YFl2mCHdv24)
 
