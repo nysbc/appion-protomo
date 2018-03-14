@@ -35,7 +35,7 @@ Launch Kitematic.
 
 ## What is Docker?
 
-[This tutorial explains why Docker is used.](https://www.youtube.com/watch?v=YFl2mCHdv24)
+[This tutorial explains why Docker is used for Appion-Protomo.](https://www.youtube.com/watch?v=YFl2mCHdv24)
 
 </p></details>
 
