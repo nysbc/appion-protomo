@@ -870,7 +870,7 @@ Resolution in cryoET is limited critically by pixelsize, SNR from the microscope
 
 > **Note:** If tilt images are collected with a low dose (~< 5e-/A^2 per tilt image), it is common to find that more SNR exists in the power spectrum of the summed frames rather than the sum of the power spectra of all frames. The opposite is often true with higher dose images in single particle cryoEM.
 
-- Tilt image collection of high magnification can cause beam-induced motion, often in the direction of tilt. Additionally, non-gold grids also often drift in the direction of tilt. The combination of uncorrectable directional movement between frames (or over the course of a whole whole image exposure if no frames are collected) will be the drift resolution limit of that tilt image. The drift resolution limit of the tilt-series will vary, depending on the dose weighting applied.
+- Tilt image collection at high magnification can cause beam-induced motion, often in the direction of tilt. Additionally, non-gold grids also often drift in the direction of tilt. The combination of uncorrectable directional movement between frames (or over the course of a whole whole image exposure if no frames are collected) will be the drift resolution limit of that tilt image. The drift resolution limit of the tilt-series will vary, depending on the dose weighting applied.
 
 > **Note:** CFlat carbon grids in particular can drift up to 100 angstroms during a ~3e-/A^2 exposure at tilts > 45 degrees.
 
