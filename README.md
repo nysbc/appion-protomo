@@ -368,7 +368,9 @@ Next, VNC to `vnc://192.168.99.100:5901` (replace with your VNC ip:port) with pa
 
 Paste the command to a terminal prompt and hit enter
 
-- Wait for uploadSerialEM.py  to finish processing.
+- Wait for uploadSerialEM.py to finish processing.
+
+**Note:** If `uploadSerialEM.py` gived an error regarding binning, then edit the  file and change line 79 to: binning = 1 . This bug will be fixed in the next version.
 
 **_<details><summary>Click for images</summary><p>_**
 
