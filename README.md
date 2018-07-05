@@ -951,6 +951,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - Version number added to Appion main page.
 
 <details><summary>02-27-2018</summary><p>
+  
   - IMOD 4.10.11 Added.
   - Tomo3D Added.
   - TomoCTF Added.
@@ -981,6 +982,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - Links to stacks added to bottom of main summary webpage.
 
 <details><summary>02-27-2018</summary><p>
+  
   - IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.
   - Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation).
   - The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement, which increases the reliability of the quality metrics. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.
@@ -1007,7 +1009,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
 
-Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., Tan Y. Z., Zhang Z., Kim L. Y., Scapin G., Rapp M., Eng E. T., Rice M. J., Cheng A., Negro C. J., Shapiro L., Kwong P. D., Jeruzalmi D., des Georges A., Potter C. S., Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. https://doi.org/10.7554/eLife.34257
+Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., Tan Y. Z., Zhang Z., Kim L. Y., Scapin G., Rapp M., Eng E. T., Rice M. J., Cheng A., Negro C. J., Shapiro L., Kwong P. D., Jeruzalmi D., des Georges A., Potter C. S., Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. eLife. https://doi.org/10.7554/eLife.34257
 
 Winkler, H., & Taylor, K. A. (2006). Accurate marker-free alignment with simultaneous geometry determination and reconstruction of tilt series in electron tomography. Ultramicroscopy, 106(3), 240–254. https://doi.org/10.1016/j.ultramic.2005.07.007
 
