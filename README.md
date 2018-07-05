@@ -947,7 +947,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-- `02-27-2018`
+- `07-05-2018`
+  - Version number added to Appion main page.
+
+<details><summary>02-27-2018</summary><p>
   - IMOD 4.10.11 Added.
   - Tomo3D Added.
   - TomoCTF Added.
@@ -955,6 +958,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - /emg/sw/ has been re-located to /sw/. This was creating issues because since /emg/data/ is shared between the host and Docker container, this was also locking the sw/ directory, preventing the user from removing software if they wish.
   - /home/appionuser/.Xauthority permissions have been changed from root to appionuser (CentOS7 in particular had default permissions as root:root, which makes X11 in the VNC viewer fail).
   - Spider, Xmipp, Relion, CTFfind3&4, and FindEM have been removed from the container.
+
+</p></details>
 
 <details><summary>12-05-2017</summary><p>
 
@@ -970,7 +975,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-- `02-27-2018`
+- `07-05-2018`
+  - Bug in SerialEM upload script fixed.
+  - Main summary webpage has been slightly simplified by combining a couple columns.
+  - Links to stacks added to bottom of main summary webpage.
+
+<details><summary>02-27-2018</summary><p>
   - IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.
   - Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation).
   - The maximum search area is now calculated automatically. This frees the user from having to estimate this value by eye, increases the search area used for refinement, and reduces the likelihood of search area re-sizing during refinement, which increases the reliability of the quality metrics. This feature currently allows the user to set the search area to be a fraction of the maximum search area available at the beginning of refinement. Currently, the maximum search area is not updated for each iteration.
@@ -979,6 +989,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - Batch coarse alignment now tries to find an existing coarse_series####.param file in the current run directory.
   - If tilt image frames have been aligned in Appion, then the maximum per-tilt image frame drift is plotted automatically for the corresponsing tilt-series, like this: https://i.imgur.com/RCLcLv8.png
   - Backup of `/sw/myami/`: https://drive.google.com/open?id=1djw1s0GiK64mV-Dz4H2Mv5fKMUP8cRlB
+
+</p></details>
 
 <details><summary>12-05-2017</summary><p>
 
@@ -995,7 +1007,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 Noble, A. J., & Stagg, S. M. (2015). Automated batch fiducial-less tilt-series alignment in Appion using Protomo. Journal of Structural Biology, 192(2), 270–278. https://doi.org/10.1016/j.jsb.2015.10.003
 
-Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., Tan Y. Z., Zhang Z., Kim L. Y., Scapin G., Rapp M., Eng E. T., Rice M. J., Cheng A., Negro C. J., Shapiro L., Kwong P. D., Jeruzalmi D., des Georges A., Potter C. S., Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. https://doi.org/10.1101/230276
+Noble, A. J., Dandey, V. P., Wei, H., Brasch, J., Chase, J., Acharya, P., Tan Y. Z., Zhang Z., Kim L. Y., Scapin G., Rapp M., Eng E. T., Rice M. J., Cheng A., Negro C. J., Shapiro L., Kwong P. D., Jeruzalmi D., des Georges A., Potter C. S., Carragher, B. (2017). Routine Single Particle CryoEM Sample and Grid Characterization by Tomography. https://doi.org/10.7554/eLife.34257
 
 Winkler, H., & Taylor, K. A. (2006). Accurate marker-free alignment with simultaneous geometry determination and reconstruction of tilt series in electron tomography. Ultramicroscopy, 106(3), 240–254. https://doi.org/10.1016/j.ultramic.2005.07.007
 
