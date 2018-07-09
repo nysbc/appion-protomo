@@ -738,7 +738,7 @@ Conceptually, Protomo alignment combines common lines and iterative preliminary 
 
 Appion-Protomo refinement on a coarsely aligned tilt-series generally proceeds as follows:
 
-1. Pre-process all tilt images with lowpass and highpass filters, a median or gaussian filter, gradient subtraction, pixel intensity thresholds, masks, and mask lowpass and highpass apodization filters. All images are then binned during the first several Round of refinement.
+1. Pre-process all tilt images with lowpass and highpass filters, a median or gaussian filter, gradient subtraction, pixel intensity thresholds, masks, and mask lowpass and highpass apodization filters. All images are then binned during the first several Rounds of refinement.
 
 2. A reference image is chosen (usually the tilt image closest to 0°). This image will not be moved during each refinement iteration.
 
