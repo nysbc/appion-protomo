@@ -765,7 +765,7 @@ Tilt-series alignment quality is then assessed automatically by plotting the ite
 ![](https://i.imgur.com/gtTBrD9.png)
 
 <p align="center"> 
-<img src="https://i.imgur.com/lseYuWx.gif">
+<img src="https://i.imgur.com/D6FTqnM.gif">
 </p>
 
 </p></details>
