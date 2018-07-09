@@ -680,9 +680,9 @@ Select `Just Show Command` at the bottom of the page.
 
 Since it is often difficult to determine the sample thickness *a priori*, **batch refinement** is **rarely recommended**, and is thus left to the user to test on their own.
 
-However, **batch coarse alignment** is **very useful** for being able to quickly visualize and assess large datasets.
+However, **batch coarse alignment** is **very useful** for being able to quickly visualize and assess large datasets and batch defocus estimation is also useful.
 
-To use batch alignment, first click Align Tilt-Series and select any tilt-series from the list - this will load metadata into the browser. Then click on Batch Align Tilt-Series.
+To use batch alignment, first click `Align Tilt-Series` and select any tilt-series from the list - this will load metadata into the browser. Then click on `Batch Align Tilt-Series`.
 
 </p></details>
 
