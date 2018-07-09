@@ -682,7 +682,7 @@ Since it is often difficult to determine the sample thickness *a priori*, **batc
 
 However, **batch coarse alignment** is **very useful** for being able to quickly visualize and assess large datasets.
 
-...
+To use batch alignment, first click Align Tilt-Series and select any tilt-series from the list - this will load metadata into the browser. Then click on Batch Align Tilt-Series.
 
 </p></details>
 
