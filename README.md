@@ -529,11 +529,9 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 ![](https://i.imgur.com/N0RICUS.png)
 
-- Watch the tilt-series video to estimate:
-  - The amount of central area in common between all tilt images,
-  - The tilt azimuth (vertical is ±90°, horizontal is 0° or 180°)
+- Watch the tilt-series video to estimate the tilt azimuth (vertical is ±90°, horizontal is 0° or 180°)
 
-- This tilt-series has a central common area of about 80% and a tilt azimuth of approximately ±90°:
+- This tilt-series has a tilt azimuth of approximately ±90°:
 
 <p align="center"> 
 <img src="https://i.imgur.com/kwF8kbA.gif">
@@ -746,9 +744,9 @@ Appion-Protomo refinement on a coarsely aligned tilt-series generally proceeds a
 
 4. These three aligned tilt images are weighted back-projected into a preliminary 3D reconstruction.
 
-5. The preliminary 3D reconstruction is then re-projected in the direction of the next highest tilt angle and the corresponding tilt image is then aligned (rotation, translation, and/or isotropic scaling) to this reprojection inside of a given search area.
+5. A volume is selected from the preliminary 3D reconstruction and is then re-projected in the direction of the next highest tilt angle and the corresponding tilt image is then aligned (rotation, translation, and/or isotropic scaling) to this reprojection inside of a given search area.
 
-   - Alignment by correlation allows for sub-pixel accuracy. The alignment algorithm also allows for an estimation of the alignment error in rotation, translation, and/or scaling because it is calculated by matrix diagnolization, which numerically results in non-zero off-diagonal terms left over.
+   - Alignment by correlation allows for sub-pixel accuracy. The alignment algorithm also allows for an estimation of the alignment error in rotation, translation, and/or scaling because it is calculated by matrix diagnolization, which numerically results in left over non-zero off-diagonal terms.
 
 6. These four aligned tilt images are weighted back-projected into a preliminary 3D reconstruction, and step 5 proceeds with the next highest tilt image on the opposite side of the last-aligned tilt image (ie. alternating alignment between positive and negative tilt angles).
 
@@ -758,7 +756,7 @@ This process (steps 4 through 6) continues until all tilt images have been align
 
 8. Steps 1 through 7 are repeated over dozens of iterations with less and less binning and filtering.
 
-Tilt-series alignment quality is then assessed automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, that the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series videos.
+Tilt-series alignment quality is then assessed semi-automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, that the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series and reconstruction videos.
 
 **_<details><summary>Click for Protomo alignment schematic</summary><p>_**
 
@@ -792,7 +790,7 @@ To simplify the assessment of these correction factors, a combined metric (CCMS 
 - The dotted orange line records the average + 1 standard deviation of the x correction factor and y correction factor, summed.
 - The x'd orange line records the average + 1 standard deviation of the scaling correction factor.
 - The blue line records the average + 1 standard deviation of the rotation correction factor.
-- The black line is a scaled sum of the above three lines
+- The black line is a scaled sum of the above three lines.
 
 The goal then becomes to minimize the black line.
 
