@@ -375,7 +375,7 @@ Paste the command to a terminal prompt and hit enter
 
 - Wait for uploadSerialEM.py to finish processing.
 
-**Note:** If `uploadSerialEM.py` gived an error regarding binning, then edit the  file and change line 79 to: binning = 1 . This bug will be fixed in the next version.
+**Note:** If `uploadSerialEM.py` gives an error regarding binning, then edit the  file and change line 79 to: binning = 1 . This bug will be fixed in the next version.
 
 **_<details><summary>Click for images</summary><p>_**
 
