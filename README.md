@@ -1,6 +1,11 @@
 # appion-protomo
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
+**_<details><summary>Click to see how Protomo alignment works</summary><p>_**
+
+![](https://i.imgur.com/3PFyXw6.gif)
+
+</p></details>
 
 # Prerequisites
 
@@ -758,10 +763,10 @@ This process (steps 4 through 6) continues until all tilt images have been align
 
 Tilt-series alignment quality is then assessed semi-automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, that the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series and reconstruction videos.
 
-**_<details><summary>Click for Protomo alignment schematic</summary><p>_**
+**_<details><summary>Click for Protomo alignment schematics</summary><p>_**
 
 <p align="center"> 
-<img src="https://i.imgur.com/D6FTqnM.gif">
+<img src="https://i.imgur.com/3PFyXw6.gif">
 </p>
 
 ![](https://i.imgur.com/gtTBrD9.png)
