@@ -635,6 +635,22 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 </p></details>
 
+<details><summary>Assess refinement</summary><p>
+
+A tilt-series refinement should be assessed in the following ways:
+
+1. (if possible) Watch the tilt-series video to see if the alignment is potentially good. Are any images clearly shifted or rotated improperly?
+   - If so, then use the command at the bottom of the refinement iteration webpage to manually fix the bad tilt images and/or remove the bad tilt images. You will likely want to further refine the tilt-series before continuing.
+2. Watch the tilt-series correlation peak video at the top of the refinement iteration webpage - the small square video. All but one frame (usually the middle frame) should be black. The other frames should have a clear correlation peak in the center of the box.
+   - If there are more than one black frames, then this means that the search area had to shrink during the refinement, which is often caused by a tilt image shifting too far. This might or might not be an issue. Note that this makes the tilt-series quality rating unreliable.
+   - If the correlation peaks are not clear, then there might not be enough signal in the search volume to align the tilt-series.
+3. (if possible) Pause the reconstruction video at the bottom of the refinement iteration webpage at or near the middle. If there is an object visible near the middle of the reconstruction video, then find the object in the tilt-series video, point at that object with your finger or mouse cursor, and let the tilt-series video play through. That object should not move throughout the tilt-series video; ie. the object at the middle of a tilt-series reconstruction should not move in the tilt-series that it was reconstructed from.
+   - If the object does move, then manually align the tilt-series to re-position the bad tilt images so that the object at the middle of the reconstruction doesn't move.
+   - If there are no objects near the middle of the reconstruction, then you might choose an object away from the center of the reconstruction and follow it through the tilt-series video. That object should move at a continuous rate across the screen. If that object accelerates or decelerates, then the bad tilt images probably need to be re-positioned so that the object moves at a continuous rate.
+4. 
+
+</p></details>
+
 <details><summary>Reconstruct tilt-series</summary><p>
 
 > **Note:** Before proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. In particular, *view the aligned tilt-series video to confirm that there are no visual issues.*
