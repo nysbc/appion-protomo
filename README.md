@@ -655,14 +655,15 @@ A tilt-series refinement should be assessed in the following ways:
 Secondary refinement assessments include:
 
 1. The tilt azimuth should be within ~0.5 degrees of the known tilt azimuth for the given microscope + goniometer combination.
-2. Ideally, the search volume should not be too small or too rectangular. Sometimes one highly shifted tilt image severely reduces the search area and might better be excluded from the refinement so that a larger search area can be used.
-3. You might not want the search volume to include grid substrate. Substrate will likely move differently than biological objects when exposed to the electron beam, unless the objects are securely attached to the substrate. The goal of Protomo alignment is to align to the biological objects - any motion during the tilt-series exposure of the objects in the search volume will limit the alignment quality. Carbon substrate in particular has very high signal and will drive the alignment.
+2. The geometry model - ie. the plot of phi, psi, and theta - should be stable before/after the iteration being analyzed.
+3. Ideally, the search volume should not be too small or too rectangular. Sometimes one highly shifted tilt image severely reduces the search area and might better be excluded from the refinement so that a larger search area can be used.
+4. You might not want the search volume to include grid substrate. Substrate will likely move differently than biological objects when exposed to the electron beam, unless the objects are securely attached to the substrate. The goal of Protomo alignment is to align to the biological objects - any motion during the tilt-series exposure of the objects in the search volume will limit the alignment quality. Carbon substrate in particular has very high signal and will drive the alignment.
 
 </p></details>
 
 <details><summary>Reconstruct tilt-series</summary><p>
 
-> **Note:** Before proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. In particular, *view the aligned tilt-series video to confirm that there are no visual issues.*
+> **Note:** Before proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. At the very least, *view the aligned tilt-series video to confirm that there are no visual issues.*
 
 From the Protomo Alignment Summary webpage, copy the `runname` of the tilt-series you wish to reconstruct, and take note of the desired reconstruction iteration.
 
