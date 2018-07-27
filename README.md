@@ -911,6 +911,8 @@ Heavy objects, such as gold beads or gallium ion deposits from FIB-milling, may 
 
 - Fiducials move differently than the sample. 
 
+Most of these issues reduce efficiency of collection and processing. However, if the sample has sufficient signal, then tilt-series alignment can be done with Appion-Protomo and all of these issues can be bypassed.
+
 [Fiducials may move differently than the sample, additional sample optimization (sparcity, aggregation), reduced targeting options (loss of collection efficiency), reduced tilt-series alignment efficiency (need sufficient well-behaved fiducials in the tilt-series), fiducials change the contrast and power spectrum of objects nearby in 3D, fiducials distant from the sample in 3D may still be in individual tilt images used for reconstructing the sample]
 
 </p></details>
