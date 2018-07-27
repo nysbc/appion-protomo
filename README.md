@@ -903,6 +903,12 @@ The following list orders CTF estimation and correction methods by their approxi
 
 <details><summary>Reasons for not using fiducials</summary><p>
 
+Heavy objects, such as gold beads or gallium ion deposits from FIB-milling, may be used as fiducials to determine the tilt-series alignment parameters that best localize the fiducials in 3D space. However, relying on fiducials may cause several issues:
+
+- Fiducials limit imageable areas. Ideally, 10-20 fiducials should be scattered uniformly throughout the ice in the desired field of view, which would allow for linear deformations in the ice to be accounted for during tilt-series alignment by using software such as [TomoAlign](https://sites.google.com/site/3demimageprocessing/tomoalign). However, uniform dispersion of fiiducials rarely occurs. Instead, fiducials are often scattered on one or both ice surfaces. Furthermore, many desired exposure areas either have too few fiducials, too many fiducials, or aggregated fiducials, causing the areas to either be unalignable with fiducials or heavily contaminated with fiducials.
+
+- Fiducials move differently than the sample. 
+
 [Fiducials may move differently than the sample, additional sample optimization (sparcity, aggregation), reduced targeting options (loss of collection efficiency), reduced tilt-series alignment efficiency (need sufficient well-behaved fiducials in the tilt-series), fiducials change the contrast and power spectrum of objects nearby in 3D, fiducials distant from the sample in 3D may still be in individual tilt images used for reconstructing the sample]
 
 </p></details>
