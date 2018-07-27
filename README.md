@@ -576,6 +576,8 @@ Paste the command into a terminal in the container.
 
 Follow the **bolded instructions** that first appear after running the manual alignment command.
 
+Practically, find an object that you think might be near the middle of the ice and align each image such that this object does not move on the screen.
+
 > **Note:** The objects in the tilt-series that move the least image-to-image will have a higher chance of being closest to the center of the tomogram after refinement. See the **_Critical Note_** in the upcoming 'Refine tilt-series' section.
 
 </p></details>
