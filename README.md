@@ -905,15 +905,13 @@ The following list orders CTF estimation and correction methods by their approxi
 
 Heavy objects, such as gold beads or gallium ion deposits from FIB-milling, may be used as fiducials to determine the tilt-series alignment parameters that best localize the fiducials in 3D space. However, relying on fiducials may cause several issues:
 
-- Fiducials limit imageable areas. Ideally, 10-20 fiducials should be scattered uniformly throughout the ice in the desired field of view, which would allow for linear deformations in the ice to be accounted for during tilt-series alignment by using software such as [TomoAlign](https://sites.google.com/site/3demimageprocessing/tomoalign). However, uniform dispersion of fiiducials rarely occurs. Instead, fiducials are often scattered on one or both ice surfaces. Furthermore, many desired exposure areas either have too few fiducials, too many fiducials, or aggregated fiducials, causing the areas to either be unalignable with fiducials or heavily contaminated with fiducials.
+- Fiducials limit imageable areas. Ideally, 10-20 fiducials should be scattered uniformly throughout the ice in the desired field of view, which would allow for linear deformations in the ice to be accounted for during tilt-series alignment by using software such as [TomoAlign](https://sites.google.com/site/3demimageprocessing/tomoalign). However, uniform dispersion of fiducials rarely occurs. Instead, fiducials are often scattered on one or both ice surfaces. Furthermore, many desired exposure areas either have too few fiducials, too many fiducials, or aggregated fiducials, causing the areas to either be unalignable with fiducials or heavily contaminated with fiducials.
 
-- Fiducials may occlude objects of interest. Sometimes an object of interest is directly next to a fiducial, and since fiducials show fringing artifacts, the contrast and power spectra of the objects of interest vary greatly from objects not near fiducials. Also, an object of interest far away from fiducials may still have fiducials in the projection direction of some tilt images. These distant fiducials tehn contaminate the power spectra of those tilt images and subvolumes.
+- Fiducials may occlude objects of interest. Sometimes an object of interest is directly next to a fiducial, and since fiducials show fringing artifacts, the contrast and power spectra of the objects of interest vary greatly from objects not near fiducials. Also, an object of interest far away from fiducials may still have fiducials in the projection direction of some tilt images. These distant fiducials then contaminate the power spectra of those tilt images and subvolumes.
 
-- Fiducials move differently than the sample. 
+- Fiducials move differently than the sample. Fiducials primarily absorb electrons, which impart momentum on them and cause them to move differently than biological objects, which don't absorb as many electrons. Thus aligning to fiducials may result in a very accurate 3D model of the fiducials, but not the sample.
 
-Most of these issues reduce efficiency of collection and processing. However, if the sample has sufficient signal, then tilt-series alignment can be done with Appion-Protomo and all of these issues can be bypassed.
-
-[Fiducials may move differently than the sample, additional sample optimization (sparcity, aggregation), reduced targeting options (loss of collection efficiency), reduced tilt-series alignment efficiency (need sufficient well-behaved fiducials in the tilt-series), fiducials change the contrast and power spectrum of objects nearby in 3D, fiducials distant from the sample in 3D may still be in individual tilt images used for reconstructing the sample]
+These issues reduce efficiency of collection and processing. However, if the sample has sufficient signal, then tilt-series alignment can be done with Appion-Protomo and all of these issues can be bypassed.
 
 </p></details>
 
