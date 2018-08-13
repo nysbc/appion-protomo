@@ -649,7 +649,7 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 
 </p></details>
 
-<details><summary>Assess refinement</summary><p>
+<details><summary><img src="https://i.imgur.com/teIUMBq.png"> Assess refinement</summary><p>
 
 A tilt-series refinement should be assessed in the following ways:
 
