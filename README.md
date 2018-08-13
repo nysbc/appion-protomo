@@ -307,8 +307,8 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 </p></details>
 
 <br />
-![test](https://i.imgur.com/yOAo6Pi.png)
-<details><summary><img src="https://i.imgur.com/yOAo6Pi.png"> Upload first SerialEM-formatted tilt-series to a new session</summary><p>
+
+<details><summary><img src="https://i.imgur.com/j31mFp6.png"> Upload first SerialEM-formatted tilt-series to a new session</summary><p>
 
 Make sure your container is running via the ```./run.sh``` script.
 
