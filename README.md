@@ -1092,13 +1092,13 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 # Authors
 
 <details><summary>Carl J Negro</summary><p>
-
+https://avatars0.githubusercontent.com/u/9562053?s=400&v=4
 - Docker Appion-Protomo
 
 &nbsp;&nbsp;&nbsp;[Github](https://github.com/carl9384)<br />
 </p></details>
 <details><summary>Alex J Noble</summary><p>
-  
+https://avatars2.githubusercontent.com/u/30907567?s=400&v=4
 - [Appion-Protomo](https://doi.org/10.1016/j.jsb.2015.10.003)
 
 &nbsp;&nbsp;&nbsp;[Twitter](https://twitter.com/alexjamesnoble)<br />
@@ -1106,6 +1106,8 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 </p></details>
 <details><summary>Neil R Voss</summary><p>
   
+  ![seehow](https://media.licdn.com/dms/image/C4E03AQGTTRr82lErmA/profile-displayphoto-shrink_800_800/0?e=1539820800&v=beta&t=tOsl03rIWS1TsoL8H3msgyUeCV7Ed7F00F-vWepxw6o)
+
 - [Base CentOS 7 Appion Docker image](https://hub.docker.com/r/vosslab/appion_centos7/).
 
 &nbsp;&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA)
