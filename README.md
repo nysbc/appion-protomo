@@ -266,7 +266,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <br />
 
-# Example #1 ![starthere](https://i.imgur.com/ZeaUQGp.png)
+# Example #1 ![starthere](https://i.imgur.com/Qmhfpge.png)
 *Single particle tilt-series from [EMPIAR-10129](https://www.ebi.ac.uk/pdbe/emdb/empiar/entry/10129/))*
 
 *Click to expand:*
