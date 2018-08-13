@@ -1002,7 +1002,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-- `07-25-2018 - v1.0.2`
+- `08-14-2018 - v1.0.2`
   - README (this file!) significantly updated.
 
 <details><summary>07-05-2018 - v1.0.1</summary><p>
@@ -1037,7 +1037,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-- `07-25-2018 - v1.0.2`
+- `08-14-2018 - v1.0.2`
   - Batch IMOD coarse alignment bug fixed.
 
 <details><summary>07-05-2018 - v1.0.1</summary><p>
