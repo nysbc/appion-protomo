@@ -256,8 +256,6 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 <details><summary>Appion-Protomo tilt-series alignment overview</summary><p>
 
-![](https://i.imgur.com/KsCbaf7.png)
-
 1) Upload tilt-series,
 2) Coarse align tilt-series,
 <br>2b. Manually fix poorly aligned tilt images, if necessary,
