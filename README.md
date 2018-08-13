@@ -423,7 +423,7 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary><img src="https://i.imgur.com/6jNFewI.png"> Upload additional SerialEM-formatted tilt-series to an existing session</summary><p>
+<details><summary><img src="https://i.imgur.com/4JfVlU1.png"> Upload additional SerialEM-formatted tilt-series to an existing session</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
 
@@ -478,7 +478,7 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary><img src="https://i.imgur.com/bkp3BIY.png"> Coarse align tilt-series</summary><p>
+<details><summary><img src="https://i.imgur.com/6jNFewI.png"> Coarse align tilt-series</summary><p>
 
 - Navigate to your session in the image viewer and click `processing`.
 
@@ -582,7 +582,7 @@ Practically, find an object that you think might be near the middle of the ice a
 
 </p></details>
 
-<details><summary>Refine tilt-series</summary><p>
+<details><summary><img src="https://i.imgur.com/bkp3BIY.png"> Refine tilt-series</summary><p>
 
 - On the Protomo Coarse Alignment Summary webpage click on `[Click here to continue onto Refinement if the Coarse Alignment results are satisfactory] →`.
 
