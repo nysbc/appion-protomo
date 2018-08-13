@@ -861,7 +861,7 @@ As a secondary metric, the stability of the geometry model should be checked.
 
 </p></details>
 
-<details><summary>Protomo limitations ![inprogress](https://i.imgur.com/chaGpB5.png)</summary><p>
+<details><summary>Protomo limitations <img src="https://i.imgur.com/chaGpB5.png"></summary><p>
 
 [Global alignment using a section of all tilt images - alignment is restricted by the overall 3D sample movement and drift in the search area, objects outside of the search area might not be aligned as well as inside the search area for the same reasons.]
 
