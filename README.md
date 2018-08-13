@@ -1093,7 +1093,7 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 
 <details><summary>Carl J Negro</summary><p>
 
-  ![seehow](https://avatars0.githubusercontent.com/u/9562053?s=400&v=4)
+  <img src="https://avatars0.githubusercontent.com/u/9562053?s=400&v=4" width="120">
 
 - Docker Appion-Protomo
 
@@ -1101,7 +1101,7 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 </p></details>
 <details><summary>Alex J Noble</summary><p>
   
-  ![seehow](https://avatars2.githubusercontent.com/u/30907567?s=400&v=4)
+  <img src="https://avatars2.githubusercontent.com/u/30907567?s=400&v=4" width="120">
   
 - [Appion-Protomo](https://doi.org/10.1016/j.jsb.2015.10.003)
 
