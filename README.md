@@ -564,7 +564,7 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 </p></details>
 
-<details><summary>Manually fix tilt-series if necessary</summary><p>
+<details><summary><img src="https://i.imgur.com/ca6cCR6.png"> Manually fix tilt-series if necessary</summary><p>
 
 - If there are any tilt images that are grossly shifted relative to the others then continue through this section.
 
