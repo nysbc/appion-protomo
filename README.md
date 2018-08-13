@@ -1002,16 +1002,16 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-- `07-25-2018 — v1.0.2`
+- `07-25-2018 - v1.0.2`
   - README (this file!) significantly updated.
 
-<details><summary>07-05-2018 — v1.0.1</summary><p>
+<details><summary>07-05-2018 - v1.0.1</summary><p>
   
   - Version number added to Appion main page.
 
 </p></details>
 
-<details><summary>02-27-2018 — v1.0.0</summary><p>
+<details><summary>02-27-2018 - v1.0.0</summary><p>
   
   - IMOD 4.10.11 Added.
   - Tomo3D Added.
@@ -1037,10 +1037,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-- `07-25-2018 — v1.0.2`
+- `07-25-2018 - v1.0.2`
   - Batch IMOD coarse alignment bug fixed.
 
-<details><summary>07-05-2018 — v1.0.1</summary><p>
+<details><summary>07-05-2018 - v1.0.1</summary><p>
   
  - Bug in SerialEM upload script fixed.
  - Main summary webpage has been slightly simplified by combining a couple columns.
@@ -1048,7 +1048,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 </p></details>
 
-<details><summary>02-27-2018 — v1.0.0</summary><p>
+<details><summary>02-27-2018 - v1.0.0</summary><p>
   
   - IMOD coarse alignment added. With two coarse alignment methods, this increases its robustness and reduces the time required to manually align.
   - Image transformations for reconstruction/stack export are now performed with a single 5th order spline interpolation using scipy.ndimage.interpolation.affine_transform. In previous releases, three interpolations were performed sequentially (translation, scaling, and rotation).
