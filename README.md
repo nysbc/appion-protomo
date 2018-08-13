@@ -861,7 +861,7 @@ As a secondary metric, the stability of the geometry model should be checked.
 
 </p></details>
 
-<details><summary>Protomo limitations</summary><p>
+<details><summary>Protomo limitations ![inprogress](https://i.imgur.com/chaGpB5.png)</summary><p>
 
 [Global alignment using a section of all tilt images - alignment is restricted by the overall 3D sample movement and drift in the search area, objects outside of the search area might not be aligned as well as inside the search area for the same reasons.]
 
@@ -871,11 +871,11 @@ As a secondary metric, the stability of the geometry model should be checked.
 
 - In general, Protomo and Appion-Protomo can align any tilt-series that has high enough SNR. All sample types are alignable — single particles of all sizes, filaments, microtubules, liposomes, (pseudo-)crystalline arrays (2D and 3D), reconstituted proteins on membranes, cryosections, FIB/SEM lamella, thin cells — however, some sample geometries are particularly difficult.<br><br>If the field of view of a tilt-series is dominated by rotational or translational (pseudo-)symmetry, per-image rotations or translations might diverge. To help guide tilt-series alignment of such samples, always begin refinement with a tilt-series that is decently aligned to the eye (no obvious errors) and determine the tilt azimuth beforehand to within a few degrees. (For rotationally symmetric samples in particular,) turn on `Check Azimuth Stability` in Advanced General Refinement Parameters, or turn off Tilt Azimuth Refinement in `Geometry Refinement Parameters`. This will help avoid rotational alignment divergence. (For translationally symmetric samples in particular,) adjust the `Translational Limit` appropriately in `Cross-Correlation Parameters`. After making these adjustments, attempt refinement using a wide and dense range of sample thicknesses.<br><br>If the tilt-series is still unalignable, perform refinement using only low tilt angles (~ -30°:30°). If the low angle tilt-series is alignable, manually add the high tilt images back into the Protomo .tlt file in the tilt-series run directory. (This last possible step must be performed manually as there is currently no method built into Appion-Protomo for adding tilt images back into a tilt-series alignment. Use the `My tlt file` option in `Starting Alignment` to insert the tlt file back into Appion-Protomo.)
 
-[Discuss thickness, tilt azimuth, search area, individual bad/misaligned tilt images...]
+[Discuss thickness, tilt azimuth, search area, individual bad/misaligned tilt images...] ![inprogress](https://i.imgur.com/chaGpB5.png)
 
 </p></details>
 
-<details><summary>Common collection issues</summary><p>
+<details><summary>Common collection issues ![inprogress](https://i.imgur.com/chaGpB5.png)</summary><p>
 
 [Discuss grid hole edge in images, drift, beam-induced motion, doming, charging, tracking, dose (SNR), ...]
 
@@ -937,7 +937,7 @@ Ice doming is the effect where the ice bends in the direction normal to the grid
 
 Differences in electron absorption between objects might occur because the objects of interest (including potentially fiducials) might be composed of atoms with significantly different electron cross sections. Different objects might absorb different amounts of energy and be deflected in different directions with different momentum transfers. As a result, objects might move with complicated relative motions during the full tilt-series exposure. Like with ice doming, if a sample is behaving in this way, then Protomo and fiducial alignment will be limited due to the global nature of the alignment methods. Refinement of sub-tilt-series may be able to track this movement and thus recover this resolution loss.
 
-- [electron damage]
+- [electron damage] ![inprogress](https://i.imgur.com/chaGpB5.png)
 
 > The lower bound of the overall resolution limit of a tilt-series might be expressed conceptually as:
 >
@@ -969,11 +969,11 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 # More Examples
 *Here you will find additional example tilt-series alignments showing different samples types and alignment scenarios.*
-<br>**_[to be added]_**
+<br>**_[to be added]_** ![inprogress](https://i.imgur.com/chaGpB5.png)
 
 <details><summary>Click here</summary><p>
 
-# Example #2
+# Example #2 ![inprogress](https://i.imgur.com/chaGpB5.png)
 **_[to be added]_**
 
 *Click to expand:*
