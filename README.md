@@ -275,13 +275,6 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 
 ![](https://i.imgur.com/KsCbaf7.png)
 
-1) Upload tilt-series,
-2) Coarse align tilt-series,
-<br>2b. Manually fix poorly aligned tilt images, if necessary,
-3) Refine tilt-series,
-<br>3b. Assess refinement,
-4) Reconstruct/export tilt-series.
-
 </p></details>
 
 <details><summary>Expected results after following this example tutorial</summary><p>
