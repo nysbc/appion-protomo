@@ -1,7 +1,7 @@
 # appion-protomo
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
-**_<details><summary>Click to see how Protomo alignment works ![test](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
+**_<details><summary>Click to see how Protomo alignment works ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/3PFyXw6.gif)
 
@@ -116,7 +116,7 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
   
 - Re-start the container.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/VDa8UNj.png)
 
@@ -219,7 +219,7 @@ Use your IP and TCP port like ``192.168.99.100:5901`` as the VNC address with pa
 
 - This should open your web browser to the Apache test page. Append `/myamiweb/` to the URL to access Appion.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/siObtGj.png)
 
@@ -243,7 +243,7 @@ https://www.realvnc.com/en/connect/download/viewer/windows/
 
 Use the IP and port found in the running Kitematic container's `Settings >> Hostname/Ports` next to `Docker port 5901` as the VNC address with password `appion-protomo`.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/LnEVAtr.png)
 
@@ -389,7 +389,7 @@ Paste the command to a terminal prompt and hit enter
 
 **Note:** If `uploadSerialEM.py` gives an error regarding binning, then edit the  file and change line 79 to: binning = 1 . This bug will be fixed in the next version.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/j2An6CN.png)
 
@@ -460,7 +460,7 @@ Paste the command to a terminal prompt and hit enter
 - Wait for uploadSerialEM.py  to finish processing.
 
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/gSmwREH.png)
 
@@ -514,7 +514,7 @@ Click `[Click here to View Coarse Alignment Results after protomo2aligner.py --c
 
 > **Note:** The objects in the tilt-series that move the least image-to-image will have a higher chance of being closest to the center of the tomogram after refinement. See the **_Critical Note_** in the upcoming 'Refine tilt-series' section.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/tGbx3dr.png)
 
@@ -617,7 +617,7 @@ On the left under `Align Tilt-Series` click `## runs processing or finished` to 
 > - If the sample consists of a roughly uniformly dense set of objects, such as a FIB-milled cellular lamella or reconstituted proteins on liposomes, then alignment thicknesses up to and including the thickness of the entire sample slab in the search area might align well, however the alignment closest to the thickness of the sample slab will likely align most accurately.
 > - Alignment thicknesses chosen to be significantly larger than the sample thickness will likely align worse than alignment thicknesses that are roughly the same as the sample thickness.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/hyJq6x1.png)
 
@@ -753,7 +753,7 @@ Select `Just Show Command` at the bottom of the page.
 
 - On the next page, copy the entire protomo2reconstruction.py command and run it in the Docker container.
 
-**_<details><summary>Click for images</summary><p>_**
+**_<details><summary>Click for images ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/BFBjnuF.png)
 
