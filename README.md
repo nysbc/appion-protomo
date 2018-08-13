@@ -278,7 +278,7 @@ Use the IP and port found in the running Kitematic container's `Settings >> Host
 <br>2b. Manually fix poorly aligned tilt images, if necessary,
 3) Refine tilt-series,
 <br>3b. Assess refinement,
-4) Reconstruct tilt-series.
+4) Reconstruct/export tilt-series.
 
 </p></details>
 
@@ -675,7 +675,7 @@ Secondary refinement assessments include:
 
 </p></details>
 
-<details><summary>Reconstruct tilt-series</summary><p>
+<details><summary>Reconstruct/export tilt-series</summary><p>
 
 > **Note:** Before proceeding to reconstruction, always check the best iteration(s) of the tilt-series you wish to reconstruct on the Protomo Alignment Summary. At the very least, *view the aligned tilt-series video to confirm that there are no visual issues.*
 
