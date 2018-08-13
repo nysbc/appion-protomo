@@ -1,7 +1,7 @@
-# appion-protomo ![test](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
+# appion-protomo
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
-**_<details><summary>Click to see how Protomo alignment works</summary><p>_**
+**_<details><summary>Click to see how Protomo alignment works</summary><p>_** ![test](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)
 
 ![](https://i.imgur.com/3PFyXw6.gif)
 
