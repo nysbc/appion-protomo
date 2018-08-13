@@ -422,7 +422,7 @@ Paste the command to a terminal prompt and hit enter
 </p></details>
 
 </p></details>
-
+https://i.imgur.com/bkp3BIY.png
 <details><summary><img src="https://i.imgur.com/6jNFewI.png"> Upload additional SerialEM-formatted tilt-series to an existing session</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
@@ -478,7 +478,7 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary>Coarse align tilt-series</summary><p>
+<details><summary><img src="https://i.imgur.com/bkp3BIY.png"> Coarse align tilt-series</summary><p>
 
 - Navigate to your session in the image viewer and click `processing`.
 
