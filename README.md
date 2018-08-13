@@ -1040,7 +1040,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 - `07-25-2018`
   - Batch IMOD coarse alignment bug fixed.
 
-  <details><summary>07-05-2018</summary><p>
+<details><summary>07-05-2018</summary><p>
   
 - `07-05-2018`
   - Bug in SerialEM upload script fixed.
