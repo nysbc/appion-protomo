@@ -94,7 +94,7 @@ In the Kitematic search bar type: `semc/appion-protomo`.
 
 Click `Create` on the `semc` `appion-protomo` repository and wait for the container to download and start.
 
-**_<details><summary>Click for image</summary><p>_**
+**_<details><summary>Click for image ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/D6P0c3J.png)
 
@@ -327,7 +327,7 @@ tar -zxvf HAslow1.tar.gz <your appion-protomo/emg/data/tiltseries/ directory>
 > Now we are inside the container
 ```
 
-**_<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. Click for image instructions</summary><p>_**
+**_<details><summary>For Windows you need to copy tilt-series to the container because there are no mounted drives. Click for image instructions ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 - Click on `DOCKER CLI` on the bottom-left of Kitematic:
 
@@ -803,7 +803,7 @@ This process (steps 4 through 6) continues until all tilt images have been align
 
 Tilt-series alignment quality is then assessed semi-automatically by plotting the iterations versus the errors in alignment (see 5. indent), and should be additionally assessed by the user by checking tilt model geometry stability, that the alignment thickness has been chosen appropriately, and by simply watching the aligned tilt-series and reconstruction videos.
 
-**_<details><summary>Click for Protomo alignment schematics</summary><p>_**
+**_<details><summary>Click for Protomo alignment schematics ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 <p align="center"> 
 <img src="https://i.imgur.com/3PFyXw6.gif">
@@ -823,7 +823,7 @@ When you click on a refinement iteration summary, you will see four correction f
 
 Each correction factor plot, except for rotation, additionally has plotted the mean correction factor (solid line) plus/minus one standard deviation (dotted lines). Green lines are good, red lines are bad.
 
-**_<details><summary>Click for image</summary><p>_**
+**_<details><summary>Click for image ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/dnPfPXw.png)
 
@@ -839,7 +839,7 @@ To simplify the assessment of these correction factors, a combined metric (CCMS 
 
 The goal then becomes to minimize the black line.
 
-**_<details><summary>Click for image</summary><p>_**
+**_<details><summary>Click for image ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/YjuEzSP.png)
 
@@ -848,7 +848,7 @@ The goal then becomes to minimize the black line.
 
 To simplify this process further, the main Protomo Alignment Summary webpage locates the lowest points on the black line and grades the alignment quality depending on how low the line is at that iteration: Bad, Okay, Good, Very Good, Excellent, Perfection!, and Suspiciously Perfect...
 
-**_<details><summary>Click for image</summary><p>_**
+**_<details><summary>Click for image ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/7t89LBZ.png)
 
