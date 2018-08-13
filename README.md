@@ -423,7 +423,7 @@ Paste the command to a terminal prompt and hit enter
 
 </p></details>
 
-<details><summary>Upload additional SerialEM-formatted tilt-series to an existing session</summary><p>
+<details><summary><img src="https://i.imgur.com/6jNFewI.png"> Upload additional SerialEM-formatted tilt-series to an existing session</summary><p>
 
 Place multiple SerialEM stacks and mdoc files (each pair with the same basename) into `emg/data/tiltseries`
 
