@@ -1037,7 +1037,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 <details><summary>Appion-Protomo</summary><p>
   
 <!--- - [TBD] - v1.1  --->
-<!---   - Added the option to re-center tilt images after coarse alignment, manual alignment, and before refinement. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.  --->
+<!---   - Added the option to re-center tilt images after coarse alignment and manual alignment. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.  --->
 <!---   - Added the option to begin a manual alignment from a previous manual alignment.  --->
 <!---   - Added single-letter names for manual alignment starting options: 'o' for original, 'c' for coarse, 'i' for Imod, 'm' for manual.  --->
 <!---   - Fixed the Translational Limit parameter in refinement. It didn't change if you enter in a different value.  --->
