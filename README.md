@@ -29,6 +29,8 @@ Launch docker according to your Docker engine's instructions, typically ``docker
 
 > **Note:** You must have sudo or root access to *install* Docker. If you do not wish to *run* Docker as sudo/root, you need to configure user groups as described here: https://docs.docker.com/install/linux/linux-postinstall/
 
+> **Note:** You may need to update your Docker installation by commandline before being able to install Appion-Protomo.
+
 </p></details>
 
 ## Windows &nbsp;&nbsp; *(GUI & command line)*
