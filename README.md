@@ -1028,13 +1028,16 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 </p></details>
 
-<!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
-
 <!--- - [TBD]   --->
 
 </p></details>
 
 <details><summary>Appion-Protomo</summary><p>
+  
+<!--- - [TBD] - v1.1  --->
+<!---   - Added the option to re-center tilt images after coarse alignment, manual alignment, and before refinement. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.  --->
+<!---   - Added the option to begin a manual alignment from a previous manual alignment.  --->
+<!---   - Added single-letter names for manual alignment starting options: 'o' for original, 'c' for coarse, 'i' for Imod, 'm' for manual.  --->
   
 - `08-14-2018 - v1.0.2`
   - Batch IMOD coarse alignment bug fixed.
@@ -1066,6 +1069,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - Backup of `/emg/sw/myami/`: https://drive.google.com/open?id=1zOKzIVpatgY1FNsCYjvhBDyZiwEEXnBS
 
 </p></details>
+
+<!--- - [TBD] Added 'Run' buttons alongside 'Just Show Command' button.  --->
 
 <!--- - [TBD]  --->
 
