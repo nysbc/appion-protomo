@@ -1041,6 +1041,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 <!---   - Added the option to begin a manual alignment from a previous manual alignment.  --->
 <!---   - Added single-letter names for manual alignment starting options: 'o' for original, 'c' for coarse, 'i' for Imod, 'm' for manual.  --->
 <!---   - Fixed the Translational Limit parameter in refinement. It didn't change if you enter in a different value.  --->
+<!---   - If you go to the Refine webpage with a manually-fixed iteration from a previous alignment, it will now default to choosing 'Manual' as the Starting Alignment.  --->
   
 - `08-14-2018 - v1.0.2`
   - Batch IMOD coarse alignment bug fixed.
