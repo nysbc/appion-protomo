@@ -14,7 +14,7 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/631/eman-linux-x8
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz'
 wget -nc -c 'https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz'
-wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9867/myami-trunk-7-5-18.tar.gz'
+wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/10549/myami-trunk-10-27-18.tar.gz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9187/tomo3d_January2015.tar.gz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9188/tomoctf_x86_64_July2013.tar.gz'
 wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9189/imod_4.10.11_docker.tar.gz'
@@ -30,5 +30,5 @@ wget -nc -c 'http://emg.nysbc.org/redmine/attachments/download/9189/imod_4.10.11
 
 cd $curdir
 #tar zxvf TGZ/findem-docker-centos7.tgz
-tar zxvf TGZ/myami-trunk-7-5-18.tar.gz myami-trunk
+tar zxvf TGZ/myami-trunk-10-27-18.tar.gz myami-trunk
 docker build -t semc/appion-protomo .
