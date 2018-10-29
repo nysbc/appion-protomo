@@ -1141,6 +1141,8 @@ Appion and thus Appion-Protomo are open source software packages released under 
 The workflow has been tested in Mac OSX El Capitan 10.11.3, Ubuntu 14.04.3 LTS, CentOS 7, and Windows 10.
 
 
-# Bugs & Suggestions
+# Bugs, Suggestions, & Discussion
 
 Please report any bugs, problems, suggestions, or requests as a [Github issue](https://github.com/nysbc/appion-protomo/issues).
+
+[Here is a Google Group](https://groups.google.com/forum/#!forum/appion-protomo) where users may discuss alignment strategies and compare notes.
