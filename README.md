@@ -1046,6 +1046,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!---     - Removed CMDiameter options from Refinement webpage - this feature is not yet implemented.  --->
 
+<!---     - Made it so Scale Factor switch adjusts properly when Rounds are shifted left.  --->
+
   
 - `10-29-2018 - v1.1`
   - Added the option to re-center tilt images after coarse alignment and manual alignment. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.
