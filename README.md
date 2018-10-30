@@ -1038,6 +1038,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   
 <!--- - `[TBD] - v1.1.1`  --->
 
+<!---   - SerialEM stack uploading now re-names files that have bad characters in them, such as [ or ) or , or . etc. Uploaded tilt-series with these characters in the filename are likely to break the alignment workflow.  --->
+
 <!---   - Cleanup and small adjustments:  --->
 
 <!---     - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.  --->
