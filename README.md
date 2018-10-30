@@ -1038,9 +1038,13 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   
 <!--- - `[TBD] - v1.1.1`  --->
 
-<!---   - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.  --->
+<!---   - Cleanup and small adjustments:  --->
 
-<!---   - For Express and Basic Settings in Coarse Alignment, the default is now to change the reference image for alignment to the image closest to zero degrees. This used to only be defaulted for Advanced Settings.  --->
+<!---     - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.  --->
+
+<!---     - For Express and Basic Settings in Coarse Alignment, the default is now to change the reference image for alignment to the image closest to zero degrees. This used to only be defaulted for Advanced Settings.  --->
+
+<!---     - Removed CMDiameter options from Refinement webpage - this feature is not yet implemented.  --->
 
   
 - `10-29-2018 - v1.1`
