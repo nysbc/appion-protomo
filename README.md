@@ -1040,6 +1040,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!---   - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.  --->
 
+<!---   - For Express and Basic Settings in Coarse Alignment, the default is now to change the reference image for alignment to the image closest to zero degrees. This used to only be defaulted for Advanced Settings.  --->
+
   
 - `10-29-2018 - v1.1`
   - Added the option to re-center tilt images after coarse alignment and manual alignment. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.
