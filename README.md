@@ -1040,21 +1040,14 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-<!--- - `[TBD] - v1.1.1`  --->
-
-<!---   - SerialEM stack uploading now re-names files that have bad characters in them, such as [ or ) or , or . etc. Uploaded tilt-series with these characters in the filename are likely to break the alignment workflow.  --->
-
-<!---   - Cleanup and small adjustments:  --->
-
-<!---     - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.  --->
-
-<!---     - For Express and Basic Settings in Coarse Alignment, the default is now to change the reference image for alignment to the image closest to zero degrees. This used to only be defaulted for Advanced Settings.  --->
-
-<!---     - Removed CMDiameter options from Refinement webpage - this feature is not yet implemented.  --->
-
-<!---     - Made it so Scale Factor switch adjusts properly when Rounds are shifted left.  --->
-
-<!---     - Protomo tlt files are now forcibly ordered from negative to positive tilt. Not doing this makes tilt-series videos display out of order.   --->
+ - `11-04-18 - v1.1.1`
+   - SerialEM stack uploading now re-names files that have bad characters in them, such as \[ or ) or , or . etc. Uploaded tilt-series with these characters in the filename are likely to break the alignment workflow.
+   - Cleanup and small adjustments:
+     - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.
+     - For Express and Basic Settings in Coarse Alignment, the default is now to change the reference image for alignment to the image closest to zero degrees. This used to only be defaulted for Advanced Settings.
+     - Removed CMDiameter options from Refinement webpage - this feature is not yet implemented.
+     - Made it so Scale Factor switch adjusts properly when Rounds are shifted left.
+     - Protomo tlt files are now forcibly ordered from negative to positive tilt. Not doing this makes tilt-series videos display out of order.
 
   
 - `10-29-2018 - v1.1`
