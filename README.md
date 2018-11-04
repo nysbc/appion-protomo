@@ -1003,12 +1003,13 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-<!--- - `[TBD] - v1.1.1`  --->
+ - `11-04-18 - v1.1.1`
+   - Created an Appion-Protomo Google Group so that users can discuss how to align tilt-series amongst themselves: `https://groups.google.com/forum/#!forum/appion-protomo`
 
-<!---   - Created an Appion-Protomo Google Group so that users can discuss how to align tilt-series amongst themselves: `https://groups.google.com/forum/#!forum/appion-protomo`  --->
-
-- `08-14-2018 - v1.0.2`
+<details><summary>08-14-2018 - v1.0.2</summary><p>
   - README (this file!) significantly updated.
+
+</p></details>
 
 <details><summary>07-05-2018 - v1.0.1</summary><p>
   
@@ -1049,8 +1050,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
      - Made it so Scale Factor switch adjusts properly when Rounds are shifted left.
      - Protomo tlt files are now forcibly ordered from negative to positive tilt. Not doing this makes tilt-series videos display out of order.
 
-  
-- `10-29-2018 - v1.1`
+<details><summary>10-29-2018 - v1.1</summary><p>
   - Added the option to re-center tilt images after coarse alignment and manual alignment. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.
   - Added the option to begin a manual alignment from a previous manual alignment.
   - Added single-letter names for manual alignment starting options: 'o' for original, 'c' for coarse, 'i' for Imod, 'm' for manual.
@@ -1059,6 +1059,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   - Added the ability to create tilt-series and reconstruction videos after a manual alignment by adding '--create_videos' to the protomo2manualaligner.py command.
   - Updated the Preset Parameters on the refinement webpage.
   - Minor bug fixes.
+
+</p></details>
   
 <details><summary>08-14-2018 - v1.0.2</summary><p>
   
