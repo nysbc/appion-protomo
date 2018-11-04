@@ -1003,6 +1003,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
+<!--- - `[TBD] - v1.1.1`  --->
+
+<!---   - Created an Appion-Protomo Google Group so that users can discuss how to align tilt-series amongst themselves: `https://groups.google.com/forum/#!forum/appion-protomo`  --->
+
 - `08-14-2018 - v1.0.2`
   - README (this file!) significantly updated.
 
@@ -1155,7 +1159,7 @@ Appion and thus Appion-Protomo are open source software packages released under 
 
 # Compatibility
 
-The workflow has been tested in Mac OSX El Capitan 10.11.3, Ubuntu 14.04.3 LTS, CentOS 7, and Windows 10.
+The workflow has been tested in Mac OSX El Capitan 10.11.3, Ubuntu 14.04.3 LTS, CentOS 7, Windows 10, and Amazon EC2.
 
 
 # Bugs, Suggestions, & Discussion
