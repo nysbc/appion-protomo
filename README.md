@@ -1042,6 +1042,14 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
+<!--- - [TBD] - v1.1.2  --->
+
+<!---   - Added the pixelsize to headers of tilt images and reconstructions.   --->
+
+<!---   - Added a link from Coarse alignment to Batch alignment.   --->
+
+<!---   - Removed unused protomo*py scripts.   --->
+
  - `11-04-18 - v1.1.1`
    - SerialEM stack uploading now re-names files that have bad characters in them, such as \[ or ) or , or . etc. Uploaded tilt-series with these characters in the filename are likely to break the alignment workflow.
    - Cleanup and small adjustments:
