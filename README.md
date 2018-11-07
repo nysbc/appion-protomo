@@ -1044,7 +1044,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   
 <!--- - [TBD] - v1.1.2  --->
     
-<!---   - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tomograms properly.  --->
+<!---   - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tilt-series stacks and tomograms properly.  --->
 
   
  - `11-04-18 - v1.1.1`
