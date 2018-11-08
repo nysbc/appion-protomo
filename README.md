@@ -1048,6 +1048,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!---   - Added a link from Coarse alignment to Batch alignment.   --->
 
+<!---   - Fixed a small bug where if you only have 2 CPU cores then tilt-series videos wouldn't be made.   --->
+
 <!---   - Removed unused protomo*py scripts.   --->
 
  - `11-04-18 - v1.1.1`
