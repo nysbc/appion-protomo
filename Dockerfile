@@ -1,14 +1,15 @@
 FROM centos:7
-MAINTAINER Carl Negro <cnegro@nysbc.org>
-LABEL authors="Neil Voss, Carl Negro"
+MAINTAINER Alex Noble <anoble@nysbc.org>
+LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 ### install epel
 RUN yum -y install epel-release
 RUN yum -y install yum
-RUN yum -y upgrade \
-  && yum -y install wget epel-release sudo passwd rsync tar openssh-clients && yum -y clean all
+#RUN yum -y upgrade --exclude=filesystem*  # filesystem doesn't update properly for some reason
+RUN yum -y install wget epel-release sudo passwd rsync tar openssh-clients && yum -y clean all
 
 ### install software
-RUN yum -y upgrade && yum -y install \
+#RUN yum -y upgrade --exclude=filesystem*  # filesystem doesn't update properly for some reason
+RUN yum -y install \
  python-tools python-devel python-matplotlib \
  ImageMagick grace gnuplot bash-completion colordiff \
  wxPython numpy scipy python-imaging python2-pip  \
@@ -27,7 +28,7 @@ RUN yum -y upgrade && yum -y install \
 RUN sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/nanorc
 
 ## Appion specific installs
-RUN yum -y upgrade && yum -y install mozilla-adblockplus firefox dbus && yum -y clean all
+RUN yum -y upgrade --exclude=filesystem* && yum -y install mozilla-adblockplus firefox dbus && yum -y clean all
 RUN dbus-uuidgen > /var/lib/dbus/machine-id
 RUN pip install --upgrade pip
 RUN pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2
@@ -148,7 +149,8 @@ RUN ln -sv /sw/imod_4.10.11 /sw/IMOD
 #RUN yum -y upgrade && yum -y install  \
 # ftp://ftp.pbone.net/mirror/ftp.scientificlinux.org/linux/scientific/6.5/x86_64/os/Packages/xorg-x11-twm-1.0.3-5.1.el6.x86_64.rpm \
 # && yum -y clean all
-RUN yum -y upgrade && yum -y install \
+#RUN yum -y upgrade --exclude=filesystem* &&  # filesystem doesn't update properly for some reason
+RUN yum -y install \
  tigervnc-server xterm xsetroot fluxbox \
  xorg-x11-xinit xorg-x11-font-utils xorg-x11-fonts-Type1 xorg-x11-xauth  \
  libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
@@ -201,9 +203,9 @@ COPY config/bashrc /etc/bashrc
 #RUN mkdir -p /home/appionuser/.mozilla/firefox/yvn3wpn8.default
 #COPY profiles.ini  /home/appionuser/.mozilla/firefox/
 COPY config/config.php /sw/myami/myamiweb/config.php
+RUN sed -i 's:Appion-Protomo in a Docker Container:Appion-Protomo in a Docker Container<br><font size=5>version 1.1.2</font>:g' /sw/myami/myamiweb/config.php
 COPY startup.sh /sw/startup.sh
 
 RUN updatedb
 
 CMD /sw/startup.sh
-
