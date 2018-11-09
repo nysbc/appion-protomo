@@ -1003,12 +1003,14 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-<!--- - [TBD] - v1.1.2  --->
-    
-<!---   - Fixed critical database creation issue since v1.1.   --->
+ - `11-09-18 - v1.1.2`
+   - Fixed critical database creation issue since v1.1. Sorry!!
 
- - `11-04-18 - v1.1.1`
-   - Created an Appion-Protomo Google Group so that users can discuss how to align tilt-series amongst themselves: [https://groups.google.com/forum/#!forum/appion-protomo](https://groups.google.com/forum/#!forum/appion-protomo)
+</p></details>
+
+<details><summary>11-04-2018 - v1.1.1</summary><p>
+  
+    - Created an Appion-Protomo Google Group so that users can discuss how to align tilt-series amongst themselves: [https://groups.google.com/forum/#!forum/appion-protomo](https://groups.google.com/forum/#!forum/appion-protomo)
 
 <details><summary>08-14-2018 - v1.0.2</summary><p>
   
@@ -1046,18 +1048,14 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-<!--- - [TBD] - v1.1.2  --->
-    
-<!---   - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tilt-series stacks and tomograms properly.  --->
-
-<!---   - Added a link from Coarse alignment to Batch alignment.   --->
-
-<!---   - Fixed a small bug where if you only have 2 CPU cores then tilt-series videos wouldn't be made.   --->
-
-<!---   - Removed unused protomo*py scripts.   --->
-
+ - `11-09-18 - v1.1.2`
+   - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tilt-series stacks and tomograms properly.
+   - Added a link from Coarse alignment to Batch alignment.
+   - Fixed a small bug where if you only have 2 CPU cores then tilt-series videos wouldn't be made.
+   - Removed unused protomo\*py scripts.
+ 
+<details><summary>11-04-2018 - v1.1.1</summary><p>
   
- - `11-04-18 - v1.1.1`
    - SerialEM stack uploading now re-names files that have bad characters in them, such as \[ or ) or , or . etc. Uploaded tilt-series with these characters in the filename are likely to break the alignment workflow.
    - Cleanup and small adjustments:
      - Removed Shift Limit|Angle Limit from Basic Settings in Coarse Alignment. These generally aren't used or useful.
@@ -1066,6 +1064,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
      - Made it so Scale Factor switch adjusts properly when Rounds are shifted left.
      - Protomo tlt files are now forcibly ordered from negative to positive tilt. Not doing this makes tilt-series videos display out of order.
 
+</p></details>
+ 
 <details><summary>10-29-2018 - v1.1</summary><p>
   
   - Added the option to re-center tilt images after coarse alignment and manual alignment. In many circumstances, this can dramatically increase the available search area, thus improving the alignment and even allowing previously unalignable tilt-series to be aligned.
