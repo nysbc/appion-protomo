@@ -1166,7 +1166,7 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
   
   <img src="http://biophysics.fsu.edu/taylor/wp-content/uploads/sites/18/2010/09/hw.jpg" width="120">
 
-- [Protomo](https://www.electrontomography.org/).
+- [Protomo](https://www.electrontomography.org/)
 
 </p></details>
 
