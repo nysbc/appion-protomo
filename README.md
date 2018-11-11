@@ -1005,7 +1005,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
  - `11-11-18 - v1.1.3`
    - Decreased the size of the Docker image by ~10% by optimizing the Dockerfile commands.
-   - Added screen to make it easier to run multiple jobs and kill jobs.
+   - Added [screen](https://www.tecmint.com/screen-command-examples-to-manage-linux-terminals/) to make it easier to run multiple jobs and kill jobs.
    - Removed AdblockPlus because why was it there?
 
 <details><summary>11-09-2018 - v1.1.2</summary><p>
