@@ -1004,7 +1004,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 <details><summary>Docker Appion-Protomo</summary><p>
 
  - `11-11-18 - v1.1.3`
-   - Decreased the size of the Docker image by optimizing the Dockerfile commands.
+   - Decreased the size of the Docker image by ~10% by optimizing the Dockerfile commands.
    - Added screen to make it easier to run multiple jobs and kill jobs.
    - Removed AdblockPlus because why was it there?
 
