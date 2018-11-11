@@ -1012,6 +1012,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
  
    - Fixed critical database creation issue since v1.1. Sorry!!
 
+</p></details>
+
 <details><summary>11-04-2018 - v1.1.1</summary><p>
   
     - Created an Appion-Protomo Google Group so that users can discuss how to align tilt-series amongst themselves: [https://groups.google.com/forum/#!forum/appion-protomo](https://groups.google.com/forum/#!forum/appion-protomo)
