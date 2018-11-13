@@ -1,6 +1,6 @@
 # appion-protomo v1.1
 ```diff
- Warning: Database is broken in v1.1. Use v1.1.3 or newer!
+- Warning: Database is broken in v1.1. Use v1.1.3 or newer!
 ```
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
