@@ -12,16 +12,6 @@ export APPIONPATH=/sw/myami/appion
 export LEGINONPATH=/sw/myami/leginon
 export EMANDIR=/sw/eman1
 export EMAN2DIR=/sw/eman2
-#export RELIONDIR=/sw/relion
-#export XMIPPDIR=/sw/xmipp
-#export MPIPATH=/usr/lib64/openmpi
-#export GRIGPATH=/sw/grigorieff
-
-#spider
-#export SPIDERDIR=/sw/spider
-#export SPBIN_DIR=${SPIDERDIR}/bin/
-#export SPPROC_DIR=${SPIDERDIR}/proc/
-#export SPMAN_DIR=${SPIDERDIR}/man/
 
 #protomo
 export I3ROOT=/sw/protomo2
