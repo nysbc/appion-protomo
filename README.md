@@ -1003,6 +1003,11 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
+<!--- - [TBD] - v1.1.4   --->
+
+<!---   - Removed a few unused packages and simplified Dockerfile a bit more. Also cleaned up Dockerfile and installation scripts.   --->
+
+
  - `11-11-18 - v1.1.3`
    - Decreased the size of the Docker image by ~10% by optimizing the Dockerfile commands.
    - Added [screen](https://www.tecmint.com/screen-command-examples-to-manage-linux-terminals/) to make it easier to run multiple jobs and kill jobs.
@@ -1056,6 +1061,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
+<!--- - [TBD] - v1.1.4   --->
+
+<!---   - Added TOMO4 tilt-series upload support!   --->
+
+<!---   - Fixed minor errors in text.   --->
+
  - `11-09-18 - v1.1.2`
    - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tilt-series stacks and tomograms properly.
    - Added a link from Coarse alignment to Batch alignment.
