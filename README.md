@@ -1,4 +1,7 @@
-# appion-protomo
+# appion-protomo v1.1.2
+```diff
+- Warning: Database is broken in v1.1.2. Use v1.1.3 or newer!
+```
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
 **_<details><summary>Click to see how Protomo alignment works ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
