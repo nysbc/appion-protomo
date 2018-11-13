@@ -4,7 +4,6 @@
 [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
 xsetroot -solid '#222E45' 
 vncconfig -iconic &
-xterm -geometry 110x24+10+10 -ls -title "Welcome to Appion 1" &
-xterm -geometry 110x24+10-100 -ls -title "Welcome to Appion 2" &
-#LANG=C twm &
+xterm -geometry 110x24+10+10 -ls -title "Welcome to Appion-Protomo 1" &
+xterm -geometry 110x24+10-100 -ls -title "Welcome to Appion-Protomo 2" &
 exec fluxbox
