@@ -1,4 +1,4 @@
-# appion-protomo
+# appion-protomo v1.0.1
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
 
