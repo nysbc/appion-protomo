@@ -1069,6 +1069,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!---   - Added a link to the Google group to the end of the python commands.   --->
 
+<!---   - Added a link from the refinement command generation page to the all-encompassing alignment summary page .   --->
+
 <!---   - Fixed minor errors in text.   --->
 
  - `11-09-18 - v1.1.2`
