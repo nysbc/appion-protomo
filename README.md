@@ -1065,11 +1065,15 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!---   - Added TOMO4 tilt-series upload support!   --->
 
-<!---   - Changed the link to the User Guide on the website to the github Appion-Protomo page.   --->
+<!---   - Collapsed the sidebar on the webpage for all sections except for Protomo.    --->
 
-<!---   - Added a link to the Google group to the end of the python commands.   --->
+<!---   - Clicking on 'processing' in imageviewer now goes directly to 'Align Tilt-Series'.    --->
 
-<!---   - Added a link from the refinement command generation page to the all-encompassing alignment summary page .   --->
+<!---   - Changed the link to the User Guide on the website to the github Appion-Protomo page, and added the same link to the Appion webpage.   --->
+
+<!---   - Added a link to the Google group to the Appion webpage and to the end of the python commands.   --->
+
+<!---   - Added a link from the refinement command generation page to the all-encompassing alignment summary page.   --->
 
 <!---   - Fixed minor errors in text.   --->
 
