@@ -1065,6 +1065,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!---   - Added TOMO4 tilt-series upload support!   --->
 
+<!---   - Changed the link to the User Guide on the website to the github Appion-Protomo page.   --->
+
+<!---   - Added a link to the Google group to the end of the python commands.   --->
+
 <!---   - Fixed minor errors in text.   --->
 
  - `11-09-18 - v1.1.2`
