@@ -20,7 +20,7 @@ docker run -d -t \
   -v $(pwd)/config/httpd.conf:/etc/httpd/conf/httpd.conf \
   -w /sw/myami/appion \
   -p $WEBPORT:80 -p $VNCPORT:5901 -p $DBPORT:3306 \
-  semc/appion-protomo
+  semc/appion-protomo:v1.0
 
 echo Waiting for database...
 sleep 10
