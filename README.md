@@ -1062,8 +1062,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
+  
+<!--- - [TBD] - v1.2   --->
+
+<!---   - Added TOMO4 tilt-series upload support!  --->
+
  - 11-14-2018 - v1.1.4
-   - Added TOMO4 tilt-series upload support!
    - Collapsed the sidebar on the webpage for all sections except for Protomo.
    - Clicking on 'processing' in imageviewer now goes directly to 'Align Tilt-Series'.
    - Changed the link to the User Guide on the website to the github Appion-Protomo page, and added the same link to the Appion webpage.
