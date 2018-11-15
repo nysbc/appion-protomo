@@ -1003,16 +1003,17 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-<!--- - [TBD] - v1.1.4   --->
+ - 11-14-2018 - v1.1.4
+   - Removed a few unused packages and simplified Dockerfile a bit more. Also cleaned up Dockerfile and installation scripts.
 
-<!---   - Removed a few unused packages and simplified Dockerfile a bit more. Also cleaned up Dockerfile and installation scripts.   --->
-
-
- - `11-11-18 - v1.1.3`
+<details><summary>11-11-2018 - v1.1.3</summary><p>
+ 
    - Decreased the size of the Docker image by ~10% by optimizing the Dockerfile commands.
    - Added [screen](https://www.tecmint.com/screen-command-examples-to-manage-linux-terminals/) to make it easier to run multiple jobs and kill jobs.
    - Removed AdblockPlus because why was it there?
 
+</p></details>
+ 
 <details><summary>11-09-2018 - v1.1.2</summary><p>
  
    - Fixed critical database creation issue since v1.1. Sorry!!
@@ -1061,27 +1062,23 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-<!--- - [TBD] - v1.1.4   --->
+ - 11-14-2018 - v1.1.4
+   - Added TOMO4 tilt-series upload support!
+   - Collapsed the sidebar on the webpage for all sections except for Protomo.
+   - Clicking on 'processing' in imageviewer now goes directly to 'Align Tilt-Series'.
+   - Changed the link to the User Guide on the website to the github Appion-Protomo page, and added the same link to the Appion webpage.
+   - Added a link to the Google group to the Appion webpage and to the end of the python commands.
+   - Added a link from the refinement command generation page to the all-encompassing alignment summary page.
+   - Fixed minor errors in text.
 
-<!---   - Added TOMO4 tilt-series upload support!   --->
-
-<!---   - Collapsed the sidebar on the webpage for all sections except for Protomo.    --->
-
-<!---   - Clicking on 'processing' in imageviewer now goes directly to 'Align Tilt-Series'.    --->
-
-<!---   - Changed the link to the User Guide on the website to the github Appion-Protomo page, and added the same link to the Appion webpage.   --->
-
-<!---   - Added a link to the Google group to the Appion webpage and to the end of the python commands.   --->
-
-<!---   - Added a link from the refinement command generation page to the all-encompassing alignment summary page.   --->
-
-<!---   - Fixed minor errors in text.   --->
-
- - `11-09-18 - v1.1.2`
+<details><summary>11-09-2018 - v1.1.2</summary><p>
+ 
    - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tilt-series stacks and tomograms properly.
    - Added a link from Coarse alignment to Batch alignment.
    - Fixed a small bug where if you only have 2 CPU cores then tilt-series videos wouldn't be made.
    - Removed unused protomo\*py scripts.
+ 
+</p></details>
  
 <details><summary>11-04-2018 - v1.1.1</summary><p>
   
