@@ -4,6 +4,9 @@
 [ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
 xsetroot -solid '#222E45' 
 vncconfig -iconic &
-xterm -geometry 110x24+10+10 -ls -title "Welcome to Appion-Protomo 1" &
-xterm -geometry 110x24+10-100 -ls -title "Welcome to Appion-Protomo 2" &
+firefox &
+xterm -geometry 110x24+10+10 -ls -title "Welcome to Appion-Protomo!" &
+xterm -geometry 110x24+10-100 -ls -title "Try using 'screen' to run virtual terminals!" &
+xterm -geometry 110x24+800+10 -ls -title "First follow the example on github" &
+xterm -geometry 110x24+800+100 -ls -title "Get assistance at the Appion-Protomo google group" &
 exec fluxbox
