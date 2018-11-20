@@ -3,7 +3,7 @@ MAINTAINER Alex Noble <anoble@nysbc.org>
 LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 
 ### install software
-RUN yum -y install epel-release && yum -y install yum wget epel-release sudo passwd rsync tar openssh-clients && yum -y install \
+RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar openssh-clients && yum -y install \
  python-tools python-devel python-matplotlib \
  ImageMagick gnuplot bash-completion \
  wxPython numpy scipy python-imaging python2-pip  \
@@ -19,11 +19,11 @@ RUN yum -y install epel-release && yum -y install yum wget epel-release sudo pas
  gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
  numactl vim nc screen && yum -y clean all \
  && rm -rf /var/cache/yum \
-
+#
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/nanorc \
-
+#
 ## Appion specific installs   # filesystem doesn't update properly for some reason
 && yum -y upgrade --exclude=filesystem* && yum -y install firefox dbus && yum -y clean all && rm -rf /var/cache/yum \
 && dbus-uuidgen > /var/lib/dbus/machine-id \
@@ -31,86 +31,75 @@ RUN yum -y install epel-release && yum -y install yum wget epel-release sudo pas
 && pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
-&& mkdir -p /emg/data  && echo 'mkdir /emg/data' \
-&& mkdir -p /sw && echo 'mkdir /sw' \
-&& mkdir -p /sw/sql && echo 'mkdir /sw/sql' \
-&& mkdir -p /emg/data/appion && echo 'mkdir /emg/data/appion' \
-&& chmod 777 -R /emg  && echo 'chmod 777' \
+&& mkdir -p /emg/data \
+&& mkdir -p /sw \
+&& mkdir -p /sw/sql \
+&& mkdir -p /emg/data/appion \
+&& chmod 777 -R /emg \
 && chown -R appionuser:users /emg/data
+
+COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
 
 ### Apache setup
 COPY config/php.ini config/bashrc /etc/
 COPY config/info.php /var/www/html/info.php
 EXPOSE 80 5901
 
+COPY sql/ /sw/sql/
+
+### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz && tar xzfv eman2_centos6_docker.tgz -C /sw && rm eman2_centos6_docker.tgz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
+&& wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz && tar xfv ffmpeg-git-64bit-static.tar.xz -C /sw && rm ffmpeg-git-64bit-static.tar.xz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10729/tomo3d_January2015.tar.gz && tar xzfv tomo3d_January2015.tar.gz -C /sw && rm tomo3d_January2015.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10731/tomoctf_x86_64_July2013.tar.gz && tar xzfv tomoctf_x86_64_July2013.tar.gz -C /sw && rm tomoctf_x86_64_July2013.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10732/imod_4.10.11_docker.tar.gz && tar xzfv imod_4.10.11_docker.tar.gz -C /sw && rm imod_4.10.11_docker.tar.gz \
+&& ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static \
+&& ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so \
+#
 ### Myami setup
-COPY myami-trunk /sw/myami
-RUN chmod 444 /var/www/html/info.php && echo 'chmod info.php' \
+&& chmod 444 /var/www/html/info.php \
 && ln -sv /sw/myami/myamiweb /var/www/html/myamiweb \
-&& mkdir -p /sw/sql \
+&& mkdir -p /etc/myami \
 && mkdir -p /var/cache/myami/redux/ && chmod 777 /var/cache/myami/redux/ \
 && ln -sv /sw/myami/appion/appionlib /usr/lib64/python2.7/site-packages/ \
 && ln -sv /sw/myami/redux/bin/reduxd /usr/bin/ && chmod 755 /usr/bin/reduxd \
 && for i in pyami imageviewer leginon pyscope sinedon redux; \
 	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
 
-COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
-
-COPY sql/ /sw/sql/
-
 ### Compile radermacher, libcv, numextension, and redux
-WORKDIR /sw/myami/modules/radermacher
-RUN python ./setup.py install
-WORKDIR /sw/myami/modules/libcv
-RUN python ./setup.py install
+
 WORKDIR /sw/myami/modules/numextension
 RUN python ./setup.py install
 WORKDIR /sw/myami/redux
 RUN python ./setup.py install \
-
+#
 && mkdir /etc/fftw \
 && python /sw/myami/pyami/fft/fftwsetup.py 2 4096 4096 && mv -v ~/fftw3-wisdom-* /etc/fftw/wisdom \
-&& cp -v /sw/myami/redux/init.d/reduxd /etc/init.d/reduxd
-WORKDIR /sw/myami/
-
-### EMAN 1 & 2, IMOD, Protomo, FFMPEG
-ADD TGZ/eman-linux-x86_64-cluster-1.9.tar.gz TGZ/eman2_centos6_docker.tgz TGZ/imod_4.10.11_docker.tar.gz TGZ/protomo2-centos7-docker.tgz TGZ/ffmpeg-git-64bit-static.tar.xz /sw/
-
-### Tomo3D
-ADD TGZ/tomo3d_January2015.tar.gz /sw/tomo3d/
-
-### TomoCTF
-ADD TGZ/tomoctf_x86_64_July2013.tar.gz /sw/tomoctf/
-
-### IMOD  (fix libpyEM.so?)
-RUN ln -sv /sw/imod_4.10.11 /sw/IMOD \
-&& ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static \
-&& chmod +x /sw/tomoctf/bin/* \
-&& mv -v /sw/EMAN /sw/eman1 \
-&& ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so \
-
-### Trying to do VNC
+&& cp -v /sw/myami/redux/init.d/reduxd /etc/init.d/reduxd \
+#
+### VNC
 && yum -y install \
  tigervnc-server xterm xsetroot fluxbox \
  xorg-x11-xinit xorg-x11-font-utils xorg-x11-fonts-Type1 xorg-x11-xauth  \
  libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
  xorg-x11-fonts-75dpi xorg-x11-fonts-100dpi xorg-x11-fonts-misc \
  && yum -y clean all && rm -rf /var/cache/yum \
-
+#
 ### Change to local user
-&& useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && echo 'appionuser' && usermod -aG wheel appionuser \
+&& useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && usermod -aG wheel appionuser \
 && chmod 777 /home/appionuser \
-&& chown -R appionuser:users /home/appionuser
-ENV HOME /home/appionuser
-WORKDIR /home/appionuser
-RUN mkdir -p .vnc \
-&& touch .Xauthority \
-&& chmod 777 .vnc \
-&& echo appion-protomo | vncpasswd -f > .vnc/passwd \
+&& chown -R appionuser:users /home/appionuser \
+&& mkdir -p /home/appionuser/.vnc \
+&& touch /home/appionuser/.Xauthority \
+&& chmod 777 /home/appionuser/.vnc \
+&& echo appion-protomo | vncpasswd -f > /home/appionuser/.vnc/passwd \
 && echo "root:appion-protomo" | chpasswd \
-&& chmod 600 .vnc/passwd \
-&& ls .vnc/ \
-&& mkdir -p .config/fbpanel
+&& chmod 600 /home/appionuser/.vnc/passwd \
+&& mkdir -p /home/appionuser/.config/fbpanel
+ENV HOME /home/appionuser
 USER root
 COPY config/xstartup .vnc/xstartup
 COPY config/fbpanel-default .config/fbpanel/default
@@ -120,10 +109,8 @@ RUN chown -R appionuser:users /home/appionuser \
 && chown -R appionuser:users /emg/data \
 && chmod -R 777 /emg/ \
 && chmod 700 .vnc/xstartup \
-&& rm -rf root/.cache/ \
-&& sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.1.4</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
-&& rm /anaconda-post.log \
-
+&& rm -rf root/.cache/ /anaconda-post.log \
+&& sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
 && updatedb
 
 COPY startup.sh /sw/startup.sh
