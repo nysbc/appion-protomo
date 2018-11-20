@@ -101,14 +101,14 @@ RUN python ./setup.py install \
 && mkdir -p /home/appionuser/.config/fbpanel
 ENV HOME /home/appionuser
 USER root
-COPY config/xstartup .vnc/xstartup
-COPY config/fbpanel-default .config/fbpanel/default
+COPY config/xstartup /home/appionuser/.vnc/xstartup
+COPY config/fbpanel-default /home/appionuser/.config/fbpanel/default
 COPY config/config.php /sw/myami/myamiweb/config.php
 RUN chown -R appionuser:users /home/appionuser \
 && mkdir -p /emg/data/ \
 && chown -R appionuser:users /emg/data \
 && chmod -R 777 /emg/ \
-&& chmod 700 .vnc/xstartup \
+&& chmod 700 /home/appionuser/.vnc/xstartup \
 && rm -rf root/.cache/ /anaconda-post.log \
 && sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
 && updatedb
