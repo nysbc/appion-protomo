@@ -6,7 +6,7 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 RUN yum -y install epel-release && yum -y install yum wget epel-release sudo passwd rsync tar openssh-clients && yum -y install \
  python-tools python-devel python-matplotlib \
  ImageMagick gnuplot bash-completion \
- wxPython numpy scipy python-imaging python2-pip  \
+ numpy scipy python-imaging python2-pip  \
  gcc-gfortran opencv-python  \
  gcc-objc fftw3-devel gsl-devel boost148-python PyQt4 \
  mariadb mariadb-server MySQL-python ftgl \
