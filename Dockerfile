@@ -31,24 +31,12 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
-&& mkdir -p /emg/data \
-&& mkdir -p /sw \
-&& mkdir -p /sw/sql \
-&& mkdir -p /emg/data/appion \
+&& mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg \
-&& chown -R appionuser:users /emg/data
-
-COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
-
-### Apache setup
-COPY config/php.ini config/bashrc /etc/
-COPY config/info.php /var/www/html/info.php
-EXPOSE 80 5901
-
-COPY sql/ /sw/sql/
-
+&& chown -R appionuser:users /emg/data \
+#
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz && tar xzfv eman2_centos6_docker.tgz -C /sw && rm eman2_centos6_docker.tgz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
@@ -69,8 +57,15 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-
 && for i in pyami imageviewer leginon pyscope sinedon redux; \
 	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
 
-### Compile radermacher, libcv, numextension, and redux
+COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
+COPY sql/ startup.sh /sw/
 
+### Apache setup
+COPY config/php.ini config/bashrc /etc/
+COPY config/info.php /var/www/html/info.php
+EXPOSE 80 5901
+
+### Compile radermacher, libcv, numextension, and redux
 WORKDIR /sw/myami/modules/numextension
 RUN python ./setup.py install
 WORKDIR /sw/myami/redux
@@ -113,5 +108,4 @@ RUN chown -R appionuser:users /home/appionuser \
 && sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
 && updatedb
 
-COPY startup.sh /sw/startup.sh
 CMD /sw/startup.sh
