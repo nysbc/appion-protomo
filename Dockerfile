@@ -30,7 +30,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
-&& mkdir -p /emg/data/appion /sw/sql \
+&& mkdir -p /emg/data /emg/data/appion /sw /sw/sql \
 && chmod 777 -R /emg \
 && chown -R appionuser:users /emg/data
 
