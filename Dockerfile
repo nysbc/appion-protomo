@@ -14,8 +14,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  gcc-c++ libtiff-devel PyOpenGL python-argparse \
  php-devel gd-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
- libssh2-devel nano file \
- python-configparser mlocate \
+ libssh2-devel nano file python-configparser mlocate \
  gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
  numactl vim nc screen && yum -y clean all \
  && rm -rf /var/cache/yum \
@@ -33,10 +32,19 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && updatedb \
 && mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg \
-&& chown -R appionuser:users /emg/data \
-#
+&& chown -R appionuser:users /emg/data
+
+COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
+
+### Apache setup
+COPY config/php.ini config/bashrc /etc/
+COPY config/info.php /var/www/html/info.php
+EXPOSE 80 5901
+
+COPY sql/ startup.sh /sw/
+
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-&& wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz && tar xzfv eman2_centos6_docker.tgz -C /sw && rm eman2_centos6_docker.tgz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
@@ -56,14 +64,6 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && ln -sv /sw/myami/redux/bin/reduxd /usr/bin/ && chmod 755 /usr/bin/reduxd \
 && for i in pyami imageviewer leginon pyscope sinedon redux; \
 	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
-
-COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
-COPY sql/ startup.sh /sw/
-
-### Apache setup
-COPY config/php.ini config/bashrc /etc/
-COPY config/info.php /var/www/html/info.php
-EXPOSE 80 5901
 
 ### Compile radermacher, libcv, numextension, and redux
 WORKDIR /sw/myami/modules/numextension
@@ -85,15 +85,13 @@ RUN python ./setup.py install \
 #
 ### Change to local user
 && useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && usermod -aG wheel appionuser \
-&& chmod 777 /home/appionuser \
 && chown -R appionuser:users /home/appionuser \
-&& mkdir -p /home/appionuser/.vnc \
+&& mkdir -p /home/appionuser/.vnc /home/appionuser/.config/fbpanel \
 && touch /home/appionuser/.Xauthority \
-&& chmod 777 /home/appionuser/.vnc \
+&& chmod 777 /home/appionuser /home/appionuser/.vnc \
 && echo appion-protomo | vncpasswd -f > /home/appionuser/.vnc/passwd \
 && echo "root:appion-protomo" | chpasswd \
-&& chmod 600 /home/appionuser/.vnc/passwd \
-&& mkdir -p /home/appionuser/.config/fbpanel
+&& chmod 600 /home/appionuser/.vnc/passwd
 ENV HOME /home/appionuser
 USER root
 COPY config/xstartup /home/appionuser/.vnc/xstartup
