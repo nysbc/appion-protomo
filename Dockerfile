@@ -6,7 +6,7 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar openssh-clients && yum -y install \
  python-tools python-devel python-matplotlib \
  ImageMagick gnuplot bash-completion \
- numpy scipy python-imaging python2-pip  \
+ wxPython numpy scipy python-imaging python2-pip  \
  gcc-gfortran opencv-python  \
  gcc-objc fftw3-devel gsl-devel boost148-python PyQt4 \
  mariadb mariadb-server MySQL-python ftgl \
@@ -14,7 +14,8 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  gcc-c++ libtiff-devel PyOpenGL python-argparse \
  php-devel gd-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
- libssh2-devel nano file python-configparser mlocate \
+ libssh2-devel nano file \
+ python-configparser mlocate \
  gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
  numactl vim nc screen && yum -y clean all \
  && rm -rf /var/cache/yum \
@@ -30,7 +31,10 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
-&& mkdir -p /emg/data /emg/data/appion /sw /sw/sql \
+&& mkdir -p /emg/data \
+&& mkdir -p /sw \
+&& mkdir -p /sw/sql \
+&& mkdir -p /emg/data/appion \
 && chmod 777 -R /emg \
 && chown -R appionuser:users /emg/data
 
@@ -41,7 +45,7 @@ COPY config/php.ini config/bashrc /etc/
 COPY config/info.php /var/www/html/info.php
 EXPOSE 80 5901
 
-COPY sql/ startup.sh /sw/
+COPY sql/ /sw/sql/
 
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
 RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
@@ -66,6 +70,7 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-
 	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
 
 ### Compile radermacher, libcv, numextension, and redux
+
 WORKDIR /sw/myami/modules/numextension
 RUN python ./setup.py install
 WORKDIR /sw/myami/redux
@@ -85,13 +90,15 @@ RUN python ./setup.py install \
 #
 ### Change to local user
 && useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && usermod -aG wheel appionuser \
+&& chmod 777 /home/appionuser \
 && chown -R appionuser:users /home/appionuser \
-&& mkdir -p /home/appionuser/.vnc /home/appionuser/.config/fbpanel \
+&& mkdir -p /home/appionuser/.vnc \
 && touch /home/appionuser/.Xauthority \
-&& chmod 777 /home/appionuser /home/appionuser/.vnc \
+&& chmod 777 /home/appionuser/.vnc \
 && echo appion-protomo | vncpasswd -f > /home/appionuser/.vnc/passwd \
 && echo "root:appion-protomo" | chpasswd \
-&& chmod 600 /home/appionuser/.vnc/passwd
+&& chmod 600 /home/appionuser/.vnc/passwd \
+&& mkdir -p /home/appionuser/.config/fbpanel
 ENV HOME /home/appionuser
 USER root
 COPY config/xstartup /home/appionuser/.vnc/xstartup
@@ -106,4 +113,5 @@ RUN chown -R appionuser:users /home/appionuser \
 && sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
 && updatedb
 
+COPY startup.sh /sw/startup.sh
 CMD /sw/startup.sh
