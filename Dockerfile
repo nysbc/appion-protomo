@@ -5,18 +5,20 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 ### install software
 RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar openssh-clients && yum -y install \
  python-tools python-devel python-matplotlib \
- ImageMagick gnuplot bash-completion \
- numpy scipy python-imaging python2-pip \
- gcc-gfortran opencv-python numactl vim nc screen \
+ ImageMagick bash-completion \
+ numpy scipy python-imaging python2-pip  \
+ gcc-gfortran opencv-python  \
  gcc-objc fftw3-devel gsl-devel boost148-python PyQt4 \
  mariadb mariadb-server MySQL-python ftgl \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
  gcc-c++ libtiff-devel PyOpenGL python-argparse \
  php-devel gd-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
- libssh2-devel nano file python-configparser mlocate \
+ libssh2-devel nano file \
+ python-configparser mlocate \
  gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
- && yum -y clean all && rm -rf /var/cache/yum \
+ numactl vim nc screen && yum -y clean all \
+ && rm -rf /var/cache/yum \
 #
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
@@ -56,16 +58,6 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-
 && wget http://emg.nysbc.org/redmine/attachments/download/10732/imod_4.10.11_docker.tar.gz && tar xzfv imod_4.10.11_docker.tar.gz -C /sw && rm imod_4.10.11_docker.tar.gz \
 && ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static \
 && ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so \
-#
-### NoMachine
-&& wget http://download.nomachine.com/download/6.3/Linux/nomachine_6.3.6_1_x86_64.rpm \
-&& yum localinstall -y nomachine_6.3.6_1_x86_64.rpm && yum groupinstall -y mate-desktop --setopt=group_package_types=mandatory,default,optional \
-&& rm nomachine_6.3.6_1_x86_64.rpm && yum -y clean all && rm -rf /var/cache/yum \
-&& groupadd -r nomachine -g 433 \
-&& useradd -u 431 -r -g nomachine -d /home/nomachine -s /bin/bash -c "NoMachine" nomachine \
-&& mkdir -p /home/nomachine \
-&& chown -R nomachine:nomachine /home/nomachine \
-&& echo 'nomachine:nomachine' | chpasswd \
 #
 ### Myami setup
 && chmod 444 /var/www/html/info.php \
