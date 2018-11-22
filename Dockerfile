@@ -60,7 +60,7 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-
 ### NoMachine
 && wget http://download.nomachine.com/download/6.3/Linux/nomachine_6.3.6_1_x86_64.rpm \
 && yum localinstall -y nomachine_6.3.6_1_x86_64.rpm && yum groupinstall mate-desktop \
-&& rm nomachine_6.3.6_1_x86_64.rpm && yum -y clean all rm -rf /var/cache/yum \
+&& rm nomachine_6.3.6_1_x86_64.rpm && yum -y clean all && rm -rf /var/cache/yum \
 && groupadd -r nomachine -g 433 \
 && useradd -u 431 -r -g nomachine -d /home/nomachine -s /bin/bash -c "NoMachine" nomachine \
 && mkdir -p /home/nomachine \
