@@ -11,7 +11,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  gcc-objc fftw3-devel gsl-devel boost148-python \
  mariadb mariadb-server MySQL-python ftgl \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
- gcc-c++ libtiff-devel PyOpenGL python-argparse \
+ gcc-c++ libtiff-devel python-argparse \
  php-devel gd-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
  libssh2-devel nano file \
@@ -28,7 +28,8 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && yum -y upgrade --exclude=filesystem* && yum -y install firefox dbus && yum -y clean all && rm -rf /var/cache/yum \
 && dbus-uuidgen > /var/lib/dbus/machine-id \
 && pip install --upgrade pip \
-&& pip install joblib pyfftw3 fs==0.5.4 \
+&& pip install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
+&& python -c 'from sklearn import svm' # test for function \
 && updatedb \
 && mkdir -p /emg/data \
 && mkdir -p /sw \
