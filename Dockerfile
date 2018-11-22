@@ -28,8 +28,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && yum -y upgrade --exclude=filesystem* && yum -y install firefox dbus && yum -y clean all && rm -rf /var/cache/yum \
 && dbus-uuidgen > /var/lib/dbus/machine-id \
 && pip install --upgrade pip \
-&& pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2 \
-&& python -c 'from sklearn import svm' # test for function \
+&& pip install joblib pyfftw3 fs==0.5.4 \
 && updatedb \
 && mkdir -p /emg/data \
 && mkdir -p /sw \
