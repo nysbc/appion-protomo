@@ -8,7 +8,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  ImageMagick bash-completion \
  numpy scipy python-imaging python2-pip  \
  gcc-gfortran opencv-python  \
- gcc-objc fftw3-devel gsl-devel boost148-python PyQt4 \
+ gcc-objc fftw3-devel gsl-devel boost148-python \
  mariadb mariadb-server MySQL-python ftgl \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
  gcc-c++ libtiff-devel PyOpenGL python-argparse \
