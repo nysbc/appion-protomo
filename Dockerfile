@@ -16,7 +16,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  xorg-x11-server-Xvfb python-requests \
  libssh2-devel nano file python-configparser mlocate \
  gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
- && yum -y clean all rm -rf /var/cache/yum \
+ && yum -y clean all && rm -rf /var/cache/yum \
 #
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
