@@ -4,6 +4,8 @@
 rm -fr /tmp/.X* && \
   /usr/sbin/runuser -l appionuser -c 'vncserver -autokill :1 -name vnc -geometry 1440x900' \
   && echo 'vncserver' >> /var/log/startup.log
+/etc/NX/nxserver --startup
+tail -f /usr/NX/var/log/nxserver.log
 updatedb && echo 'updatedb' >> /var/log/startup.log
 nohup /usr/sbin/apachectl -DFOREGROUND &
 echo 'httpd' >> /var/log/startup.log
