@@ -8,10 +8,10 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  ImageMagick bash-completion \
  numpy scipy python-imaging python2-pip  \
  gcc-gfortran opencv-python  \
- gcc-objc fftw3-devel gsl-devel boost148-python PyQt4 \
+ gcc-objc fftw3-devel gsl-devel boost148-python \
  mariadb mariadb-server MySQL-python ftgl \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
- gcc-c++ libtiff-devel PyOpenGL python-argparse \
+ gcc-c++ libtiff-devel python-argparse \
  php-devel gd-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
  libssh2-devel nano file \
@@ -27,8 +27,8 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 ## Appion specific installs   # filesystem doesn't update properly for some reason
 && yum -y upgrade --exclude=filesystem* && yum -y install firefox dbus && yum -y clean all && rm -rf /var/cache/yum \
 && dbus-uuidgen > /var/lib/dbus/machine-id \
-&& pip install --upgrade pip \
-&& pip install joblib pyfftw3 fs==0.5.4 scikit-learn==0.18.2 \
+&& pip --no-cache-dir install --upgrade pip \
+&& pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
 && mkdir -p /emg/data \
@@ -48,7 +48,7 @@ EXPOSE 80 5901
 COPY sql/ /sw/sql/
 
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-16-18.tar.gz && tar xzfv myami-trunk-11-16-18.tar.gz -C /sw && rm myami-trunk-11-16-18.tar.gz \
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10799/myami-trunk-11-22-18.tar.gz && tar xzfv myami-trunk-11-22-18.tar.gz -C /sw && rm myami-trunk-11-22-18.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz && tar xzfv eman2_centos6_docker.tgz -C /sw && rm eman2_centos6_docker.tgz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
@@ -69,8 +69,7 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-
 && for i in pyami imageviewer leginon pyscope sinedon redux; \
 	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
 
-### Compile radermacher, libcv, numextension, and redux
-
+### Compile numextension and redux
 WORKDIR /sw/myami/modules/numextension
 RUN python ./setup.py install
 WORKDIR /sw/myami/redux
@@ -111,6 +110,7 @@ RUN chown -R appionuser:users /home/appionuser \
 && chmod 700 /home/appionuser/.vnc/xstartup \
 && rm -rf root/.cache/ /anaconda-post.log \
 && sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
+&& sed -i -e '/2wayv/d' -e '/rctv/d' -e '/3wvi/d' -e '/loi.php/d' -e '/dualv/d' -e '/templ/d' /sw/myami/myamiweb/index.php \
 && updatedb
 
 COPY startup.sh /sw/startup.sh
