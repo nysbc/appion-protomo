@@ -69,8 +69,7 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10733/myami-trunk-11-
 && for i in pyami imageviewer leginon pyscope sinedon redux; \
 	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
 
-### Compile radermacher, libcv, numextension, and redux
-
+### Compile numextension and redux
 WORKDIR /sw/myami/modules/numextension
 RUN python ./setup.py install
 WORKDIR /sw/myami/redux
