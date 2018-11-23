@@ -60,7 +60,7 @@ define('SMTP_PASSWORD', "");
 // --- Set your MySQL database server parameters -- //
 define('DB_HOST', "localhost");		// DB Host name
 define('DB_USER', "usr_object");	// DB User name
-define('DB_PASS', "appion-protomo");	// DB Password
+define('DB_PASS', "Phys-554");	// DB Password
 define('DB_LEGINON', "leginondb");	// Leginon database name
 define('DB_PROJECT', "projectdb");	// Project database name
 
