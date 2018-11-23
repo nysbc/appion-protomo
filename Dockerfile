@@ -27,8 +27,8 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 ## Appion specific installs   # filesystem doesn't update properly for some reason
 && yum -y upgrade --exclude=filesystem* && yum -y install firefox dbus && yum -y clean all && rm -rf /var/cache/yum \
 && dbus-uuidgen > /var/lib/dbus/machine-id \
-&& pip install --upgrade pip \
-&& pip install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
+&& pip --no-cache-dir install --upgrade pip \
+&& pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
 && mkdir -p /emg/data \
@@ -48,7 +48,7 @@ EXPOSE 80 5901
 COPY sql/ /sw/sql/
 
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-RUN wget http://emg.nysbc.org/redmine/attachments/download/10797/myami-trunk-11-22-18.tar.gz && tar xzfv myami-trunk-11-22-18.tar.gz -C /sw && rm myami-trunk-11-22-18.tar.gz \
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10798/myami-trunk-11-22-18.tar.gz && tar xzfv myami-trunk-11-22-18.tar.gz -C /sw && rm myami-trunk-11-22-18.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz && tar xzfv eman2_centos6_docker.tgz -C /sw && rm eman2_centos6_docker.tgz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
