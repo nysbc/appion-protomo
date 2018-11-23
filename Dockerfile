@@ -41,7 +41,7 @@ COPY config/php.ini config/bashrc /etc/
 COPY config/info.php /var/www/html/info.php
 EXPOSE 80 5901
 
-COPY sql/ /sw/sql/
+COPY startup.sh sql/ /sw/
 
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
 RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-23-18.tar.gz && tar xzfv myami-trunk-11-23-18.tar.gz -C /sw && rm myami-trunk-11-23-18.tar.gz \
@@ -108,5 +108,4 @@ RUN chown -R appionuser:users /home/appionuser \
 && sed -i -e '/2wayv/d' -e '/rctv/d' -e '/3wvi/d' -e '/loi.php/d' -e '/dualv/d' -e '/templ/d' /sw/myami/myamiweb/index.php \
 && updatedb
 
-COPY startup.sh /sw/startup.sh
 CMD /sw/startup.sh
