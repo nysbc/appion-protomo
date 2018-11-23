@@ -75,9 +75,6 @@ define('COOKIE_TIME', 0);		//0 is never expire.
 // --- defaut user group -- //
 define('GP_USER', 'users');
 
-// --- XML test dataset -- //
-$XML_DATA = "test/viewerdata.xml";
-
 // --- Set Default table definition -- //
 define('DEF_PROCESSING_TABLES_FILE', "defaultprocessingtables.xml");
 define('DEF_PROCESSING_PREFIX', "ap");		//update mysql privileges
@@ -199,16 +196,6 @@ define('STARTUP_MESSAGE', "");
 // --- define('SERVER_PORT', "55123"); --- //
 define('SERVER_HOST', "localhost");
 define('SERVER_PORT', "55123");
-
-// --- list specifc datasets that have test scripts associated with them --- //
-// --- example:
-// --- $TEST_SESSIONS = array(
-// ---		'zz07jul25b'
-// ---		,'zz06apr27c'
-// ---		,'zz09feb12b'
-// ---		,'zz09apr14b'
-// ---		,'zz09feb18c'
-// ---	);
 
 $TEST_SESSIONS = array();
 
