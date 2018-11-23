@@ -110,6 +110,7 @@ RUN chown -R appionuser:users /home/appionuser \
 && chmod 700 /home/appionuser/.vnc/xstartup \
 && rm -rf root/.cache/ /anaconda-post.log \
 && sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
+&& sed -i -e '/2wayv/d' -e '/rctv/d' -e '/3wvi/d' -e '/loi.php/d' -e '/dualv/d' -e '/templ/d' /sw/myami/myamiweb/index.php \
 && updatedb
 
 COPY startup.sh /sw/startup.sh
