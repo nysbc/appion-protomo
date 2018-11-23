@@ -31,10 +31,7 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
 && pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && python -c 'from sklearn import svm' # test for function \
 && updatedb \
-&& mkdir -p /emg/data \
-&& mkdir -p /sw \
-&& mkdir -p /sw/sql \
-&& mkdir -p /emg/data/appion \
+&& mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg \
 && chown -R appionuser:users /emg/data
 
@@ -62,18 +59,17 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-
 ### Myami setup
 && chmod 444 /var/www/html/info.php \
 && ln -sv /sw/myami/myamiweb /var/www/html/myamiweb \
-&& mkdir -p /etc/myami \
-&& mkdir -p /var/cache/myami/redux/ && chmod 777 /var/cache/myami/redux/ \
+&& mkdir -p /etc/myami /var/cache/myami/redux/ && chmod 777 /var/cache/myami/redux/ \
 && ln -sv /sw/myami/appion/appionlib /usr/lib64/python2.7/site-packages/ \
 && ln -sv /sw/myami/redux/bin/reduxd /usr/bin/ && chmod 755 /usr/bin/reduxd \
 && for i in pyami imageviewer leginon pyscope sinedon redux; \
-	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done
-
+	do ln -sv /sw/myami/$i /usr/lib64/python2.7/site-packages/; done \
+#
 ### Compile numextension and redux
-WORKDIR /sw/myami/modules/numextension
-RUN python ./setup.py install
-WORKDIR /sw/myami/redux
-RUN python ./setup.py install \
+&& cd /sw/myami/modules/numextension \
+&& python ./setup.py install \
+&& cd /sw/myami/redux \
+&& python ./setup.py install \
 #
 && mkdir /etc/fftw \
 && python /sw/myami/pyami/fft/fftwsetup.py 2 4096 4096 && mv -v ~/fftw3-wisdom-* /etc/fftw/wisdom \
