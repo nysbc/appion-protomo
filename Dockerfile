@@ -5,7 +5,7 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 ### install software
 RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar openssh-clients && yum -y install \
  python-tools python-devel python-matplotlib \
- ImageMagick bash-completion \
+ ImageMagick PyOpenGL bash-completion \
  numpy scipy python-imaging python2-pip  \
  gcc-gfortran opencv-python  \
  gcc-objc fftw3-devel gsl-devel boost148-python \
