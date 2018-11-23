@@ -9,16 +9,15 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  numpy scipy python-imaging python2-pip  \
  gcc-gfortran opencv-python  \
  gcc-objc fftw3-devel gsl-devel boost148-python \
- mariadb mariadb-server MySQL-python ftgl \
+ mariadb mariadb-server MySQL-python \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
  gcc-c++ libtiff-devel python-argparse \
  php-devel gd-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
- libssh2-devel nano file \
- python-configparser mlocate \
+ libssh2-devel nano file numactl vim \
+ python-configparser mlocate nc screen \
  gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
- numactl vim nc screen && yum -y clean all \
- && rm -rf /var/cache/yum \
+ && yum -y clean all && rm -rf /var/cache/yum \
 #
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
