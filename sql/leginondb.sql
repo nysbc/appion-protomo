@@ -4645,8 +4645,8 @@ CREATE TABLE IF NOT EXISTS `viewer_users` (
 
 
 
-CREATE USER usr_object@'%' IDENTIFIED BY 'Phys-554';
-GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'localhost' IDENTIFIED BY 'Phys-554';
-GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'%' IDENTIFIED BY 'Phys-554';
+CREATE USER usr_object@'%' IDENTIFIED BY 'appion-protomo';
+GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'localhost' IDENTIFIED BY 'appion-protomo';
+GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'%' IDENTIFIED BY 'appion-protomo';
 
 flush privileges;
