@@ -3,12 +3,13 @@ MAINTAINER Alex Noble <anoble@nysbc.org>
 LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 
 ### install software
-RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar openssh-clients && yum -y install \
+RUN yum -y install epel-release yum && yum -y install \
+ wget sudo passwd rsync tar openssh-clients \
  python-tools python-devel python-matplotlib \
- ImageMagick bash-completion \
+ ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip  \
- gcc-gfortran opencv-python  \
- gcc-objc fftw3-devel gsl-devel boost148-python \
+ gcc-gfortran opencv-python gcc-objc \
+ fftw3-devel gsl-devel boost148-python \
  mariadb mariadb-server MySQL-python \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
  gcc-c++ libtiff-devel python-argparse \
@@ -16,19 +17,25 @@ RUN yum -y install epel-release && yum -y install yum wget sudo passwd rsync tar
  xorg-x11-server-Xvfb python-requests \
  libssh2-devel nano file numactl vim \
  python-configparser mlocate nc screen \
- gtkglext-libs pangox-compat tcsh gedit `#protomo specific pkgs` \
+ gtkglext-libs pangox-compat tcsh gedit \
+#
+### VNC
+ tigervnc-server xterm xsetroot fluxbox \
+ xorg-x11-xinit xorg-x11-font-utils xorg-x11-fonts-Type1 xorg-x11-xauth  \
+ libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
+ xorg-x11-fonts-75dpi xorg-x11-fonts-100dpi xorg-x11-fonts-misc \
+ && yum -y upgrade --exclude=filesystem* \
  && yum -y clean all && rm -rf /var/cache/yum \
+# filesystem doesn't update properly for some reason
 #
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/nanorc \
 #
-## Appion specific installs   # filesystem doesn't update properly for some reason
-&& yum -y upgrade --exclude=filesystem* && yum -y install firefox dbus && yum -y clean all && rm -rf /var/cache/yum \
+### Appion specific installs   
 && dbus-uuidgen > /var/lib/dbus/machine-id \
 && pip --no-cache-dir install --upgrade pip \
 && pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
-&& python -c 'from sklearn import svm' # test for function \
 && updatedb \
 && mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg \
@@ -73,14 +80,6 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-
 && mkdir /etc/fftw \
 && python /sw/myami/pyami/fft/fftwsetup.py 2 4096 4096 && mv -v ~/fftw3-wisdom-* /etc/fftw/wisdom \
 && cp -v /sw/myami/redux/init.d/reduxd /etc/init.d/reduxd \
-#
-### VNC
-&& yum -y install \
- tigervnc-server xterm xsetroot fluxbox \
- xorg-x11-xinit xorg-x11-font-utils xorg-x11-fonts-Type1 xorg-x11-xauth  \
- libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
- xorg-x11-fonts-75dpi xorg-x11-fonts-100dpi xorg-x11-fonts-misc \
- && yum -y clean all && rm -rf /var/cache/yum \
 #
 ### Change to local user
 && useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && usermod -aG wheel appionuser \
