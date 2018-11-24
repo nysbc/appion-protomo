@@ -38,8 +38,7 @@ RUN yum -y install epel-release yum && yum -y install \
 && pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && updatedb \
 && mkdir -p /emg/data/appion /sw/sql \
-&& chmod 777 -R /emg \
-&& chown -R appionuser:users /emg/data
+&& chmod 777 -R /emg
 
 COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
 
@@ -85,7 +84,7 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-
 ### Change to local user
 && useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && usermod -aG wheel appionuser \
 && chmod 777 /home/appionuser \
-&& chown -R appionuser:users /home/appionuser \
+&& chown -R appionuser:users /home/appionuser /emg/data \
 && mkdir -p /home/appionuser/.vnc \
 && touch /home/appionuser/.Xauthority \
 && chmod 777 /home/appionuser/.vnc \
@@ -98,9 +97,8 @@ USER root
 COPY config/xstartup /home/appionuser/.vnc/xstartup
 COPY config/fbpanel-default /home/appionuser/.config/fbpanel/default
 COPY config/config.php /sw/myami/myamiweb/config.php
-RUN chown -R appionuser:users /home/appionuser \
+RUN chown -R appionuser:users /home/appionuser /emg/data \
 && mkdir -p /emg/data/ \
-&& chown -R appionuser:users /emg/data \
 && chmod -R 777 /emg/ \
 && chmod 700 /home/appionuser/.vnc/xstartup \
 && rm -rf root/.cache/ /anaconda-post.log \
