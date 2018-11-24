@@ -40,17 +40,15 @@ RUN yum -y install epel-release yum && yum -y install \
 && mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg
 
-COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
-
 ### Apache setup
+COPY config/sinedon.cfg config/leginon.cfg config/instruments.cfg config/appion.cfg config/redux.cfg /etc/myami/
 COPY config/php.ini config/bashrc /etc/
 COPY config/info.php /var/www/html/info.php
+COPY sql/ /sw/sql/
 EXPOSE 80 5901
 
-COPY sql/ /sw/sql/
-
 ### EMAN 1 & 2, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-23-18.tar.gz && tar xzfv myami-trunk-11-23-18.tar.gz -C /sw && rm myami-trunk-11-23-18.tar.gz \
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10802/myami-trunk-11-24-18.tar.gz && tar xzfv myami-trunk-11-24-18.tar.gz -C /sw && rm myami-trunk-11-24-18.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/5600/eman2_centos6_docker.tgz && tar xzfv eman2_centos6_docker.tgz -C /sw && rm eman2_centos6_docker.tgz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
@@ -85,13 +83,12 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-
 && useradd -d /home/appionuser -g 100 -p 'appion-protomo' -s /bin/bash appionuser && usermod -aG wheel appionuser \
 && chmod 777 /home/appionuser \
 && chown -R appionuser:users /home/appionuser /emg/data \
-&& mkdir -p /home/appionuser/.vnc \
+&& mkdir -p /home/appionuser/.vnc /home/appionuser/.config/fbpanel \
 && touch /home/appionuser/.Xauthority \
 && chmod 777 /home/appionuser/.vnc \
 && echo appion-protomo | vncpasswd -f > /home/appionuser/.vnc/passwd \
 && echo "root:appion-protomo" | chpasswd \
-&& chmod 600 /home/appionuser/.vnc/passwd \
-&& mkdir -p /home/appionuser/.config/fbpanel
+&& chmod 600 /home/appionuser/.vnc/passwd
 ENV HOME /home/appionuser
 USER root
 COPY config/xstartup /home/appionuser/.vnc/xstartup
