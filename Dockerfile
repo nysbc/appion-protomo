@@ -58,8 +58,9 @@ RUN wget http://emg.nysbc.org/redmine/attachments/download/10800/myami-trunk-11-
 && wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz && tar xfv ffmpeg-git-64bit-static.tar.xz -C /sw && rm ffmpeg-git-64bit-static.tar.xz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10729/tomo3d_January2015.tar.gz && tar xzfv tomo3d_January2015.tar.gz -C /sw && rm tomo3d_January2015.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10731/tomoctf_x86_64_July2013.tar.gz && tar xzfv tomoctf_x86_64_July2013.tar.gz -C /sw && rm tomoctf_x86_64_July2013.tar.gz \
-&& wget http://emg.nysbc.org/redmine/attachments/download/10732/imod_4.10.11_docker.tar.gz && tar xzfv imod_4.10.11_docker.tar.gz -C /sw && rm imod_4.10.11_docker.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10801/imod_4.10.11_docker.tar.gz && tar xzfv imod_4.10.11_docker.tar.gz -C /sw && rm imod_4.10.11_docker.tar.gz \
 && ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static \
+&& find /sw/ffmpeg-64bit-static/. ! -name 'ffmpeg' -type f -exec rm -f {} + \
 && ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so \
 #
 ### Myami setup
