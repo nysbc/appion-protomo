@@ -7489,15 +7489,15 @@ CREATE TABLE `ScriptUserName` (
 -- mysqldump -u root --ext --databases leginondb projectdb ap1 > docker.sql
 
 -- 
--- CREATE USER usr_object@'%' IDENTIFIED BY 'Phys-554';
+-- CREATE USER usr_object@'%' IDENTIFIED BY 'appion-protomo';
 -- GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON leginondb.* TO usr_object@'%';
 -- GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON projectdb.* TO usr_object@'%';
 -- GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON `ap%`.* to usr_object@'%'; 
--- GRANT ALL ON *.* to usr_object@'%' IDENTIFIED BY 'Phys-554'; 
+-- GRANT ALL ON *.* to usr_object@'%' IDENTIFIED BY 'appion-protomo'; 
 
-CREATE USER usr_object@'%' IDENTIFIED BY 'Phys-554';
-GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'localhost' IDENTIFIED BY 'Phys-554';
-GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'%' IDENTIFIED BY 'Phys-554';
+CREATE USER usr_object@'%' IDENTIFIED BY 'appion-protomo';
+GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'localhost' IDENTIFIED BY 'appion-protomo';
+GRANT ALTER, CREATE, INSERT, SELECT, UPDATE ON *.* to usr_object@'%' IDENTIFIED BY 'appion-protomo';
 
 flush privileges;
 
