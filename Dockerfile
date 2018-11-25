@@ -5,14 +5,13 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 ### install software
 RUN yum -y install epel-release yum && yum -y install \
  wget sudo passwd rsync tar openssh-clients \
- python-matplotlib \
+ python-matplotlib boost148-python \
  ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip \
- fftw3-devel boost148-python \
  mariadb mariadb-server MySQL-python \
  httpd php php-mysql mod_ssl php-pecl-ssh2 \
  gcc-c++ libtiff-devel python-argparse \
- php-devel gd-devel fftw3-devel php-gd \
+ php-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
  libssh2-devel nano file numactl vim \
  python-configparser mlocate nc screen \
