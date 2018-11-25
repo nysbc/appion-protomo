@@ -5,7 +5,7 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 ### install software
 RUN yum -y install epel-release yum && yum -y install \
  wget sudo passwd rsync tar openssh-clients \
- python-tools python-devel python-matplotlib \
+ python-matplotlib \
  ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip  \
  opencv-python gcc-objc \
@@ -48,13 +48,13 @@ COPY sql/ /sw/sql/
 EXPOSE 80 5901
 
 ### EMAN 1, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-RUN wget http://emg.nysbc.org/redmine/attachments/download/10804/myami-trunk-11-24-18b.tar.gz && tar xzfv myami-trunk-11-24-18b.tar.gz -C /sw && rm myami-trunk-11-24-18b.tar.gz \
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10806/myami-trunk-11-24-18c.tar.gz && tar xzfv myami-trunk-11-24-18c.tar.gz -C /sw && rm myami-trunk-11-24-18c.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
 && wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz && tar xfv ffmpeg-git-64bit-static.tar.xz -C /sw && rm ffmpeg-git-64bit-static.tar.xz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10729/tomo3d_January2015.tar.gz && tar xzfv tomo3d_January2015.tar.gz -C /sw && rm tomo3d_January2015.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10731/tomoctf_x86_64_July2013.tar.gz && tar xzfv tomoctf_x86_64_July2013.tar.gz -C /sw && rm tomoctf_x86_64_July2013.tar.gz \
-&& wget http://emg.nysbc.org/redmine/attachments/download/10801/imod_4.10.11_docker.tar.gz && tar xzfv imod_4.10.11_docker.tar.gz -C /sw && rm imod_4.10.11_docker.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10805/imod_4.10.11_docker.tar.gz && tar xzfv imod_4.10.11_docker.tar.gz -C /sw && rm imod_4.10.11_docker.tar.gz \
 && ln -sv /sw/ffmpeg* /sw/ffmpeg-64bit-static \
 && find /sw/ffmpeg-64bit-static/. ! -name 'ffmpeg' -type f -exec rm -f {} + \
 && ln -sv /sw/eman1/lib/libpyEM.so.ucs4.py2.6 /sw/eman1/lib/libpyEM.so \
