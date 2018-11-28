@@ -1003,8 +1003,16 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
- - 11-14-2018 - v1.1.4
+ - 11-28-2018 - v1.2
+   - Reduced Docker size by removing unnecessary things.
+   - EMAN2 reliance has been removed and so EMAN2 has been removed (normalization of Tomo3D tomograms is now done with IMOD).
+   - Added more xterms and opened Firefox in VNC.
+
+<details><summary>11-14-2018 - v1.1.4</summary><p>
+ 
    - Removed a few unused packages and simplified Dockerfile a bit more. Also cleaned up Dockerfile and installation scripts.
+
+</p></details>
 
 <details><summary>11-11-2018 - v1.1.3</summary><p>
  
@@ -1062,12 +1070,17 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-  
-<!--- - [TBD] - v1.2   --->
+ - 11-28-2018 - v1.2
+   - Added TOMO4 support!
+   - Re-ordered upload pull-down menu.
+   - Added 'Upload more tilt-series' link to Appion menubar on the left at the bottom of Tomography.
+   - Simplified Appion homepage.
+   - Updated tips that show up after a protomo2XXXX.py command completes.
+   - Tomograms made with Tomo3D are now normalized.
+   - Minor bugs.
 
-<!---   - Added TOMO4 tilt-series upload support!  --->
-
- - 11-14-2018 - v1.1.4
+<details><summary>11-14-2018 - v1.1.4</summary><p>
+ 
    - Collapsed the sidebar on the webpage for all sections except for Protomo.
    - Clicking on 'processing' in imageviewer now goes directly to 'Align Tilt-Series'.
    - Changed the link to the User Guide on the website to the github Appion-Protomo page, and added the same link to the Appion webpage.
@@ -1075,6 +1088,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
    - Added a link from the refinement command generation page to the all-encompassing alignment summary page.
    - Fixed minor errors in text.
 
+</p></details>
+ 
 <details><summary>11-09-2018 - v1.1.2</summary><p>
  
    - The pixelsize is hardcoded into the raw image headers now, so it is passed on to the tilt-series stacks and tomograms properly.
