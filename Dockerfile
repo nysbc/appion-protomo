@@ -9,9 +9,9 @@ RUN yum -y install epel-release yum && yum -y install \
  ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip \
  mariadb mariadb-server MySQL-python \
- httpd php php-mysql mod_ssl php-pecl-ssh2 \
+ httpd php php-mysql mod_ssl \
  gcc-c++ libtiff-devel python-argparse \
- php-devel fftw3-devel \
+ php-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
  libssh2-devel nano file numactl vim \
  python-configparser mlocate nc screen \
