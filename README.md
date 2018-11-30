@@ -11,7 +11,7 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 
 - A modern operating system (Linux, MacOS, Windows) with 16+ GB of RAM (32+ GB is *highly* recommended).
 
-- Tilt-series stacks and tilt image information (ideally in the form of SerialEM-formatted stacks and mdoc files).
+- Tilt-series stacks and tilt image information (ideally in SerialEM or TOMO4 format, including stacks and info files).
 
 - Basic Unix/Linux knowledge.
 > **Note:** Protomo aligns tilt-series based only on the accumulated SNR of the sample — no fiducials or features are used.
