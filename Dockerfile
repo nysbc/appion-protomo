@@ -13,7 +13,7 @@ RUN yum -y install epel-release yum && yum -y install \
  gcc-c++ libtiff-devel python-argparse \
  php-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
- libssh2-devel nano file numactl vim \
+ nano file numactl vim \
  python-configparser mlocate nc screen \
  gtkglext-libs pangox-compat tcsh gedit \
 #
