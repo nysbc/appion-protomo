@@ -731,9 +731,55 @@ To use batch alignment, first click `Align Tilt-Series` and select any tilt-seri
 
 <details><summary>Restarting a refinement</summary><p>
 
-If you would like to refine a tilt-series that has already been refined, navigate to `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number you wish to refine from the box. Change the Run name if you wish. Click on `Just Show Command`, Click on `View Coarse Alignment Results`. Click on the link to continue onto Refinement.
+If you would like to refine a tilt-series that has already been refined, it is recommended that you first go to the refinement iteration on the `Protomo Alignment Summary` page, scroll to the bottom, and run the `protomo2manualaligner.py` command (even if you don't need to manually fix any images). Then navigate to `Align Tilt-Series` on the left. Click on `Protomo 2.4.1`. Select the tilt-series number you wish to refine from the box. Change the Run name to the name of the run that you manually aligned on a particular iteration (e.g. tiltseries0003_thick500). Click on `Just Show Command`, Click on `View Coarse Alignment Results`. Click on the link to continue onto Refinement.
 
-Choose `Advanced` Settings Verbosity. Under `General Parameters`, input the run name of the tilt-series and the iteration you wish to restart from. If you manually aligned the previously-refined tilt-series (to fix grossly misaligned images, for instance), then change the Starting Alignment under `Parameter Presets` to Manual AND under `General Parameters` in the restart iteration box, type in 'Manual'. If you do not want to re-refine beginning with binned by 8 alignment iterations, then click the `<- Shift Rounds Left` link at the top of `General Parameters`.
+Change the Starting Alignment under `Parameter Presets` to Manual. If you do not want to re-refine beginning with binned by 8 alignment iterations, then click the `<- Shift Rounds Left` link at the top of `General Parameters`.
+
+</p></details>
+
+<details><summary>Upload a Generic Tilt Series</summary><p>
+
+If you have a tilt-series that is not in SerialEM format (stack.mrc/.st and stack.mdoc) or TOMO4 format (stack_orig.st and stack.txt), then you can upload the tilt-series one of two ways:
+
+1) Unstack the tilt-series into a separate folder, where the filenames are in the order in which the tilt-series was collected chronologically. The tilt images should have the file format and extension of .mrc. Then proceed to upload a `Generic Tilt Series` to a new session. Fill in the information in the bottom section of the form that corresponds to the tilt-series metadata (tilt image folder, binning, magnification, tilt angles, etc.). Note that the order of the tilt angles and dose list should be the same order as the unstacked tilt images.
+
+2) Unstack the tilt-series into a separate folder. The tilt images should have the file format and extension of .mrc.  Create a txt file in the format of the example below, where the first image corresponds to the first image collected and the last image to the last image collected.
+
+```
+/home/appionuser/HAslow1_tmp/HAslow1_0023.mrc	2.340000e-10	1	1	19000	-5.174180e-6	200000	17.999900	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0022.mrc	2.340000e-10	1	1	19000	-5.291560e-6	200000	15.146100	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0021.mrc	2.340000e-10	1	1	19000	-5.217900e-6	200000	12.249800	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0020.mrc	2.340000e-10	1	1	19000	-5.231850e-6	200000	9.317380	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0019.mrc	2.340000e-10	1	1	19000	-5.187400e-6	200000	6.358640	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0018.mrc	2.340000e-10	1	1	19000	-5.206210e-6	200000	3.375980	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0017.mrc	2.340000e-10	1	1	19000	-5.204870e-6	200000	0.382592	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0016.mrc	2.340000e-10	1	1	19000	-5.199690e-6	200000	-2.618120	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0015.mrc	2.340000e-10	1	1	19000	-5.097580e-6	200000	-5.614440	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0014.mrc	2.340000e-10	1	1	19000	-5.077370e-6	200000	-8.601000	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0013.mrc	2.340000e-10	1	1	19000	-5.049780e-6	200000	-11.567100	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0012.mrc	2.340000e-10	1	1	19000	-5.022180e-6	200000	-14.507800	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0011.mrc	2.340000e-10	1	1	19000	-4.983710e-6	200000	-17.410400	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0010.mrc	2.340000e-10	1	1	19000	-4.948330e-6	200000	-20.272500	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0009.mrc	2.340000e-10	1	1	19000	-4.916720e-6	200000	-23.088700	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0008.mrc	2.340000e-10	1	1	19000	-4.885120e-6	200000	-25.846400	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0007.mrc	2.340000e-10	1	1	19000	-4.925620e-6	200000	-28.541700	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0006.mrc	2.340000e-10	1	1	19000	-4.894820e-6	200000	-31.179800	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0005.mrc	2.340000e-10	1	1	19000	-4.873330e-6	200000	-33.746200	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0004.mrc	2.340000e-10	1	1	19000	-4.851830e-6	200000	-36.240800	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0003.mrc	2.340000e-10	1	1	19000	-4.961730e-6	200000	-38.658900	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0002.mrc	2.340000e-10	1	1	19000	-4.943290e-6	200000	-41.000800	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0001.mrc	2.340000e-10	1	1	19000	-4.940540e-6	200000	-43.261700	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0024.mrc	2.340000e-10	1	1	19000	-5.815860e-6	200000	20.852200	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0025.mrc	2.340000e-10	1	1	19000	-5.902490e-6	200000	23.656800	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0026.mrc	2.340000e-10	1	1	19000	-5.905990e-6	200000	26.404200	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0027.mrc	2.340000e-10	1	1	19000	-5.964920e-6	200000	29.090200	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0028.mrc	2.340000e-10	1	1	19000	-6.009980e-6	200000	31.711700	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0029.mrc	2.340000e-10	1	1	19000	-5.930460e-6	200000	34.263000	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0030.mrc	2.340000e-10	1	1	19000	-5.937190e-6	200000	36.740500	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0031.mrc	2.340000e-10	1	1	19000	-5.944450e-6	200000	39.143000	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0032.mrc	2.340000e-10	1	1	19000	-5.951710e-6	200000	41.468300	3.186660
+/home/appionuser/HAslow1_tmp/HAslow1_0033.mrc	2.340000e-10	1	1	19000	-5.958970e-6	200000	43.714100	3.186660
+```
 
 </p></details>
 
@@ -935,7 +981,7 @@ Resolution in cryoET is limited critically by pixelsize, SNR from the microscope
 
 - Several factors can contribute to the anisotropic motion of objects of interest in 3D in the ice during tilt-series collection. Two such factors are ice doming and differences between electron absorption between objects.
 
-Ice doming is the effect where the ice bends in the direction normal to the grid during electron exposure. This is sometimes noticeable in grid holes. If this occurs and if the motion is not uniformly normal to the grid, then the objects of interest will move relative to one another during collection. If the possibility of this movement is not taken into account during tilt-series alignment and/or sub-tilt-series refinement, then this will limit the resolution of the tomogram and subvolumes extracted from it. Protomo uses a central search area to align tilt images and thus if there is any doming in that area, then the alignment accuracy and resolution of objects in that area will be limited. Any objects outside of that search area will also be limited in alignment accuracy and resolution.
+Ice doming is the effect where the ice bends in the direction roughly normal to the grid during electron exposure. This is sometimes noticeable in grid holes. If this occurs and if the motion is not uniformly normal to the grid, then the objects of interest will move relative to one another during collection. If the possibility of this movement is not taken into account during tilt-series alignment and/or sub-tilt-series refinement, then this will limit the resolution of the tomogram and subvolumes extracted from it. Protomo uses a central search area to align tilt images and thus if there is any doming in that area, then the alignment accuracy and resolution of objects in that area will be limited. Any objects outside of that search area will also be limited in alignment accuracy and resolution.
 
 Differences in electron absorption between objects might occur because the objects of interest (including potentially fiducials) might be composed of atoms with significantly different electron cross sections. Different objects might absorb different amounts of energy and be deflected in different directions with different momentum transfers. As a result, objects might move with complicated relative motions during the full tilt-series exposure. Like with ice doming, if a sample is behaving in this way, then Protomo and fiducial alignment will be limited due to the global nature of the alignment methods. Refinement of sub-tilt-series may be able to track this movement and thus recover this resolution loss.
 
@@ -1004,6 +1050,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
+<!--- - [TBD] - v1.2.1  --->
+
+<!--- - [TBD]   - Updated Readme to explain the proper method for restarting a tilt-series refinement.  --->
+
+<!--- - [TBD]   - Updated Readme to explain the proper method for uploading a tilt-series that is not in SerialEM or TOMO4 format.  --->
+
  - 11-28-2018 - v1.2
    - Reduced Docker size by removing unnecessary things.
    - EMAN2 reliance has been removed and so EMAN2 has been removed (normalization of Tomo3D tomograms is now done with IMOD).
@@ -1071,6 +1123,9 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
+<!--- - [TBD] - v1.2.1  --->
+
+
  - 11-28-2018 - v1.2
    - Added TOMO4 support!
    - Re-ordered upload pull-down menu.
