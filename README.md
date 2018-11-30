@@ -1,6 +1,8 @@
 # appion-protomo v1.2.1
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
+Protomo aligns tilt-series based only on the accumulated SNR of the sample — no fiducials or features are used.
+
 **_<details><summary>Click to see how Protomo alignment works ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
 
 ![](https://i.imgur.com/3PFyXw6.gif)
@@ -14,7 +16,6 @@ A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series al
 - Tilt-series stacks and tilt image information (ideally in SerialEM or TOMO4 format, including stacks and info files).
 
 - Basic Unix/Linux knowledge.
-> **Note:** Protomo aligns tilt-series based only on the accumulated SNR of the sample — no fiducials or features are used.
 
 **<details><summary>Do you have Docker installed? If not, *click here*</summary><p>**
 
