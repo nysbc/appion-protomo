@@ -743,7 +743,7 @@ If you have a tilt-series that is not in SerialEM format (stack.mrc/.st and stac
 
 1) Unstack the tilt-series into a separate folder, where the filenames are in the order in which the tilt-series was collected chronologically. The tilt images should have the file format and extension of .mrc. Then proceed to upload a `Generic Tilt Series` to a new session. Fill in the information in the bottom section of the form that corresponds to the tilt-series metadata (tilt image folder, binning, magnification, tilt angles, etc.). Note that the order of the tilt angles and dose list should be the same order as the unstacked tilt images.
 
-2) Unstack the tilt-series into a separate folder. The tilt images should have the file format and extension of .mrc.  Create a txt file in the format of the example below (generated from the EMPIAR-10129 dataset in Example #1), where the first image corresponds to the first image collected and the last image to the last image collected.
+2) Unstack the tilt-series into a separate folder. The tilt images should have the file format and extension of .mrc.  Create a txt file in the format of the example below (generated from the EMPIAR-10129 dataset in Example #1), where the first image corresponds to the first image collected and the last image to the last image collected. Then input the txt file instead of filling out the form as in 1).
 
 ```
 /home/appionuser/HAslow1_tmp/HAslow1_0023.mrc	2.340000e-10	1	1	19000	-5.174180e-6	200000	17.999900	3.186660
