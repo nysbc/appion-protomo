@@ -1203,7 +1203,7 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
   
   <img src="https://yt3.ggpht.com/a-/AN66SAyfaYqj4-mKYklFj1z8WwndIt9EtDD0oleLcw=s288-mo-c-c0xffffffff-rj-k-no" width="120">
 
-- [Base CentOS 7 Appion Docker image](https://hub.docker.com/r/vosslab/appion_centos7/).
+- [Base CentOS 7 Appion Docker image](https://hub.docker.com/r/vosslab/appion_centos7/)
 
 &nbsp;&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZdt-pe8pCkUXTAFUVfQwiA)
 </p></details>
