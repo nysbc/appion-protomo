@@ -1085,7 +1085,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
  
    - Fixed critical database creation issue since v1.1. Sorry!!
 
-</p></details>
+7</p></details>
 
 <details><summary>11-04-2018 - v1.1.1</summary><p>
   
@@ -1131,6 +1131,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
   
 <!--- - [TBD] - v1.2.1  --->
 
+<!--- - [TBD]   - Enabled terminal output to the manual aligner (the -log flag in tomoalign-gui).  --->
 
  - 11-28-2018 - v1.2
    - Added TOMO4 support!
