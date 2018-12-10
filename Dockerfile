@@ -46,8 +46,8 @@ COPY sql/ /sw/sql/
 EXPOSE 80 5901
 
 ### EMAN 1, Protomo, FFMPEG, IMOD, Tomo3D, TomoCTF setup  (fix libpyEM.so?)
-RUN wget http://emg.nysbc.org/redmine/attachments/download/10809/myami-trunk-11-25-18.tar.gz && tar xzfv myami-trunk-11-25-18.tar.gz -C /sw && rm myami-trunk-11-25-18.tar.gz \
-&& wget http://emg.nysbc.org/redmine/attachments/download/10728/eman-linux-x86_64-cluster-1.9.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9.tar.gz \
+RUN wget http://emg.nysbc.org/redmine/attachments/download/10960/myami-trunk-12-10-18.tar.gz && tar xzfv myami-trunk-12-10-18.tar.gz -C /sw && rm myami-trunk-12-10-18.tar.gz \
+&& wget http://emg.nysbc.org/redmine/attachments/download/10961/eman-linux-x86_64-cluster-1.9_stripped.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9_stripped.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9_stripped.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
 && wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz && tar xfv ffmpeg-git-64bit-static.tar.xz -C /sw && rm ffmpeg-git-64bit-static.tar.xz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10729/tomo3d_January2015.tar.gz && tar xzfv tomo3d_January2015.tar.gz -C /sw && rm tomo3d_January2015.tar.gz \
