@@ -1058,6 +1058,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] - v1.2.1  --->
 
+<!--- - [TBD]   - Installation is about 10% smaller.  --->
+
 <!--- - [TBD]   - Updated Readme to explain the proper method for restarting a tilt-series refinement.  --->
 
 <!--- - [TBD]   - Updated Readme to explain the proper method for uploading a tilt-series that is not in SerialEM or TOMO4 format.  --->
