@@ -1056,18 +1056,18 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-<!--- - [TBD] - v1.2.1  --->
+ - 12-12-2018 - v1.2.1
+   - Installation is about 10% smaller (removed libcufft.so from IMOD libraries - might put this back if determined necessary).
+   - Updated Readme to explain the proper method for restarting a tilt-series refinement.
+   - Updated Readme to explain the proper method for uploading a tilt-series that is not in SerialEM or TOMO4 format.
 
-<!--- - [TBD]   - Installation is about 10% smaller.  --->
-
-<!--- - [TBD]   - Updated Readme to explain the proper method for restarting a tilt-series refinement.  --->
-
-<!--- - [TBD]   - Updated Readme to explain the proper method for uploading a tilt-series that is not in SerialEM or TOMO4 format.  --->
-
- - 11-28-2018 - v1.2
+<details><summary>11-28-2018 - v1.2</summary><p>
+ 
    - Reduced Docker size by removing unnecessary things.
    - EMAN2 reliance has been removed and so EMAN2 has been removed (normalization of Tomo3D tomograms is now done with IMOD).
    - Added more xterms and opened Firefox in VNC.
+
+</p></details>
 
 <details><summary>11-14-2018 - v1.1.4</summary><p>
  
@@ -1131,11 +1131,12 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
-<!--- - [TBD] - v1.2.1  --->
+ - 12-12-2018 - v1.2.1
+   - Enabled terminal output to the manual aligner (the -log flag in tomoalign-gui).
+   - Minor bugs.
 
-<!--- - [TBD]   - Enabled terminal output to the manual aligner (the -log flag in tomoalign-gui).  --->
-
- - 11-28-2018 - v1.2
+<details><summary>11-28-2018 - v1.2</summary><p>
+ 
    - Added TOMO4 support!
    - Re-ordered upload pull-down menu.
    - Added 'Upload more tilt-series' link to Appion menubar on the left at the bottom of Tomography.
@@ -1143,6 +1144,8 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
    - Updated tips that show up after a protomo2XXXX.py command completes.
    - Tomograms made with Tomo3D are now normalized.
    - Minor bugs.
+
+</p></details>
 
 <details><summary>11-14-2018 - v1.1.4</summary><p>
  
