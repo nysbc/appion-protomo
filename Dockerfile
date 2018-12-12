@@ -23,7 +23,7 @@ RUN yum -y install epel-release yum && yum -y install \
  libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
  xorg-x11-fonts-75dpi xorg-x11-fonts-100dpi xorg-x11-fonts-misc \
  && yum -y upgrade --exclude=filesystem* \
- && yum -y clean all && rm -rf /var/cache/yum \
+ && yum -y clean all && rm -rf /var/cache/yum /var/lib/rpm \
 # filesystem doesn't update properly for some reason
 #
 ### MariaDB setup
@@ -96,7 +96,7 @@ RUN chown -R appionuser:users /home/appionuser /emg/data \
 && chmod -R 777 /emg/ \
 && chmod 700 /home/appionuser/.vnc/xstartup \
 && rm -rf root/.cache/ /anaconda-post.log \
-&& sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2.1</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
+&& sed -i 's,Appion-Protomo in a Docker Container,Appion-Protomo in a Docker Container<br><font size=5>version 1.2.2</font><br><font size=3><a href='https://github.com/nysbc/appion-protomo' target='_blank'><b>Check if there is an update! | <a href='https://groups.google.com/forum/#!forum/appion-protomo' target='_blank'>Get help from the Google group!</a></b></font>,g' /sw/myami/myamiweb/config.php \
 && sed -i -e '/2wayv/d' -e '/rctv/d' -e '/3wvi/d' -e '/loi.php/d' -e '/dualv/d' -e '/templ/d' /sw/myami/myamiweb/index.php \
 && updatedb
 
