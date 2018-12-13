@@ -23,7 +23,7 @@ RUN yum -y install epel-release yum && yum -y install \
  libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
  xorg-x11-fonts-75dpi xorg-x11-fonts-100dpi xorg-x11-fonts-misc \
  && yum -y upgrade --exclude=filesystem* \
- && yum -y clean all && rm -rf /var/cache/yum /var/lib/rpm \
+ && yum -y clean all && rm -rf /var/cache/yum \
 # filesystem doesn't update properly for some reason
 #
 ### MariaDB setup
@@ -35,6 +35,7 @@ RUN yum -y install epel-release yum && yum -y install \
 && pip --no-cache-dir install --upgrade pip \
 && pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && updatedb \
+&& yum remove python2-pip \
 && mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg
 
