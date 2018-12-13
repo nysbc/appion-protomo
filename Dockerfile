@@ -10,10 +10,10 @@ RUN yum -y install epel-release yum && yum -y install \
  numpy scipy python-imaging python2-pip \
  mariadb mariadb-server MySQL-python \
  httpd php php-mysql mod_ssl \
- gcc-c++ libtiff python-argparse \
- php fftw3 php-gd \
+ gcc-c++ libtiff-devel python-argparse \
+ php-devel fftw3-devel php-gd \
  xorg-x11-server-Xvfb python-requests \
- libssh2 nano file numactl vim \
+ libssh2-devel nano file numactl vim \
  python-configparser mlocate nc screen \
  gtkglext-libs pangox-compat tcsh gedit \
 #
@@ -35,7 +35,6 @@ RUN yum -y install epel-release yum && yum -y install \
 && pip --no-cache-dir install --upgrade pip \
 && pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && updatedb \
-&& yum remove python2-pip \
 && mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg
 
