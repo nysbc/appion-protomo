@@ -3,17 +3,16 @@ MAINTAINER Alex Noble <anoble@nysbc.org>
 LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 
 ### install software
-COPY config/google-chrome.repo /etc/yum.repos.d/
 RUN yum -y install epel-release yum && yum -y install \
  wget sudo passwd rsync tar openssh-clients \
- python-matplotlib boost148-python dbus \
- bash-completion google-chrome-stable \
+ python-matplotlib boost148-python \
+ ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip \
  mariadb mariadb-server MySQL-python \
- httpd php php-mysql mod_ssl ImageMagick \
- gcc-c++ libtiff python-argparse php-gd \
+ httpd php php-mysql mod_ssl php-gd \
+ gcc-c++ libtiff python-argparse php \
  xorg-x11-server-Xvfb python-requests \
- libssh2 nano file numactl vim fftw3 php \
+ libssh2 nano file numactl vim fftw3 \
  python-configparser mlocate nc screen \
  gtkglext-libs pangox-compat tcsh gedit \
 #
