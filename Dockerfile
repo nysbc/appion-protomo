@@ -9,11 +9,10 @@ RUN yum -y install epel-release yum && yum -y install \
  ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip \
  mariadb mariadb-server MySQL-python \
- httpd php php-mysql mod_ssl \
- gcc-c++ libtiff python-argparse \
- php fftw3 php-gd \
+ httpd php php-mysql mod_ssl php-gd \
+ gcc-c++ libtiff python-argparse php \
  xorg-x11-server-Xvfb python-requests \
- libssh2 nano file numactl vim \
+ libssh2 nano file numactl vim fftw3 \
  python-configparser mlocate nc screen \
  gtkglext-libs pangox-compat tcsh gedit \
 #
@@ -22,9 +21,7 @@ RUN yum -y install epel-release yum && yum -y install \
  xorg-x11-xinit xorg-x11-font-utils xorg-x11-fonts-Type1 xorg-x11-xauth  \
  libX11-common libX11 dbus-x11 xorg-x11-server-utils xorg-x11-xkb-utils \
  xorg-x11-fonts-75dpi xorg-x11-fonts-100dpi xorg-x11-fonts-misc \
- && yum -y upgrade --exclude=filesystem* \
  && yum -y clean all && rm -rf /var/cache/yum \
-# filesystem doesn't update properly for some reason
 #
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
