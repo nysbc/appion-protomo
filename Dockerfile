@@ -90,6 +90,7 @@ USER root
 COPY config/xstartup /home/appionuser/.vnc/xstartup
 COPY config/fbpanel-default /home/appionuser/.config/fbpanel/default
 COPY config/config.php /sw/myami/myamiweb/config.php
+COPY config/.bashrc config/.pystartup /home/appionuser/
 RUN chown -R appionuser:users /home/appionuser /emg/data \
 && mkdir -p /emg/data/ \
 && chmod -R 777 /emg/ \
