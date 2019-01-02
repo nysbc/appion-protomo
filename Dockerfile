@@ -31,6 +31,7 @@ RUN yum -y install epel-release yum && yum -y install \
 #
 ### Appion specific installs   
 && dbus-uuidgen > /var/lib/dbus/machine-id \
+&& pip --no-cache-dir install --upgrade pip \
 && pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && updatedb \
 && mkdir -p /emg/data/appion /sw/sql \
