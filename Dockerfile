@@ -1,4 +1,4 @@
-FROM centos:7
+FROM alpine
 MAINTAINER Alex Noble <anoble@nysbc.org>
 LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 
