@@ -4,7 +4,7 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 
 ### install software
 RUN yum -y install epel-release yum && yum -y install \
- wget sudo passwd rsync tar openssh-clients \
+ wget sudo passwd rsync openssh-clients \
  python-matplotlib boost148-python \
  ImageMagick bash-completion firefox dbus \
  numpy scipy python-imaging python2-pip \
