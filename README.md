@@ -1,4 +1,4 @@
-# appion-protomo v1.2.1
+# appion-protomo v1.2.2
 A Docker-based distribution of the Appion-Protomo *fiducial-less* tilt-series alignment suite.
 
 Protomo aligns tilt-series based only on the accumulated SNR of the sample — no fiducials or features are used.
@@ -1056,6 +1056,10 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
+<!--- - [TBD] Cleaned up bashrc (cosmetic changes).   --->
+
+<!--- - [TBD] Added .pystartup so that python keeps terminal history because it can be useful.  --->
+
  - 12-12-2018 - v1.2.1
    - Installation is about 10% smaller (removed libcufft.so from IMOD libraries - might put this back if determined necessary).
    - Updated Readme to explain the proper method for restarting a tilt-series refinement.
@@ -1087,7 +1091,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
  
    - Fixed critical database creation issue since v1.1. Sorry!!
 
-7</p></details>
+</p></details>
 
 <details><summary>11-04-2018 - v1.1.1</summary><p>
   
