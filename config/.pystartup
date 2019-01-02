@@ -1,12 +1,4 @@
-# Add auto-completion and a stored history file of commands to your Python
-# interactive interpreter. Requires Python 2.0+, readline. Autocomplete is
-# bound to the Esc key by default (you can change it - see readline docs).
-#
-# Store the file in ~/.pystartup, and set an environment variable to point
-# to it:  "export PYTHONSTARTUP=/home/gsf/.pystartup" in bash.
-#
-# Note that PYTHONSTARTUP does *not* expand "~", so you have to put in the
-# full path to your home directory.
+# Python autocomplete
 
 import atexit
 import os
@@ -17,7 +9,7 @@ import sys
 # change autocomplete to tab
 readline.parse_and_bind("tab: complete")
 
-historyPath = os.path.expanduser("/home/anoble/.pyhistory")
+historyPath = os.path.expanduser("/home/appionuser/.pyhistory")
 
 def save_history(historyPath=historyPath):
     import readline
