@@ -11,18 +11,16 @@ umask 002
 export APPIONPATH=/sw/myami/appion
 export LEGINONPATH=/sw/myami/leginon
 export EMANDIR=/sw/eman1
-export EMAN2DIR=/sw/eman2
 
 #protomo
 export I3ROOT=/sw/protomo2
 export PROTOMO2PATH=/sw/protomo2:/sw/protomo2/bin:/sw/protomo2/lib/linux/x86-64:/sw/ffmpeg-64bit-static
 
-export PATH=/usr/sbin:/usr/bin:/bin:${APPIONPATH}/bin:${LEGINONPATH}:${EMANDIR}/bin:${XMIPPDIR}/bin:${SPIDERDIR}/bin:
-export PATH=${PATH}:${GRIGPATH}/bin:${MPIPATH}/bin:${EMAN2DIR}/bin:${RELIONDIR}/bin
+export PATH=/usr/sbin:/usr/bin:/bin:${APPIONPATH}/bin:${LEGINONPATH}:${EMANDIR}/bin:
 export PATH=${PATH}:${I3ROOT}/i3/bin:${PROTOMO2PATH}
-export PYTHONPATH=${EMANDIR}/lib:${EMAN2DIR}/lib:${EMAN2DIR}/bin:${PROTOMO2PATH}/lib/linux/x86-64
-export LD_LIBRARY_PATH=${EMANDIR}/lib:${XMIPPDIR}/lib:${MPIPATH}/lib:${EMAN2DIR}/lib
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${RELIONDIR}/lib:${PROTOMO2PATH}/lib/linux/x86-64
+export PYTHONPATH=${EMANDIR}/lib:${PROTOMO2PATH}/lib/linux/x86-64
+export LD_LIBRARY_PATH=${EMANDIR}/lib
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${PROTOMO2PATH}/lib/linux/x86-64
 
 #tomo3d and tomoctf
 export PATH=${PATH}:/sw/tomo3d/bin:/sw/tomoctf/bin
