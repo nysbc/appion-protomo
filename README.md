@@ -1058,7 +1058,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <!--- - [TBD] Cleaned up bashrc (cosmetic changes).   --->
 
-<!--- - [TBD] Added .pystartup so that python keeps terminal history because it can be useful.  --->
+<!--- - [TBD] Added .pystartup so that python keeps terminal autocompletes from history (press up) because it can be useful.  --->
 
  - 12-12-2018 - v1.2.1
    - Installation is about 10% smaller (removed libcufft.so from IMOD libraries - might put this back if determined necessary).
