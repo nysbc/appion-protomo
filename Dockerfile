@@ -6,14 +6,14 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 RUN yum -y install epel-release yum && yum -y install \
  wget sudo passwd rsync openssh-clients \
  python-matplotlib boost148-python \
- ImageMagick bash-completion firefox dbus \
- numpy scipy python-imaging \
+ ImageMagick bash-completion firefox \
+ numpy scipy python-imaging dbus \
  mariadb mariadb-server MySQL-python \
  httpd php php-mysql mod_ssl php-gd \
  gcc-c++ libtiff python-argparse php \
  xorg-x11-server-Xvfb python-requests \
- libssh2 nano file numactl vim fftw3 \
- python-configparser mlocate nc screen \
+ libssh2 file numactl vim fftw3 nc \
+ python-configparser mlocate screen \
  gtkglext-libs pangox-compat tcsh gedit \
 #
 ### VNC
