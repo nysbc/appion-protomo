@@ -27,7 +27,6 @@ RUN yum -y install epel-release yum && yum -y install \
 #
 ### MariaDB setup
 && sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/my.cnf \
-&& sed -i.bak 's/max_allowed_packet = [0-9]*M/max_allowed_packet = 24M/' /etc/nanorc \
 #
 ### Appion specific installs   
 && dbus-uuidgen > /var/lib/dbus/machine-id \
