@@ -28,7 +28,7 @@ export PATH=${PATH}:/sw/tomo3d/bin:/sw/tomoctf/bin
 #imod
 source /sw/IMOD/IMOD-linux.sh
 
-export EDITOR=nano
+export EDITOR=vim
 export TERM=xterm
 export HISTSIZE=10000
 export HISTFILESIZE=200000
