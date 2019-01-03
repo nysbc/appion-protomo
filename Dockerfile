@@ -5,9 +5,9 @@ LABEL authors="Neil Voss, Carl Negro, Alex Noble"
 ### install software
 RUN yum -y install epel-release yum && yum -y install \
  wget sudo passwd rsync openssh-clients \
- python-matplotlib boost148-python \
+ python-matplotlib boost148-python dbus \
  ImageMagick bash-completion firefox \
- numpy scipy python-imaging dbus \
+ numpy scipy python-imaging python2-pip \
  mariadb mariadb-server MySQL-python \
  httpd php php-mysql mod_ssl php-gd \
  gcc-c++ libtiff python-argparse php \
@@ -30,6 +30,8 @@ RUN yum -y install epel-release yum && yum -y install \
 #
 ### Appion specific installs   
 && dbus-uuidgen > /var/lib/dbus/machine-id \
+&& pip --no-cache-dir install --upgrade pip \
+&& pip --no-cache-dir install joblib pyfftw3 fs==0.5.4  scikit-learn==0.18.2 \
 && updatedb \
 && mkdir -p /emg/data/appion /sw/sql \
 && chmod 777 -R /emg
