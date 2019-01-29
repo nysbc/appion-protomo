@@ -1056,7 +1056,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
- - 1-29-2019 - v1.2.2
+ - 01-29-2019 - v1.2.2
    - Cleaned up bashrc (cosmetic changes).
    - Added .pystartup so that python keeps terminal autocompletes from history (press up) because it can be useful.
 
@@ -1138,7 +1138,7 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
- - 1-29-2019 - v1.2.2
+ - 01-29-2019 - v1.2.2
    - Fixed a small bug in reconstruction file handling.
 
 <details><summary>12-12-2018 - v1.2.1</summary><p>
