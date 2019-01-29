@@ -1056,14 +1056,17 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Docker Appion-Protomo</summary><p>
 
-<!--- - [TBD] Cleaned up bashrc (cosmetic changes).   --->
+ - 1-29-2019 - v1.2.2
+   - Cleaned up bashrc (cosmetic changes).
+   - Added .pystartup so that python keeps terminal autocompletes from history (press up) because it can be useful.
 
-<!--- - [TBD] Added .pystartup so that python keeps terminal autocompletes from history (press up) because it can be useful.  --->
-
- - 12-12-2018 - v1.2.1
+<details><summary>12-12-2018 - v1.2.1</summary><p>
+ 
    - Installation is about 10% smaller (removed libcufft.so from IMOD libraries - might put this back if determined necessary).
    - Updated Readme to explain the proper method for restarting a tilt-series refinement.
    - Updated Readme to explain the proper method for uploading a tilt-series that is not in SerialEM or TOMO4 format.
+
+</p></details>
 
 <details><summary>11-28-2018 - v1.2</summary><p>
  
@@ -1135,9 +1138,15 @@ Note that clicking on Align Tilt-Series forcefully clears all PHP variables. Sel
 
 <details><summary>Appion-Protomo</summary><p>
   
- - 12-12-2018 - v1.2.1
+ - 1-29-2019 - v1.2.2
+   - Fixed a small bug in reconstruction file handling.
+
+<details><summary>12-12-2018 - v1.2.1</summary><p>
+ 
    - Enabled terminal output to the manual aligner (the -log flag in tomoalign-gui).
    - Minor bugs.
+
+</p></details>
 
 <details><summary>11-28-2018 - v1.2</summary><p>
  
