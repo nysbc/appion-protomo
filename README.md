@@ -159,6 +159,13 @@ If you needed to run Docker using VirtualBox, then you will need to increase the
 
 </p></details>
 
+## Amazon EC2 &nbsp;&nbsp; *(pre-installed!)*
+*<details><summary>Click to expand</summary><p>*
+
+Everything is already installed and ready to use!
+
+</p></details>
+
 </p></details>
 
 <br />
