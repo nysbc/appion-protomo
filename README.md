@@ -47,6 +47,14 @@ Launch Kitematic.
 
 </p></details>
 
+
+## Amazon EC2 &nbsp;&nbsp; *(GUI & command line)*
+*<details><summary>Click to expand</summary><p>*
+
+In Amazon EC2, search the public Amazon AMI instances for 'Appion-Protomo' and start an instance. This is a fully-configured Linux Docker Appion-Protomo with test datasets; everything is installed and ready to use!
+
+</p></details>
+
 ## What is Docker?
 
 [This tutorial explains why Docker is used for Appion-Protomo.](https://www.youtube.com/watch?v=YFl2mCHdv24)
