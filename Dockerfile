@@ -47,7 +47,7 @@ EXPOSE 80 5901
 RUN wget http://emg.nysbc.org/redmine/attachments/download/11248/myami-trunk-01-29-19.tar.gz && tar xzfv myami-trunk-01-29-19.tar.gz -C /sw && rm myami-trunk-01-29-19.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10961/eman-linux-x86_64-cluster-1.9_stripped.tar.gz && tar xzfv eman-linux-x86_64-cluster-1.9_stripped.tar.gz -C /sw && rm eman-linux-x86_64-cluster-1.9_stripped.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/8380/protomo2-centos7-docker.tgz && tar xzfv protomo2-centos7-docker.tgz -C /sw && rm protomo2-centos7-docker.tgz \
-&& wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-64bit-static.tar.xz && tar xfv ffmpeg-git-64bit-static.tar.xz -C /sw && rm ffmpeg-git-64bit-static.tar.xz \
+&& wget https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz && tar xfv ffmpeg-git-amd64-static.tar.xz -C /sw && rm ffmpeg-git-amd64-static.tar.xz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10729/tomo3d_January2015.tar.gz && tar xzfv tomo3d_January2015.tar.gz -C /sw && rm tomo3d_January2015.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10731/tomoctf_x86_64_July2013.tar.gz && tar xzfv tomoctf_x86_64_July2013.tar.gz -C /sw && rm tomoctf_x86_64_July2013.tar.gz \
 && wget http://emg.nysbc.org/redmine/attachments/download/10964/imod_4.10.11_docker_stripped.tar.gz && tar xzfv imod_4.10.11_docker_stripped.tar.gz -C /sw && rm imod_4.10.11_docker_stripped.tar.gz \
