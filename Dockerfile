@@ -8,7 +8,7 @@ RUN yum -y install epel-release yum && yum -y install \
  python-matplotlib boost148-python dbus \
  ImageMagick bash-completion firefox \
  numpy scipy python-imaging python2-pip \
- mariadb mariadb-server MySQL-python \
+ mariadb.x86_64 1:5.5.60-1.el7_5 mariadb-server.x86_64 1:5.5.60-1.el7_5 MySQL-python \
  httpd php php-mysql mod_ssl php-gd \
  gcc-c++ libtiff python-argparse php \
  xorg-x11-server-Xvfb python-requests \
