@@ -103,6 +103,8 @@ cd appion-protomo
 
 In the Kitematic search bar type: `semc/appion-protomo`.
 
+Select appion-protomo v1.2.2 ('latest' is currently broken, sorry!).
+
 Click `Create` on the `semc` `appion-protomo` repository and wait for the container to download and start.
 
 **_<details><summary>Click for image ![seehow](https://i.imgur.com/QR7ItjO.png)</summary><p>_**
