@@ -1280,14 +1280,6 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 
 # Authors
 
-<details><summary>Carl J Negro</summary><p>
-
-  <img src="https://avatars0.githubusercontent.com/u/9562053?s=400&v=4" width="120">
-
-- Docker Appion-Protomo
-
-&nbsp;&nbsp;&nbsp;[Github](https://github.com/carl9384)<br />
-</p></details>
 <details><summary>Alex J Noble</summary><p>
   
   <img src="https://avatars2.githubusercontent.com/u/30907567?s=400&v=4" width="120">
@@ -1296,6 +1288,14 @@ Appion-Protomo repository may be found [here](http://emg.nysbc.org/redmine/proje
 
 &nbsp;&nbsp;&nbsp;[Twitter](https://twitter.com/alexjamesnoble)<br />
 &nbsp;&nbsp;&nbsp;[Youtube](https://www.youtube.com/channel/UCZectHccFZSFQIgpOzakl7A)
+</p></details>
+<details><summary>Carl J Negro</summary><p>
+
+  <img src="https://avatars0.githubusercontent.com/u/9562053?s=400&v=4" width="120">
+
+- Docker Appion-Protomo
+
+&nbsp;&nbsp;&nbsp;[Github](https://github.com/carl9384)<br />
 </p></details>
 <details><summary>Neil R Voss</summary><p>
   
